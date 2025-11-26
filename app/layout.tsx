@@ -12,10 +12,9 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: "CodeClub | Learn to Code Together",
+  title: "Nova Coding Club | Learn to Code Together",
   description:
     "Join our coding clubs and bootcamps. Learn programming with expert instructors and grow your tech skills.",
-  generator: "v0.app",
 }
 
 export default function RootLayout({
