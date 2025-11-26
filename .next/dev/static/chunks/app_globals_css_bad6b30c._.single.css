@@ -1299,8 +1299,12 @@
     min-height: 400px;
   }
 
-  .min-h-\[500px\] {
-    min-height: 500px;
+  .min-h-\[800px\] {
+    min-height: 800px;
+  }
+
+  .min-h-\[850px\] {
+    min-height: 850px;
   }
 
   .min-h-screen {

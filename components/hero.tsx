@@ -1,16 +1,16 @@
 "use client"
 
-import { ArrowRight, Sparkles } from "lucide-react"
+import { ArrowRight, Cpu, Sparkles, Terminal } from "lucide-react"
 import Link from "next/link"
 
 export default function Hero() {
   return (
-    <section className="min-h-[500px] pt-20 pb-12 md:pt-24 md:pb-16 flex items-center px-4 relative overflow-hidden">
+    <section className="min-h-[850px] pt-20 pb-12 md:pt-24 md:pb-16 flex items-center px-4 relative overflow-hidden">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: "url('/students-coding-programming-learning.jpg')",
+          backgroundImage: "url('/hero1.jpg')",
         }}
       />
       {/* Black Overlay */}
@@ -21,18 +21,17 @@ export default function Hero() {
           <div className="space-y-6 md:space-y-8 max-w-3xl">
             <div className="inline-block">
               <span className="px-4 py-2 rounded-full bg-white/20 border border-white/30 text-white font-medium text-sm flex items-center gap-2">
-                <Sparkles size={16} />
+                <Terminal size={16} />
                 Learn. Code. Grow.
               </span>
             </div>
 
             <h1 className="font-display font-bold text-4xl md:text-5xl lg:text-6xl text-balance leading-tight text-white">
-              Master Coding at CodeClub
+            Unlock Your Coding Potential at Nova Coding Club
             </h1>
 
             <p className="text-lg md:text-xl text-white/90 text-balance max-w-2xl leading-relaxed">
-              Join our coding communities designed for students and professionals. Whether you're starting your journey
-              or scaling your skills, we have programs tailored for you.
+            Join our coding communities designed for students and professionals. Whether you're just starting out or looking to level up your skills, we have programs tailored just for you.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-start">
