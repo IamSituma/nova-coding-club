@@ -1,28 +1,28 @@
 "use client"
 
-import { BookOpen, Users, Zap } from "lucide-react"
+import { BookOpen, FileCode, MessageCircle, MessageCircleCode, User, UserCheck, UserPlus, Users, Zap } from "lucide-react"
 
 export default function Features() {
   const features = [
     {
-      title: "Expert-Led Training",
-      description: "Learn from industry professionals with years of experience in tech.",
-      icon: BookOpen,
-      image: "/expert-instructor-teaching-coding.jpg",
+      title: "Expert Tutors",
+      description: "Get guidance from experienced coding mentors who make learning fun and easy to follow. Our tutors are here to support you every step of the way.",
+      icon: UserCheck,
+      image: "/tutor.jpg",
       delay: 0,
     },
     {
-      title: "Community Learning",
-      description: "Connect with peers, collaborate on projects, and grow together.",
-      icon: Users,
-      image: "/students-collaborating-on-project.jpg",
+      title: "Hands-On Projects",
+      description: "Learn by building real projects in HTML, CSS, JavaScript, and more. Apply your skills while creating cool fascinating practical projects.",
+      icon: FileCode,
+      image: "/projects.jpg",
       delay: 0.1,
     },
     {
-      title: "Practical Skills",
-      description: "Hands-on projects and real-world coding challenges to accelerate your growth.",
-      icon: Zap,
-      image: "/coding-hands-on-project-laptop.jpg",
+      title: "Collaboration",
+      description: "Join a vibrant coding community of students and professionals. Collaborate, share ideas, and grow together in a supportive environment.",
+      icon: MessageCircleCode,
+      image: "/ideas.jpg",
       delay: 0.2,
     },
   ]
@@ -41,7 +41,7 @@ export default function Features() {
                   animation: `fadeInUp 0.6s ease-out ${feature.delay}s both`,
                 }}
               >
-                <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center mb-4">
+                <div className="w-12 h-12 rounded-lg bg-teal-700 flex items-center justify-center mb-4">
                   <Icon className="text-primary-foreground" size={24} />
                 </div>
                 <h3 className="font-display font-bold text-xl md:text-2xl mb-3 text-foreground">{feature.title}</h3>
@@ -50,7 +50,7 @@ export default function Features() {
                 <img
                   src={feature.image || "/placeholder.svg"}
                   alt={feature.title}
-                  className="w-full h-32 object-cover rounded-lg mb-2"
+                  className="w-full h-50 object-cover rounded-lg mb-2"
                 />
               </div>
             )

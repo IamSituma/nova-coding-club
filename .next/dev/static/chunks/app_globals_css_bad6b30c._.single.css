@@ -107,6 +107,11 @@
     --color-green-400: #05df72;
     --color-green-500: #00c758;
     --color-green-600: #00a544;
+    --color-teal-500: #00baa7;
+    --color-teal-600: #009588;
+    --color-teal-700: #00776e;
+    --color-teal-900: #0b4f4a;
+    --color-cyan-900: #104e64;
     --color-gray-700: #364153;
     --color-black: #000;
     --color-white: #fff;
@@ -184,6 +189,11 @@
       --color-green-400: lab(78.503% -64.9265 39.7492);
       --color-green-500: lab(70.5521% -66.5147 45.8073);
       --color-green-600: lab(59.0978% -58.6621 41.2579);
+      --color-teal-500: lab(67.3859% -49.0983 -2.63511);
+      --color-teal-600: lab(55.0223% -41.0774 -3.90277);
+      --color-teal-700: lab(44.4134% -33.1436 -4.22149);
+      --color-teal-900: lab(29.506% -21.4706 -3.59886);
+      --color-cyan-900: lab(30.372% -13.1853 -18.7887);
       --color-gray-700: lab(27.1134% -.956401 -12.3224);
     }
   }
@@ -1211,6 +1221,14 @@
     height: calc(var(--spacing) * 48);
   }
 
+  .h-50 {
+    height: calc(var(--spacing) * 50);
+  }
+
+  .h-52 {
+    height: calc(var(--spacing) * 52);
+  }
+
   .h-64 {
     height: calc(var(--spacing) * 64);
   }
@@ -1299,10 +1317,6 @@
     min-height: 400px;
   }
 
-  .min-h-\[800px\] {
-    min-height: 800px;
-  }
-
   .min-h-\[850px\] {
     min-height: 850px;
   }
@@ -1357,6 +1371,10 @@
 
   .w-5 {
     width: calc(var(--spacing) * 5);
+  }
+
+  .w-5xl {
+    width: var(--container-5xl);
   }
 
   .w-8 {
@@ -2216,6 +2234,10 @@
     background-color: var(--card);
   }
 
+  .bg-cyan-900 {
+    background-color: var(--color-cyan-900);
+  }
+
   .bg-destructive {
     background-color: var(--destructive);
   }
@@ -2368,12 +2390,38 @@
     }
   }
 
+  .bg-secondary\/80 {
+    background-color: var(--secondary);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .bg-secondary\/80 {
+      background-color: color-mix(in oklab, var(--secondary) 80%, transparent);
+    }
+  }
+
   .bg-sidebar {
     background-color: var(--sidebar);
   }
 
   .bg-sidebar-border {
     background-color: var(--sidebar-border);
+  }
+
+  .bg-teal-500 {
+    background-color: var(--color-teal-500);
+  }
+
+  .bg-teal-600 {
+    background-color: var(--color-teal-600);
+  }
+
+  .bg-teal-700 {
+    background-color: var(--color-teal-700);
+  }
+
+  .bg-teal-900 {
+    background-color: var(--color-teal-900);
   }
 
   .bg-transparent {
@@ -3128,6 +3176,16 @@
   @supports (color: color-mix(in lab, red, red)) {
     .text-foreground\/80 {
       color: color-mix(in oklab, var(--foreground) 80%, transparent);
+    }
+  }
+
+  .text-foreground\/90 {
+    color: var(--foreground);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .text-foreground\/90 {
+      color: color-mix(in oklab, var(--foreground) 90%, transparent);
     }
   }
 
