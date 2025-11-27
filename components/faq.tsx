@@ -8,7 +8,7 @@ export default function FAQ() {
 
   const faqs = [
     {
-      question: "What are the prerequisites for joining CodeClub?",
+      question: "What are the prerequisites for joining Nova Coding Club?",
       answer:
         "No prior programming experience is required! Our programs are designed for beginners through advanced learners. We offer foundational courses and advanced bootcamps to match your level.",
     },

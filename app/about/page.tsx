@@ -37,7 +37,7 @@ export default function About() {
   const milestones = [
     {
       year: "2020",
-      title: "Founded CodeClub",
+      title: "Founded Nova Coding Club",
       description:
         "Started with a vision to democratize coding education in Uganda. Our founders, passionate about tech, saw a gap in accessible quality programming education and decided to bridge it.",
       image: "/startup-founding-team-office.jpg",

@@ -744,7 +744,7 @@ function FAQ() {
     const [openFAQ, setOpenFAQ] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
     const faqs = [
         {
-            question: "What are the prerequisites for joining CodeClub?",
+            question: "What are the prerequisites for joining Nova Coding Club?",
             answer: "No prior programming experience is required! Our programs are designed for beginners through advanced learners. We offer foundational courses and advanced bootcamps to match your level."
         },
         {
@@ -960,7 +960,7 @@ function About() {
     const milestones = [
         {
             year: "2020",
-            title: "Founded CodeClub",
+            title: "Founded Nova Coding Club",
             description: "Started with a vision to democratize coding education in Uganda. Our founders, passionate about tech, saw a gap in accessible quality programming education and decided to bridge it.",
             image: "/startup-founding-team-office.jpg"
         },
