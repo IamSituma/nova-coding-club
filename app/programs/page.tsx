@@ -13,17 +13,17 @@ export default function ProgramsPage() {
   const allPrograms = [
     {
       title: "School Coding Club",
-      duration: "12 Weeks",
-      price: "450,000",
+      duration: "12 Weeks (Per Term)",
+      price: "250,000",
       level: "Beginner",
       description: "Perfect for high school students looking to learn programming fundamentals.",
       features: [
-        "Python Basics",
-        "Web Development",
-        "Project Portfolio",
-        "Career Guidance",
+        "HTML & CSS Basics",
+        "Introduction to JavaScript",
+        "Responsive Design Fundamentals",
+        "Building a Personal Portfolio",
         "3 hours/week",
-        "In-Person & Online",
+        "In-Person",
       ],
       image: "/school.png",
       slug: "school-coding-club",
@@ -31,11 +31,11 @@ export default function ProgramsPage() {
     },
     {
       title: "Bootcamp - Web Development",
-      duration: "16 Weeks",
-      price: "850,000",
-      level: "Advanced",
+      duration: "8 Weeks",
+      price: "450,000",
+      level: "Begineer",
       description: "Intensive bootcamp to become a full-stack web developer ready for the job market.",
-      features: ["React & Vue", "Node.js & Express", "Databases", "Deployment", "4-5 days/week", "Hands-on Projects"],
+      features: ["HTML & CSS Foundations", "JavaScript Basics", "Using Git & GitHub for Projects", "Deploying a Simple Website", "3 Days/Week", "In-Person & Online"],
       image: "/web.jpg",
       slug: "web-development-bootcamp",
       category: "web-development",
@@ -215,10 +215,10 @@ export default function ProgramsPage() {
                         <span
                           className={`px-3 py-1 rounded-full text-xs font-semibold whitespace-nowrap ml-2 ${
                             prog.level === "Beginner"
-                              ? "bg-green-500/20 text-green-400"
+                              ? "bg-green-500/20 text-green-800"
                               : prog.level === "Intermediate"
-                                ? "bg-yellow-500/20 text-yellow-400"
-                                : "bg-red-500/20 text-red-400"
+                                ? "bg-yellow-500/20 text-yellow-700"
+                                : "bg-red-500/20 text-red-700"
                           }`}
                         >
                           {prog.level}
