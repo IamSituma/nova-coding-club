@@ -98,6 +98,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$footer$2e$tsx_
 ;
 ;
 ;
+;
 const albums = [
     {
         id: "bootcamp-graduation-2024",
@@ -146,30 +147,6 @@ const albums = [
         title: "Student Projects Expo",
         cover: "/students-presenting-tech-projects-at-exhibition.jpg",
         imageCount: 31
-    },
-    {
-        id: "coding-competition",
-        title: "Coding Competition 2024",
-        cover: "/programming-competition-students-focused-on-comput.jpg",
-        imageCount: 27
-    },
-    {
-        id: "mentorship-program",
-        title: "Mentorship Program",
-        cover: "/mentor-teaching-student-one-on-one-coding-session.jpg",
-        imageCount: 14
-    },
-    {
-        id: "ui-ux-workshop",
-        title: "UI/UX Design Workshop",
-        cover: "/design-workshop-students-working-on-wireframes.jpg",
-        imageCount: 19
-    },
-    {
-        id: "team-building-day",
-        title: "Team Building Day",
-        cover: "/team-building-activities-outdoor-games-corporate.jpg",
-        imageCount: 33
     }
 ];
 function GalleryPage() {
@@ -178,31 +155,47 @@ function GalleryPage() {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$navbar$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/app/gallery/page.tsx",
-                lineNumber: 84,
+                lineNumber: 60,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                className: "relative pt-16 min-h-[50vh] flex items-center justify-center bg-gradient-to-br from-[#009696] via-[#007a7a] to-[#005f5f] overflow-hidden",
+                className: "relative pt-16 min-h-[60vh] flex items-center justify-center bg-gradient-to-br from-[#009696] via-[#007a7a] to-[#005f5f] overflow-hidden",
                 children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "absolute inset-0 bg-black/40 z-10"
+                    }, void 0, false, {
+                        fileName: "[project]/app/gallery/page.tsx",
+                        lineNumber: 64,
+                        columnNumber: 7
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                        src: "/gallery.jpg",
+                        alt: "Coding Ideas",
+                        className: "absolute inset-0 w-full h-full object-cover"
+                    }, void 0, false, {
+                        fileName: "[project]/app/gallery/page.tsx",
+                        lineNumber: 65,
+                        columnNumber: 7
+                    }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "absolute top-10 left-10 w-32 h-32 bg-white/10 rounded-full blur-xl"
                     }, void 0, false, {
                         fileName: "[project]/app/gallery/page.tsx",
-                        lineNumber: 89,
+                        lineNumber: 71,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "absolute bottom-10 right-10 w-48 h-48 bg-white/5 rounded-full blur-2xl"
                     }, void 0, false, {
                         fileName: "[project]/app/gallery/page.tsx",
-                        lineNumber: 90,
+                        lineNumber: 72,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "absolute top-1/2 left-1/4 w-24 h-24 bg-white/10 rounded-full blur-lg"
                     }, void 0, false, {
                         fileName: "[project]/app/gallery/page.tsx",
-                        lineNumber: 91,
+                        lineNumber: 73,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -213,7 +206,7 @@ function GalleryPage() {
                                 children: "Our Gallery"
                             }, void 0, false, {
                                 fileName: "[project]/app/gallery/page.tsx",
-                                lineNumber: 94,
+                                lineNumber: 76,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -221,19 +214,19 @@ function GalleryPage() {
                                 children: "Explore moments from our events, workshops, bootcamps, and community gatherings. See the CodeClub experience through the eyes of our students and instructors."
                             }, void 0, false, {
                                 fileName: "[project]/app/gallery/page.tsx",
-                                lineNumber: 97,
+                                lineNumber: 79,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/gallery/page.tsx",
-                        lineNumber: 93,
+                        lineNumber: 75,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/gallery/page.tsx",
-                lineNumber: 87,
+                lineNumber: 63,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -249,7 +242,7 @@ function GalleryPage() {
                                     children: "Photo Albums"
                                 }, void 0, false, {
                                     fileName: "[project]/app/gallery/page.tsx",
-                                    lineNumber: 108,
+                                    lineNumber: 90,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -257,13 +250,13 @@ function GalleryPage() {
                                     children: "Browse through our collection of memories from various events and programs"
                                 }, void 0, false, {
                                     fileName: "[project]/app/gallery/page.tsx",
-                                    lineNumber: 109,
+                                    lineNumber: 91,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/gallery/page.tsx",
-                            lineNumber: 107,
+                            lineNumber: 89,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -278,14 +271,14 @@ function GalleryPage() {
                                             className: "w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                                         }, void 0, false, {
                                             fileName: "[project]/app/gallery/page.tsx",
-                                            lineNumber: 122,
+                                            lineNumber: 104,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "absolute inset-0 bg-gradient-to-t from-[#d946a8]/90 via-[#d946a8]/40 to-transparent"
+                                            className: "absolute inset-0 bg-gradient-to-t from-[#009696]/80 via-[#000000]/40 to-transparent"
                                         }, void 0, false, {
                                             fileName: "[project]/app/gallery/page.tsx",
-                                            lineNumber: 128,
+                                            lineNumber: 110,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -296,7 +289,7 @@ function GalleryPage() {
                                                     children: album.title
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/gallery/page.tsx",
-                                                    lineNumber: 131,
+                                                    lineNumber: 113,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -307,121 +300,143 @@ function GalleryPage() {
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/gallery/page.tsx",
-                                                    lineNumber: 134,
+                                                    lineNumber: 116,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/gallery/page.tsx",
-                                            lineNumber: 130,
+                                            lineNumber: 112,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, album.id, true, {
                                     fileName: "[project]/app/gallery/page.tsx",
-                                    lineNumber: 117,
+                                    lineNumber: 99,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/app/gallery/page.tsx",
-                            lineNumber: 115,
+                            lineNumber: 97,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/gallery/page.tsx",
-                    lineNumber: 106,
+                    lineNumber: 88,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/gallery/page.tsx",
-                lineNumber: 105,
+                lineNumber: 87,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                className: "py-12 md:py-20 px-4 bg-muted/30",
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "max-w-7xl mx-auto",
-                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "bg-gradient-to-r from-[#009696] to-[#007a7a] rounded-2xl p-6 md:p-12 text-center",
+                className: "jsx-77353069353c713c" + " " + "py-16 md:py-24 px-4 bg-gradient-to-r from-[#006666] to-[#009999]",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "jsx-77353069353c713c" + " " + "max-w-7xl mx-auto text-center relative",
                         children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                className: "font-display font-bold text-2xl md:text-4xl text-white mb-3 md:mb-4",
-                                children: "Want to Be Part of Our Story?"
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "jsx-77353069353c713c" + " " + "absolute -top-10 -left-10 w-32 h-32 bg-white/10 rounded-full blur-3xl animate-pulse-slow"
                             }, void 0, false, {
                                 fileName: "[project]/app/gallery/page.tsx",
-                                lineNumber: 146,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-sm md:text-lg text-white/90 max-w-2xl mx-auto mb-6 md:mb-8",
-                                children: "Join CodeClub today and create your own memories. Be featured in our next gallery!"
-                            }, void 0, false, {
-                                fileName: "[project]/app/gallery/page.tsx",
-                                lineNumber: 149,
-                                columnNumber: 13
+                                lineNumber: 128,
+                                columnNumber: 5
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex flex-col sm:flex-row gap-3 md:gap-4 justify-center",
+                                className: "jsx-77353069353c713c" + " " + "absolute -bottom-10 -right-10 w-48 h-48 bg-white/10 rounded-full blur-3xl animate-pulse-slow"
+                            }, void 0, false, {
+                                fileName: "[project]/app/gallery/page.tsx",
+                                lineNumber: 129,
+                                columnNumber: 5
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "jsx-77353069353c713c" + " " + "relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-3xl p-8 md:p-16 flex flex-col items-center justify-center space-y-6 md:space-y-8 shadow-xl hover:shadow-2xl transition-shadow duration-500",
                                 children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                                        href: "/register",
-                                        className: "px-6 md:px-8 py-2.5 md:py-3 bg-white text-[#009696] rounded-md font-semibold hover:bg-white/90 transition-all duration-300 flex items-center justify-center gap-2 text-sm md:text-base",
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                        className: "jsx-77353069353c713c" + " " + "font-display font-extrabold text-3xl md:text-5xl text-white",
+                                        children: "Be Part of Our Coding Journey!"
+                                    }, void 0, false, {
+                                        fileName: "[project]/app/gallery/page.tsx",
+                                        lineNumber: 132,
+                                        columnNumber: 7
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: "jsx-77353069353c713c" + " " + "text-white/90 text-sm md:text-lg max-w-2xl",
+                                        children: "Join CodeClub today and create your own memories. Get featured in our next gallery and explore exciting tech programs."
+                                    }, void 0, false, {
+                                        fileName: "[project]/app/gallery/page.tsx",
+                                        lineNumber: 135,
+                                        columnNumber: 7
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "jsx-77353069353c713c" + " " + "flex flex-col sm:flex-row gap-4 md:gap-6",
                                         children: [
-                                            "Join Now ",
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
-                                                size: 18
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                                                href: "/register",
+                                                className: "flex items-center justify-center gap-2 px-8 py-3 md:px-10 md:py-4 bg-white text-[#009696] font-semibold rounded-xl text-sm md:text-base shadow-md hover:scale-105 hover:shadow-lg transition-transform duration-300",
+                                                children: [
+                                                    "Join Now ",
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
+                                                        size: 20
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/app/gallery/page.tsx",
+                                                        lineNumber: 144,
+                                                        columnNumber: 20
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/app/gallery/page.tsx",
+                                                lineNumber: 140,
+                                                columnNumber: 9
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                                                href: "/programs",
+                                                className: "flex items-center justify-center px-8 py-3 md:px-10 md:py-4 border border-white rounded-xl text-white text-sm md:text-base font-semibold hover:bg-white/20 transition-colors duration-300",
+                                                children: "View Programs"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/gallery/page.tsx",
-                                                lineNumber: 157,
-                                                columnNumber: 26
+                                                lineNumber: 146,
+                                                columnNumber: 9
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/gallery/page.tsx",
-                                        lineNumber: 153,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                                        href: "/programs",
-                                        className: "px-6 md:px-8 py-2.5 md:py-3 bg-transparent text-white border border-white rounded-md font-semibold hover:bg-white/10 transition-all duration-300 text-sm md:text-base text-center",
-                                        children: "View Programs"
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/gallery/page.tsx",
-                                        lineNumber: 159,
-                                        columnNumber: 15
+                                        lineNumber: 139,
+                                        columnNumber: 7
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/gallery/page.tsx",
-                                lineNumber: 152,
-                                columnNumber: 13
+                                lineNumber: 131,
+                                columnNumber: 5
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/gallery/page.tsx",
-                        lineNumber: 145,
-                        columnNumber: 11
-                    }, this)
-                }, void 0, false, {
-                    fileName: "[project]/app/gallery/page.tsx",
-                    lineNumber: 144,
-                    columnNumber: 9
-                }, this)
-            }, void 0, false, {
+                        lineNumber: 126,
+                        columnNumber: 3
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(void 0, {
+                        id: "77353069353c713c",
+                        children: "@keyframes pulse-slow{0%,to{opacity:.4;transform:scale(1)}50%{opacity:.6;transform:scale(1.2)}}.animate-pulse-slow.jsx-77353069353c713c{animation:8s infinite pulse-slow}"
+                    }, void 0, false, void 0, this)
+                ]
+            }, void 0, true, {
                 fileName: "[project]/app/gallery/page.tsx",
-                lineNumber: 143,
+                lineNumber: 125,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$footer$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/app/gallery/page.tsx",
-                lineNumber: 170,
+                lineNumber: 169,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/gallery/page.tsx",
-        lineNumber: 83,
+        lineNumber: 59,
         columnNumber: 5
     }, this);
 }

@@ -1,3 +1,5 @@
+"use client"
+
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 import Navbar from "@/components/navbar"
@@ -52,30 +54,6 @@ const albums = [
     cover: "/students-presenting-tech-projects-at-exhibition.jpg",
     imageCount: 31,
   },
-  {
-    id: "coding-competition",
-    title: "Coding Competition 2024",
-    cover: "/programming-competition-students-focused-on-comput.jpg",
-    imageCount: 27,
-  },
-  {
-    id: "mentorship-program",
-    title: "Mentorship Program",
-    cover: "/mentor-teaching-student-one-on-one-coding-session.jpg",
-    imageCount: 14,
-  },
-  {
-    id: "ui-ux-workshop",
-    title: "UI/UX Design Workshop",
-    cover: "/design-workshop-students-working-on-wireframes.jpg",
-    imageCount: 19,
-  },
-  {
-    id: "team-building-day",
-    title: "Team Building Day",
-    cover: "/team-building-activities-outdoor-games-corporate.jpg",
-    imageCount: 33,
-  },
 ]
 
 export default function GalleryPage() {
@@ -84,7 +62,13 @@ export default function GalleryPage() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative pt-16 min-h-[50vh] flex items-center justify-center bg-gradient-to-br from-[#009696] via-[#007a7a] to-[#005f5f] overflow-hidden">
+      <section className="relative pt-16 min-h-[60vh] flex items-center justify-center bg-gradient-to-br from-[#009696] via-[#007a7a] to-[#005f5f] overflow-hidden">
+      <div className="absolute inset-0 bg-black/40 z-10"></div>
+      <img
+            src="/gallery.jpg"
+            alt="Coding Ideas"
+            className="absolute inset-0 w-full h-full object-cover"
+          />
         {/* Decorative shapes */}
         <div className="absolute top-10 left-10 w-32 h-32 bg-white/10 rounded-full blur-xl"></div>
         <div className="absolute bottom-10 right-10 w-48 h-48 bg-white/5 rounded-full blur-2xl"></div>
@@ -124,8 +108,8 @@ export default function GalleryPage() {
                   alt={album.title}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
-                {/* Pink gradient overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-[#d946a8]/90 via-[#d946a8]/40 to-transparent"></div>
+                {/* gray gradient overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-[#009696]/80 via-[#000000]/40 to-transparent"></div>
                 {/* Title at bottom */}
                 <div className="absolute bottom-0 left-0 right-0 p-3 md:p-4">
                   <h3 className="font-display font-semibold text-sm md:text-base text-white text-center">
@@ -140,32 +124,34 @@ export default function GalleryPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-12 md:py-20 px-4 bg-muted/30">
-        <div className="max-w-7xl mx-auto">
-          <div className="bg-gradient-to-r from-[#009696] to-[#007a7a] rounded-2xl p-6 md:p-12 text-center">
-            <h2 className="font-display font-bold text-2xl md:text-4xl text-white mb-3 md:mb-4">
-              Want to Be Part of Our Story?
-            </h2>
-            <p className="text-sm md:text-lg text-white/90 max-w-2xl mx-auto mb-6 md:mb-8">
-              Join CodeClub today and create your own memories. Be featured in our next gallery!
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center">
-              <Link
-                href="/register"
-                className="px-6 md:px-8 py-2.5 md:py-3 bg-white text-[#009696] rounded-md font-semibold hover:bg-white/90 transition-all duration-300 flex items-center justify-center gap-2 text-sm md:text-base"
-              >
-                Join Now <ArrowRight size={18} />
-              </Link>
-              <Link
-                href="/programs"
-                className="px-6 md:px-8 py-2.5 md:py-3 bg-transparent text-white border border-white rounded-md font-semibold hover:bg-white/10 transition-all duration-300 text-sm md:text-base text-center"
-              >
-                View Programs
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      <section className="py-16 md:py-24 px-4 bg-gradient-to-r from-[#009696] to-[#007a7a]">
+  <div className="max-w-7xl mx-auto text-center">
+    <div className="flex flex-col items-center justify-center space-y-6 md:space-y-8">
+      <h2 className="font-display font-extrabold text-3xl md:text-5xl text-white">
+        Be Part of Our Coding Journey!
+      </h2>
+      <p className="text-white/90 text-sm md:text-lg max-w-2xl">
+        Join Nova Coding Club today and create your own memories. Get featured in our next gallery and explore exciting tech programs.
+      </p>
+
+      <div className="flex flex-col sm:flex-row gap-4 md:gap-6">
+        <Link
+          href="/register"
+          className="flex items-center justify-center gap-2 px-8 py-3 md:px-10 md:py-4 bg-white text-[#009696] font-semibold rounded-xl text-sm md:text-base shadow-md hover:scale-105 hover:shadow-lg transition-transform duration-300"
+        >
+          Join Now <ArrowRight size={20} />
+        </Link>
+        <Link
+          href="/programs"
+          className="flex items-center justify-center px-8 py-3 md:px-10 md:py-4 border border-white rounded-xl text-white text-sm md:text-base font-semibold hover:bg-white/20 transition-colors duration-300"
+        >
+          View Programs
+        </Link>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       <Footer />
     </main>

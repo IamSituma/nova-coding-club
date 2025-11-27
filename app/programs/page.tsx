@@ -145,7 +145,7 @@ export default function ProgramsPage() {
     <>
       <Navbar />
 
-      <main className="min-h-screen bg-background pt-24">
+      <main className="min-h-screen bg-background">
 
         {/* Hero */}
         <section className="relative h-[500px] md:h-[600px] overflow-hidden">
