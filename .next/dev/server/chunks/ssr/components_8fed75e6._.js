@@ -516,11 +516,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 function Description() {
     const scrollRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(null);
     const images = [
-        "/students-collaborating-on-project.jpg",
-        "/expert-instructor-teaching-coding.jpg",
+        "/projects.jpg",
+        "/tutor.jpg",
         "/coding-hands-on-project-laptop.jpg",
-        "/students-coding-programming-learning.jpg",
-        "/web-development-html-css-javascript.jpg"
+        "/#.jpg",
+        "/#.jpg"
     ];
     const duplicatedImages = [
         ...images,
@@ -553,11 +553,11 @@ function Description() {
                 className: "grid grid-cols-1 md:grid-cols-2 gap-0 items-stretch min-h-[400px] md:min-h-[500px]",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "space-y-4 md:space-y-6 relative z-10 py-16 md:py-24 px-4 flex flex-col justify-center",
+                        className: "space-y-4 md:space-y-6 relative z-10 py-16 md:py-24 px-8 flex flex-col justify-center",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                 className: "font-display font-bold text-2xl md:text-4xl text-foreground",
-                                children: "Why Choose CodeClub?"
+                                children: "Why Choose Nova Coding Club?"
                             }, void 0, false, {
                                 fileName: "[project]/components/description.tsx",
                                 lineNumber: 49,
@@ -565,7 +565,7 @@ function Description() {
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: "text-base md:text-lg text-foreground/70 leading-relaxed",
-                                children: "CodeClub is more than just a coding program—it's a community of learners and creators dedicated to mastering the digital skills that matter. Whether you're a student looking to boost your career prospects or a professional aiming to stay ahead, our carefully curated programs offer the right balance of theory and practice."
+                                children: "Nova Coding Club is more than just a coding program. It' a vibrant community of learners and creators dedicated to mastering the digital skills that matter. Whether you’re a student looking to boost your career or a professional aiming to stay ahead, our programs offer the perfect blend of hands-on practice and practical theory."
                             }, void 0, false, {
                                 fileName: "[project]/components/description.tsx",
                                 lineNumber: 50,
@@ -573,10 +573,10 @@ function Description() {
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: "text-base md:text-lg text-foreground/70 leading-relaxed",
-                                children: "Our instructors bring real-world experience from leading tech companies and startups. They understand what employers are looking for and design our curriculum accordingly. Join thousands of students who have already transformed their careers through CodeClub."
+                                children: "Our instructors come with hands-on experience from top tech companies and startups. They know exactly what skills employers value and tailor our curriculum to match. Join thousands of students who have already advanced their careers with Nova Coding Club."
                             }, void 0, false, {
                                 fileName: "[project]/components/description.tsx",
-                                lineNumber: 56,
+                                lineNumber: 53,
                                 columnNumber: 13
                             }, this)
                         ]
@@ -589,43 +589,43 @@ function Description() {
                         className: "relative overflow-hidden h-[300px] md:h-auto",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "absolute left-0 top-0 bottom-0 w-32 md:w-48 z-20 pointer-events-none bg-gradient-to-r from-secondary/90 via-secondary/50 to-transparent"
+                                className: "absolute left-0 top-0 bottom-0 w-32 md:w-48 z-20 pointer-events-none bg-gradient-to-r from-secondary/50 via-secondary/50 to-transparent"
                             }, void 0, false, {
                                 fileName: "[project]/components/description.tsx",
-                                lineNumber: 66,
+                                lineNumber: 61,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 ref: scrollRef,
-                                className: "flex gap-0 h-full overflow-x-hidden",
+                                className: "flex gap-3 h-full overflow-x-hidden",
                                 style: {
                                     scrollBehavior: "auto"
                                 },
                                 children: duplicatedImages.map((img, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex-shrink-0 w-64 md:w-80 h-full overflow-hidden",
+                                        className: "flex-shrink-0 w-64 md:w-95 h-full overflow-hidden",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                                             src: img || "/placeholder.svg",
                                             alt: `CodeClub moment ${idx % images.length + 1}`,
                                             className: "w-full h-full object-cover"
                                         }, void 0, false, {
                                             fileName: "[project]/components/description.tsx",
-                                            lineNumber: 72,
+                                            lineNumber: 67,
                                             columnNumber: 19
                                         }, this)
                                     }, idx, false, {
                                         fileName: "[project]/components/description.tsx",
-                                        lineNumber: 71,
+                                        lineNumber: 66,
                                         columnNumber: 17
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/components/description.tsx",
-                                lineNumber: 69,
+                                lineNumber: 64,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/description.tsx",
-                        lineNumber: 64,
+                        lineNumber: 59,
                         columnNumber: 11
                     }, this)
                 ]
@@ -668,7 +668,7 @@ function Programs() {
         {
             title: "School Coding Club",
             duration: "12 Weeks",
-            price: "450,000",
+            price: "250,000",
             description: "Perfect for high school students looking to learn programming fundamentals.",
             features: [
                 "Python Basics",
@@ -676,13 +676,13 @@ function Programs() {
                 "Project Portfolio",
                 "Career Guidance"
             ],
-            image: "/school-coding-club.jpg",
+            image: "/school.png",
             slug: "school-coding-club"
         },
         {
-            title: "Bootcamp - Web Dev",
+            title: "Bootcamp - Web Development",
             duration: "16 Weeks",
-            price: "850,000",
+            price: "450,000",
             description: "Intensive bootcamp to become a full-stack web developer ready for job market.",
             features: [
                 "Frontend & Backend",
@@ -694,9 +694,9 @@ function Programs() {
             slug: "web-development"
         },
         {
-            title: "Bootcamp - Mobile Dev",
+            title: "Bootcamp - Mobile Development",
             duration: "16 Weeks",
-            price: "850,000",
+            price: "650,000",
             description: "Master mobile app development for iOS and Android platforms.",
             features: [
                 "React Native",
@@ -712,7 +712,7 @@ function Programs() {
         {
             title: "Advanced Python",
             duration: "8 Weeks",
-            price: "400,000",
+            price: "1,000,000",
             description: "Deep dive into Python for data science and automation.",
             image: "/advanced-python.jpg",
             slug: "web-development"
@@ -728,7 +728,7 @@ function Programs() {
         {
             title: "Data Science",
             duration: "12 Weeks",
-            price: "700,000",
+            price: "1,200,000",
             description: "Master data analysis, visualization, and machine learning basics.",
             image: "/data-science.jpg",
             slug: "design"
@@ -862,15 +862,15 @@ function Programs() {
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                className: "mt-4 md:mt-6 w-full py-2.5 md:py-3 bg-gradient-to-r from-primary to-accent text-primary-foreground rounded-lg font-semibold hover:shadow-lg hover:shadow-primary/30 transition-all duration-300 flex items-center justify-center gap-2 text-sm md:text-base",
+                                                className: "mt-4 md:mt-6 w-full py-2.5 md:py-3 bg-teal-600 text-primary-foreground rounded-lg font-semibold hover:shadow-lg hover:shadow-primary/50 transition-all duration-300 flex items-center justify-center gap-2 text-sm md:text-base",
                                                 children: [
-                                                    "Register ",
+                                                    "Join Class ",
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
                                                         size: 18
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/programs.tsx",
                                                         lineNumber: 105,
-                                                        columnNumber: 30
+                                                        columnNumber: 32
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
@@ -992,15 +992,15 @@ function Programs() {
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                className: "mt-4 md:mt-6 w-full py-2.5 md:py-3 bg-gradient-to-r from-primary to-accent text-primary-foreground rounded-lg font-semibold hover:shadow-lg hover:shadow-primary/30 transition-all duration-300 flex items-center justify-center gap-2 text-sm md:text-base",
+                                                className: "mt-4 md:mt-6 w-full py-2.5 md:py-3 bg-teal-600 text-primary-foreground rounded-lg font-semibold hover:shadow-lg hover:shadow-primary/50 transition-all duration-300 flex items-center justify-center gap-2 text-sm md:text-base",
                                                 children: [
-                                                    "Register ",
+                                                    "Join Class ",
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
                                                         size: 18
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/programs.tsx",
                                                         lineNumber: 140,
-                                                        columnNumber: 32
+                                                        columnNumber: 34
                                                     }, this)
                                                 ]
                                             }, void 0, true, {

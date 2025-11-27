@@ -1,34 +1,38 @@
-import Navbar from "@/components/navbar"
-import Footer from "@/components/footer"
-import { BookOpen, Globe, Users, Lightbulb } from "lucide-react"
+"use client"; // Client component
+
+import { useState } from "react";
+import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
+import FAQ from "@/components/faq"; // <-- import FAQ
+import { BookOpen, Globe, Users, Lightbulb } from "lucide-react";
 
 export default function About() {
   const values = [
     {
       title: "Knowledge",
       description:
-        "We are experts in the field of online education and career development, and are rigorous in delivering high quality learning materials, services and experiences that deliver the outcomes we have promised.",
+        "We provide expert guidance in coding, software development, and technology, ensuring learners gain practical skills that are immediately applicable in real-world projects",
       icon: BookOpen,
     },
     {
       title: "Inclusivity",
       description:
-        'We are inspired by the UN Declaration that "everyone is entitled to a free education". We are committed to equality and access to education irrespective of gender, geography, economic status or any other barriers to access.',
+        "We believe technology should be accessible to everyone. Our programs welcome learners of all backgrounds, regardless of gender, location, or experience level.",
       icon: Globe,
     },
     {
       title: "Empowerment",
       description:
-        "We are driven by our belief in the power of free education and skills training to change people's lives for the better and are passionate about providing an overall learning experience that meets their needs and helps them to achieve life goals.",
+        "Through hands-on coding projects, mentorship, and career guidance, we empower students to build software solutions and confidently pursue careers in tech.",
       icon: Users,
     },
     {
       title: "Innovation",
       description:
-        "We will not be constrained by what already exists but will lead the way in introducing new ways to achieve our mission. Our DNA is entrepreneurial and we understand and embrace the pioneering spirit that motivates other entrepreneurs.",
+        "We foster creativity and problem-solving in software engineering, encouraging learners to explore new technologies and develop innovative solutions.",
       icon: Lightbulb,
     },
-  ]
+  ];
 
   const milestones = [
     {
@@ -66,76 +70,52 @@ export default function About() {
         "Established partnerships with leading schools and organizations. We now serve both individual learners and institutions, bringing quality tech education to high schools across the region.",
       image: "/school-partnership-collaboration-education.jpg",
     },
-  ]
+  ];
 
   const stats = [
     { value: "1000+", label: "Students Trained" },
     { value: "50+", label: "School Partners" },
     { value: "15+", label: "Programs Offered" },
     { value: "85%", label: "Job Placement Rate" },
-  ]
+  ];
+
+  const [hovered, setHovered] = useState<number | null>(null);
 
   return (
     <>
       <Navbar />
       <main className="min-h-screen bg-background pt-16">
-        {/* Hero - Full width */}
-        <section className="relative overflow-hidden">
-          {/* Light yellow/cream background */}
-          <div className="bg-[#f5f5dc] py-20 md:py-28 px-4 relative">
-            {/* Decorative shapes */}
-            {/* Top left - green circle */}
-            <div className="absolute top-8 left-8 w-16 h-16 md:w-32 md:h-32 rounded-full bg-[#90EE90] opacity-80" />
-            {/* Top left - purple half circle */}
-            <div className="absolute top-32 md:top-40 -left-8 w-16 h-16 md:w-32 md:h-32 rounded-full bg-[#DDA0DD] opacity-80" />
-            {/* Bottom left - pink/magenta arc */}
-            <div className="absolute bottom-20 left-4 w-14 h-14 md:w-28 md:h-28 rounded-full border-[8px] md:border-[16px] border-[#FF69B4] border-r-transparent border-b-transparent opacity-80" />
-
-            {/* Top right - orange rounded rectangle */}
-            <div className="absolute top-8 right-16 w-16 h-10 md:w-28 md:h-16 rounded-full bg-[#FFA500] opacity-80" />
-            {/* Top right - green arc */}
-            <div className="absolute top-4 right-4 w-12 h-12 md:w-24 md:h-24 rounded-full border-[8px] md:border-[14px] border-[#90EE90] border-l-transparent border-b-transparent opacity-80" />
-            {/* Right side - teal/green shape */}
-            <div className="absolute top-1/2 -right-6 w-14 h-14 md:w-28 md:h-28 rounded-full bg-[#20B2AA] opacity-80" />
-            {/* Bottom right - green circle */}
-            <div className="absolute bottom-16 right-20 w-12 h-12 md:w-24 md:h-24 rounded-full bg-[#90EE90] opacity-60" />
-
-            {/* Grid lines overlay */}
-            <div className="absolute inset-0 opacity-10">
-              <div
-                className="h-full w-full"
-                style={{
-                  backgroundImage:
-                    "linear-gradient(to right, #000 1px, transparent 1px), linear-gradient(to bottom, #000 1px, transparent 1px)",
-                  backgroundSize: "60px 60px",
-                }}
-              />
-            </div>
-
-            {/* Content */}
-            <div className="max-w-4xl mx-auto text-center relative z-10 px-4">
-              <h1 className="font-display font-bold text-2xl sm:text-3xl md:text-5xl lg:text-6xl text-[#1a365d] leading-tight">
-                The Radical Idea Behind Our Story:
-              </h1>
-              <h2 className="font-display font-bold text-2xl sm:text-3xl md:text-5xl lg:text-6xl text-[#009696] mt-2">
-                Education Should Be Accessible
-              </h2>
-            </div>
-          </div>
-
-          {/* Stats bar */}
-          <div className="bg-[#1a202c] py-6 px-4">
-            <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 text-center">
-              {stats.map((stat, idx) => (
-                <div key={idx}>
-                  <h3 className="font-display font-bold text-xl md:text-3xl text-white mb-1">{stat.value}</h3>
-                  <p className="text-white/70 text-xs md:text-base">{stat.label}</p>
-                </div>
-              ))}
-            </div>
+        {/* HERO SECTION */}
+        <section className="relative overflow-hidden h-[500px] md:h-[600px]">
+          <img
+            src="/ideas.jpg"
+            alt="Coding Ideas"
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-black/70" />
+          <div className="relative z-10 max-w-4xl mx-auto text-center px-4 h-full flex flex-col justify-center">
+            <h1 className="font-display font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white leading-tight">
+              The Idea Behind Our Club
+            </h1>
+            <h2 className="font-display font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-[#009696] mt-4">
+              Tech Skills Should Be for Everyone
+            </h2>
           </div>
         </section>
 
+        {/* STATS */}
+        <div className="bg-[#1a202c] py-16 px-4">
+          <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 text-center">
+            {stats.map((stat, idx) => (
+              <div key={idx}>
+                <h3 className="font-display font-bold text-2xl md:text-4xl text-white mb-2">{stat.value}</h3>
+                <p className="text-white/70 text-sm md:text-base">{stat.label}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* VALUES */}
         <section className="py-16 md:py-24 px-4 bg-[#e8f4f8]">
           <div className="max-w-7xl mx-auto">
             <h2 className="font-display font-bold text-2xl md:text-4xl mb-10 md:mb-14 text-center text-foreground">
@@ -143,7 +123,7 @@ export default function About() {
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {values.map((value, idx) => {
-                const Icon = value.icon
+                const Icon = value.icon;
                 return (
                   <div
                     key={idx}
@@ -155,170 +135,99 @@ export default function About() {
                     <h3 className="font-display font-bold text-lg md:text-xl mb-3 text-foreground">{value.title}</h3>
                     <p className="text-foreground/60 text-sm leading-relaxed">{value.description}</p>
                   </div>
-                )
+                );
               })}
             </div>
           </div>
         </section>
 
-        {/* Mission & Vision - Updated to max-w-7xl */}
-        <section className="py-16 md:py-24 px-4 bg-secondary/50">
-          <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 md:gap-12">
-            <div>
-              <h2 className="font-display font-bold text-2xl md:text-3xl mb-4 text-foreground">Our Mission</h2>
-              <p className="text-foreground/70 leading-relaxed mb-4 md:mb-6 text-sm md:text-base">
-                To empower students and professionals with practical coding skills and industry knowledge, creating
-                pathways to meaningful careers in technology.
-              </p>
-              <p className="text-foreground/70 leading-relaxed mb-4 md:mb-6 text-sm md:text-base">
-                We combine hands-on learning with real-world projects, mentorship from industry experts, and a
-                supportive community to ensure our students not only learn to code but build careers they love.
-              </p>
-              <p className="text-foreground/70 leading-relaxed text-sm md:text-base">
-                Our curriculum is designed by industry professionals and updated regularly to reflect market demands,
-                ensuring our graduates are job-ready from day one.
-              </p>
-            </div>
-            <div>
-              <h2 className="font-display font-bold text-2xl md:text-3xl mb-4 text-foreground">Our Vision</h2>
-              <p className="text-foreground/70 leading-relaxed mb-4 md:mb-6 text-sm md:text-base">
-                To create a thriving tech ecosystem in Uganda where talent is recognized and developed, and where
-                technology is used as a tool for positive change.
-              </p>
-              <p className="text-foreground/70 leading-relaxed mb-4 md:mb-6 text-sm md:text-base">
-                We envision a future where every young person in Uganda has the opportunity to learn coding, develop
-                critical tech skills, and contribute to the digital transformation of Africa.
-              </p>
-              <p className="text-foreground/70 leading-relaxed text-sm md:text-base">
-                We aim to build a network of tech professionals who not only excel in their careers but also give back
-                to their communities as mentors and leaders.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* Journey - Updated to max-w-7xl */}
-        <section className="py-16 md:py-24 px-4 bg-background">
+        {/* OUR JOURNEY */}
+        <section className="bg-background py-16 md:py-24 px-4">
           <div className="max-w-7xl mx-auto">
-            <h2 className="font-display font-bold text-2xl md:text-4xl mb-10 md:mb-12 text-foreground">Our Journey</h2>
-            <div className="space-y-8 md:space-y-12">
-              {milestones.map((milestone, idx) => (
-                <div key={idx} className="flex flex-col md:flex-row gap-6 md:gap-8 items-start">
-                  {/* Timeline indicator */}
-                  <div className="flex flex-row md:flex-col items-center gap-4 md:gap-0 md:w-24 flex-shrink-0">
-                    <div className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-gradient-to-br from-primary to-accent text-white flex items-center justify-center font-display font-bold text-base md:text-lg">
-                      {milestone.year.slice(-2)}
+            <h2 className="font-display font-bold text-2xl md:text-4xl mb-12 text-foreground text-center">
+              Our Journey
+            </h2>
+
+            <div className="relative overflow-hidden">
+              <div
+                className={`flex gap-8 md:gap-12 animate-scroll ${
+                  hovered !== null ? "animation-play-state-paused" : ""
+                }`}
+              >
+                {[...milestones, ...milestones].map((milestone, idx) => (
+                  <div
+                    key={idx}
+                    onMouseEnter={() => setHovered(idx)}
+                    onMouseLeave={() => setHovered(null)}
+                    className={`flex-shrink-0 w-72 md:w-80 transition-all duration-300 pt-12 ${
+                      hovered === idx
+                        ? "scale-105 z-10"
+                        : hovered !== null
+                        ? "opacity-30"
+                        : ""
+                    }`}
+                    style={{ overflow: "visible" }}
+                  >
+                    {/* Year Circle */}
+                    <div className="mb-4">
+                      <div className="w-16 h-16 rounded-full border-2 border-primary bg-gradient-to-br from-primary to-accent text-white flex items-center justify-center font-display font-bold text-lg md:text-xl">
+                        {milestone.year}
+                      </div>
                     </div>
-                    <span className="md:hidden text-foreground font-semibold">{milestone.year}</span>
-                    {idx < milestones.length - 1 && (
-                      <div className="hidden md:block w-1 h-24 md:h-32 bg-primary/20 mt-4"></div>
+
+                    {/* Text */}
+                    <div className="mb-4">
+                      <h3 className="font-display font-bold text-lg md:text-xl text-foreground mb-2">
+                        {milestone.title}
+                      </h3>
+                      <p className="text-foreground/70 text-sm md:text-base leading-relaxed">
+                        {milestone.description}
+                      </p>
+                    </div>
+
+                    {/* Image */}
+                    <div className="w-full h-56 md:h-64 overflow-hidden rounded-lg">
+                      <img
+                        src={milestone.image}
+                        alt={milestone.title}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+
+                    {/* Connector Dash */}
+                    {idx < milestones.length * 2 - 1 && (
+                      <div className="h-1 w-full bg-primary/30 mt-6 md:mt-8 rounded"></div>
                     )}
                   </div>
+                ))}
+              </div>
 
-                  {/* Content and Image */}
-                  <div className="flex-1">
-                    <div className="flex flex-col md:flex-row gap-4 md:gap-6">
-                      <div className="flex-1">
-                        <h3 className="font-display font-bold text-xl md:text-2xl text-foreground mb-2">
-                          {milestone.title}
-                        </h3>
-                        <p className="text-foreground/70 leading-relaxed text-sm md:text-base">
-                          {milestone.description}
-                        </p>
-                      </div>
-                      <div className="w-full md:w-48 flex-shrink-0">
-                        <img
-                          src={milestone.image || "/placeholder.svg"}
-                          alt={milestone.title}
-                          className="w-full h-40 md:h-40 object-cover rounded-lg"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              ))}
+              {/* Fade overlay left & right */}
+              <div className="pointer-events-none absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-background to-transparent z-20" />
+              <div className="pointer-events-none absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-background to-transparent z-20" />
             </div>
+
+            <style jsx>{`
+              @keyframes scroll {
+                0% { transform: translateX(0); }
+                100% { transform: translateX(-50%); }
+              }
+              .animate-scroll {
+                animation: scroll 40s linear infinite;
+                display: flex;
+              }
+              .animation-play-state-paused {
+                animation-play-state: paused !important;
+              }
+            `}</style>
           </div>
         </section>
 
-        {/* Why Choose CodeClub - Updated to max-w-7xl */}
-        <section className="py-16 md:py-24 px-4 bg-secondary/50">
-          <div className="max-w-7xl mx-auto">
-            <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-center">
-              {/* Left Text */}
-              <div className="flex-1 space-y-6">
-                <h2 className="font-display font-bold text-2xl md:text-4xl text-foreground">Why Choose CodeClub?</h2>
-                <div className="space-y-4">
-                  <div className="space-y-2">
-                    <h3 className="font-display font-bold text-lg md:text-xl text-foreground">Expert Instructors</h3>
-                    <p className="text-foreground/70 text-sm md:text-base">
-                      Learn from industry professionals with years of real-world experience in leading tech companies.
-                    </p>
-                  </div>
-                  <div className="space-y-2">
-                    <h3 className="font-display font-bold text-lg md:text-xl text-foreground">Job Ready Curriculum</h3>
-                    <p className="text-foreground/70 text-sm md:text-base">
-                      Our programs are designed with employers in mind for immediate employment opportunities.
-                    </p>
-                  </div>
-                  <div className="space-y-2">
-                    <h3 className="font-display font-bold text-lg md:text-xl text-foreground">Community Support</h3>
-                    <p className="text-foreground/70 text-sm md:text-base">
-                      Join a thriving community of learners and professionals for lifelong support and networking.
-                    </p>
-                  </div>
-                </div>
-              </div>
+        {/* FAQ SECTION */}
+        <FAQ />  {/* <-- replaced "Why Choose CodeClub" with FAQ */}
 
-              <div className="flex-1 overflow-hidden w-full">
-                <div className="carousel-container relative h-64 md:h-80 overflow-hidden rounded-xl">
-                  <style>{`
-                    @keyframes carouselScroll {
-                      0% {
-                        transform: translateX(0);
-                      }
-                      100% {
-                        transform: translateX(-100%);
-                      }
-                    }
-                    .carousel-scroll {
-                      animation: carouselScroll 20s linear infinite;
-                      display: flex;
-                      gap: 1rem;
-                    }
-                    .carousel-scroll:hover {
-                      animation-play-state: paused;
-                    }
-                    .carousel-item {
-                      min-width: 200px;
-                      opacity: 1;
-                      transition: opacity 0.3s ease;
-                    }
-                  `}</style>
-                  <div className="carousel-scroll">
-                    {[
-                      "/coding-class-students.jpg",
-                      "/students-learning-coding.jpg",
-                      "/tech-workshop-classroom.jpg",
-                      "/programming-bootcamp.jpg",
-                      "/coding-class-students.jpg",
-                    ].map((img, idx) => (
-                      <div key={idx} className="carousel-item">
-                        <img
-                          src={img || "/placeholder.svg"}
-                          alt={`Why choose us ${idx}`}
-                          className="w-full h-64 md:h-80 object-cover rounded-lg"
-                        />
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
       </main>
       <Footer />
     </>
-  )
+  );
 }

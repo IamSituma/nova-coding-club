@@ -4,7 +4,7 @@ import { ChevronDown } from "lucide-react"
 import { useState } from "react"
 
 export default function FAQ() {
-  const [openFAQ, setOpenFAQ] = useState(0)
+  const [openFAQ, setOpenFAQ] = useState<number | null>(null)
 
   const faqs = [
     {
@@ -43,7 +43,7 @@ export default function FAQ() {
     <section className="py-16 md:py-24 px-4 bg-gradient-to-r from-secondary/20 to-secondary/5">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row gap-8 md:gap-12">
-          {/* Left side - Title and Description */}
+          {/* Left side */}
           <div className="lg:w-1/3 lg:sticky lg:top-32 lg:self-start">
             <h2 className="font-display font-bold text-2xl md:text-4xl mb-3 md:mb-4 text-foreground">
               Frequently Asked Questions
@@ -60,31 +60,43 @@ export default function FAQ() {
             </p>
           </div>
 
-          {/* Right side - Questions */}
+          {/* Right side */}
           <div className="lg:w-2/3 space-y-2 md:space-y-3">
-            {faqs.map((faq, idx) => (
-              <div
-                key={idx}
-                className="bg-background/50 border border-border rounded-lg overflow-hidden transition-all duration-300"
-              >
-                <button
-                  onClick={() => setOpenFAQ(openFAQ === idx ? -1 : idx)}
-                  className="w-full p-4 md:p-6 flex justify-between items-center hover:bg-secondary/20 transition-colors duration-300 text-left"
-                >
-                  <h3 className="font-display font-semibold text-sm md:text-lg text-foreground pr-4">{faq.question}</h3>
-                  <ChevronDown
-                    size={20}
-                    className={`text-primary transition-transform duration-300 flex-shrink-0 ${openFAQ === idx ? "rotate-180" : ""}`}
-                  />
-                </button>
+            {faqs.map((faq, idx) => {
+              const isOpen = openFAQ === idx
 
-                {openFAQ === idx && (
-                  <div className="px-4 md:px-6 pb-4 md:pb-6 pt-0 border-t border-border">
-                    <p className="text-foreground/70 leading-relaxed text-sm md:text-base">{faq.answer}</p>
+              return (
+                <div
+                  key={idx}
+                  className="bg-background/50 border border-border rounded-lg overflow-hidden transition-all duration-300"
+                >
+                  <button
+                    onClick={() => setOpenFAQ(isOpen ? null : idx)}
+                    className="group w-full p-4 md:p-6 flex justify-between items-center hover:bg-teal-600 transition-colors duration-300 text-left"
+                  >
+                    <h3 className="font-display font-semibold text-sm md:text-lg text-foreground pr-4 transition-colors duration-300 group-hover:text-white">
+                      {faq.question}
+                    </h3>
+                    <ChevronDown
+                      size={20}
+                      className={`text-primary transition-transform duration-300 flex-shrink-0 ${isOpen ? "rotate-180" : ""
+                        }`}
+                    />
+                  </button>
+
+
+                  {/* Smooth Animation Section */}
+                  <div
+                    className={`px-4 md:px-6 overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? "max-h-40 md:max-h-48 py-4 md:py-6" : "max-h-0 py-0"
+                      }`}
+                  >
+                    <p className="text-foreground/70 leading-relaxed text-sm md:text-base">
+                      {faq.answer}
+                    </p>
                   </div>
-                )}
-              </div>
-            ))}
+                </div>
+              )
+            })}
           </div>
         </div>
       </div>

@@ -1,25 +1,25 @@
 export default function Tutors() {
   const tutors = [
     {
-      name: "Sarah Johnson",
+      name: "John Doe",
       title: "Web Development Lead",
       image: "/female-tutor-web-developer.jpg",
       bio: "Full-stack developer with 8+ years of experience at tech startups.",
     },
     {
-      name: "Michael Chen",
+      name: "Jane Doe",
       title: "Mobile Development Expert",
       image: "/male-tutor-mobile-developer.jpg",
       bio: "React Native specialist who has shipped 15+ mobile apps.",
     },
     {
-      name: "Amara Okafor",
+      name: "Jane Doe",
       title: "Data Science Instructor",
       image: "/female-tutor-data-scientist.jpg",
       bio: "Machine learning engineer with 5+ years in fintech and analytics.",
     },
     {
-      name: "James Rodriguez",
+      name: "John Doe",
       title: "UI/UX Design Mentor",
       image: "/male-tutor-designer.jpg",
       bio: "Award-winning designer focused on user-centered design principles.",
@@ -51,7 +51,7 @@ export default function Tutors() {
                     alt={tutor.name}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <div className="absolute inset-0 bg-teal-600 opacity-0 group-hover:opacity-40 transition-opacity duration-300"></div>
                 </div>
                 <div className="p-4 md:p-6">
                   <h3 className="font-display font-bold text-base md:text-lg mb-1 text-foreground">{tutor.name}</h3>

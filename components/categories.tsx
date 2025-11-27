@@ -6,37 +6,37 @@ export default function Categories() {
     {
       name: "Web Development",
       count: "3 Programs",
-      image: "/web-development-html-css-javascript.jpg",
+      image: "/web.jpg",
       slug: "web-development",
     },
     {
       name: "Mobile Development",
       count: "2 Programs",
-      image: "/mobile-app-development-ios-android.jpg",
+      image: "/app.jpg",
       slug: "mobile-development",
     },
     {
       name: "Data Science",
       count: "2 Programs",
-      image: "/data-science-analytics-python.jpg",
+      image: "/data.jpg",
       slug: "data-science",
     },
     {
       name: "UI/UX Design",
       count: "1 Program",
-      image: "/ui-ux-design-figma-prototyping.jpg",
+      image: "/ui.jpg",
       slug: "design",
     },
     {
       name: "Python Programming",
       count: "2 Programs",
-      image: "/python-programming-coding.jpg",
+      image: "/python.jpg",
       slug: "web-development",
     },
     {
       name: "AI & Machine Learning",
       count: "1 Program",
-      image: "/artificial-intelligence-machine-learning.jpg",
+      image: "/ai.jpg",
       slug: "design",
     },
   ]
@@ -56,10 +56,10 @@ export default function Categories() {
                 <img
                   src={cat.image || "/placeholder.svg"}
                   alt={cat.name}
-                  className="w-full h-40 md:h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+                  className="w-full h-52 md:h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex flex-col justify-end p-4 md:p-6">
-                  <h3 className="font-display font-bold text-lg md:text-xl text-white group-hover:text-primary transition-colors mb-1">
+                  <h3 className="font-display font-bold text-lg md:text-xl text-white group-hover:text-white transition-colors mb-1">
                     {cat.name}
                   </h3>
                   <p className="text-xs md:text-sm text-white/80">{cat.count}</p>
