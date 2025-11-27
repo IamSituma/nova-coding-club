@@ -107,6 +107,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 ;
 ;
 ;
+;
 function Partnerships() {
     const benefits = [
         {
@@ -212,7 +213,7 @@ function Partnerships() {
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "absolute inset-0 bg-cover bg-center bg-no-repeat",
                                 style: {
-                                    backgroundImage: "url('/diverse-professionals-handshake-partnership-busine.jpg')"
+                                    backgroundImage: "url('/partner.jpg')"
                                 }
                             }, void 0, false, {
                                 fileName: "[project]/app/partnerships/page.tsx",
@@ -232,7 +233,7 @@ function Partnerships() {
                                     className: "max-w-3xl",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "inline-block px-4 py-2 bg-primary/20 text-primary rounded-full text-sm font-medium mb-6",
+                                            className: "inline-block px-4 py-2 bg-white/80 text-black rounded-full text-sm font-medium mb-6",
                                             children: "Partner With Us"
                                         }, void 0, false, {
                                             fileName: "[project]/app/partnerships/page.tsx",
@@ -362,20 +363,12 @@ function Partnerships() {
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "text-center mb-16",
                                     children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4",
-                                            children: "How We Partner"
-                                        }, void 0, false, {
-                                            fileName: "[project]/app/partnerships/page.tsx",
-                                            lineNumber: 127,
-                                            columnNumber: 15
-                                        }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                             className: "font-display font-bold text-3xl md:text-4xl mb-4 text-foreground",
                                             children: "Partnership Models"
                                         }, void 0, false, {
                                             fileName: "[project]/app/partnerships/page.tsx",
-                                            lineNumber: 130,
+                                            lineNumber: 127,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -383,7 +376,7 @@ function Partnerships() {
                                             children: "Choose the partnership model that best fits your institution's needs and goals."
                                         }, void 0, false, {
                                             fileName: "[project]/app/partnerships/page.tsx",
-                                            lineNumber: 131,
+                                            lineNumber: 128,
                                             columnNumber: 15
                                         }, this)
                                     ]
@@ -405,12 +398,12 @@ function Partnerships() {
                                                         size: 32
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/partnerships/page.tsx",
-                                                        lineNumber: 138,
+                                                        lineNumber: 135,
                                                         columnNumber: 19
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/partnerships/page.tsx",
-                                                    lineNumber: 137,
+                                                    lineNumber: 134,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -418,7 +411,7 @@ function Partnerships() {
                                                     children: "School Programs"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/partnerships/page.tsx",
-                                                    lineNumber: 140,
+                                                    lineNumber: 137,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -426,7 +419,7 @@ function Partnerships() {
                                                     children: "Introduce coding to your students with our flexible school-based programs. We handle curriculum, instruction, and assessment."
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/partnerships/page.tsx",
-                                                    lineNumber: 141,
+                                                    lineNumber: 138,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -440,14 +433,14 @@ function Partnerships() {
                                                                     className: "text-primary"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/partnerships/page.tsx",
-                                                                    lineNumber: 147,
+                                                                    lineNumber: 144,
                                                                     columnNumber: 21
                                                                 }, this),
                                                                 "Tailored to your school schedule"
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/partnerships/page.tsx",
-                                                            lineNumber: 146,
+                                                            lineNumber: 143,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -458,14 +451,14 @@ function Partnerships() {
                                                                     className: "text-primary"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/partnerships/page.tsx",
-                                                                    lineNumber: 151,
+                                                                    lineNumber: 148,
                                                                     columnNumber: 21
                                                                 }, this),
                                                                 "Beginner to advanced levels"
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/partnerships/page.tsx",
-                                                            lineNumber: 150,
+                                                            lineNumber: 147,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -476,20 +469,20 @@ function Partnerships() {
                                                                     className: "text-primary"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/partnerships/page.tsx",
-                                                                    lineNumber: 155,
+                                                                    lineNumber: 152,
                                                                     columnNumber: 21
                                                                 }, this),
                                                                 "Certification included"
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/partnerships/page.tsx",
-                                                            lineNumber: 154,
+                                                            lineNumber: 151,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/partnerships/page.tsx",
-                                                    lineNumber: 145,
+                                                    lineNumber: 142,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
@@ -501,19 +494,19 @@ function Partnerships() {
                                                             size: 16
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/partnerships/page.tsx",
-                                                            lineNumber: 163,
+                                                            lineNumber: 160,
                                                             columnNumber: 30
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/partnerships/page.tsx",
-                                                    lineNumber: 159,
+                                                    lineNumber: 156,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/partnerships/page.tsx",
-                                            lineNumber: 136,
+                                            lineNumber: 133,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -526,12 +519,12 @@ function Partnerships() {
                                                         size: 32
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/partnerships/page.tsx",
-                                                        lineNumber: 169,
+                                                        lineNumber: 166,
                                                         columnNumber: 19
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/partnerships/page.tsx",
-                                                    lineNumber: 168,
+                                                    lineNumber: 165,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -539,7 +532,7 @@ function Partnerships() {
                                                     children: "Corporate Training"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/partnerships/page.tsx",
-                                                    lineNumber: 171,
+                                                    lineNumber: 168,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -547,7 +540,7 @@ function Partnerships() {
                                                     children: "Upskill your employees with our corporate training programs. Custom content designed for your team's specific needs."
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/partnerships/page.tsx",
-                                                    lineNumber: 172,
+                                                    lineNumber: 169,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -561,14 +554,14 @@ function Partnerships() {
                                                                     className: "text-primary"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/partnerships/page.tsx",
-                                                                    lineNumber: 178,
+                                                                    lineNumber: 175,
                                                                     columnNumber: 21
                                                                 }, this),
                                                                 "Custom curriculum design"
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/partnerships/page.tsx",
-                                                            lineNumber: 177,
+                                                            lineNumber: 174,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -579,14 +572,14 @@ function Partnerships() {
                                                                     className: "text-primary"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/partnerships/page.tsx",
-                                                                    lineNumber: 182,
+                                                                    lineNumber: 179,
                                                                     columnNumber: 21
                                                                 }, this),
                                                                 "On-site or online delivery"
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/partnerships/page.tsx",
-                                                            lineNumber: 181,
+                                                            lineNumber: 178,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -597,20 +590,20 @@ function Partnerships() {
                                                                     className: "text-primary"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/partnerships/page.tsx",
-                                                                    lineNumber: 186,
+                                                                    lineNumber: 183,
                                                                     columnNumber: 21
                                                                 }, this),
                                                                 "Performance tracking"
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/partnerships/page.tsx",
-                                                            lineNumber: 185,
+                                                            lineNumber: 182,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/partnerships/page.tsx",
-                                                    lineNumber: 176,
+                                                    lineNumber: 173,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
@@ -622,19 +615,19 @@ function Partnerships() {
                                                             size: 16
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/partnerships/page.tsx",
-                                                            lineNumber: 194,
+                                                            lineNumber: 191,
                                                             columnNumber: 30
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/partnerships/page.tsx",
-                                                    lineNumber: 190,
+                                                    lineNumber: 187,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/partnerships/page.tsx",
-                                            lineNumber: 167,
+                                            lineNumber: 164,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -647,12 +640,12 @@ function Partnerships() {
                                                         size: 32
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/partnerships/page.tsx",
-                                                        lineNumber: 200,
+                                                        lineNumber: 197,
                                                         columnNumber: 19
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/partnerships/page.tsx",
-                                                    lineNumber: 199,
+                                                    lineNumber: 196,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -660,7 +653,7 @@ function Partnerships() {
                                                     children: "Community Initiatives"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/partnerships/page.tsx",
-                                                    lineNumber: 202,
+                                                    lineNumber: 199,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -668,7 +661,7 @@ function Partnerships() {
                                                     children: "Partner with us to bring coding education to underserved communities and create lasting impact."
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/partnerships/page.tsx",
-                                                    lineNumber: 203,
+                                                    lineNumber: 200,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -682,14 +675,14 @@ function Partnerships() {
                                                                     className: "text-primary"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/partnerships/page.tsx",
-                                                                    lineNumber: 208,
+                                                                    lineNumber: 205,
                                                                     columnNumber: 21
                                                                 }, this),
                                                                 "Scholarship programs"
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/partnerships/page.tsx",
-                                                            lineNumber: 207,
+                                                            lineNumber: 204,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -700,14 +693,14 @@ function Partnerships() {
                                                                     className: "text-primary"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/partnerships/page.tsx",
-                                                                    lineNumber: 212,
+                                                                    lineNumber: 209,
                                                                     columnNumber: 21
                                                                 }, this),
                                                                 "Community training centers"
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/partnerships/page.tsx",
-                                                            lineNumber: 211,
+                                                            lineNumber: 208,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -718,20 +711,20 @@ function Partnerships() {
                                                                     className: "text-primary"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/partnerships/page.tsx",
-                                                                    lineNumber: 216,
+                                                                    lineNumber: 213,
                                                                     columnNumber: 21
                                                                 }, this),
                                                                 "Impact measurement"
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/partnerships/page.tsx",
-                                                            lineNumber: 215,
+                                                            lineNumber: 212,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/partnerships/page.tsx",
-                                                    lineNumber: 206,
+                                                    lineNumber: 203,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
@@ -743,25 +736,25 @@ function Partnerships() {
                                                             size: 16
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/partnerships/page.tsx",
-                                                            lineNumber: 224,
+                                                            lineNumber: 221,
                                                             columnNumber: 30
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/partnerships/page.tsx",
-                                                    lineNumber: 220,
+                                                    lineNumber: 217,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/partnerships/page.tsx",
-                                            lineNumber: 198,
+                                            lineNumber: 195,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/partnerships/page.tsx",
-                                    lineNumber: 135,
+                                    lineNumber: 132,
                                     columnNumber: 13
                                 }, this)
                             ]
@@ -784,20 +777,12 @@ function Partnerships() {
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4",
-                                                children: "Why CodeClub"
-                                            }, void 0, false, {
-                                                fileName: "[project]/app/partnerships/page.tsx",
-                                                lineNumber: 235,
-                                                columnNumber: 17
-                                            }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                                 className: "font-display font-bold text-3xl md:text-4xl mb-6 text-foreground",
-                                                children: "Why Partner with CodeClub?"
+                                                children: "Why Partner with Nova Coding Club?"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/partnerships/page.tsx",
-                                                lineNumber: 238,
+                                                lineNumber: 232,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -805,7 +790,7 @@ function Partnerships() {
                                                 children: "We're more than just a training provider. We're your strategic partner in building a tech-ready workforce and transforming education."
                                             }, void 0, false, {
                                                 fileName: "[project]/app/partnerships/page.tsx",
-                                                lineNumber: 241,
+                                                lineNumber: 235,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -822,12 +807,12 @@ function Partnerships() {
                                                                     size: 24
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/partnerships/page.tsx",
-                                                                    lineNumber: 251,
+                                                                    lineNumber: 245,
                                                                     columnNumber: 27
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/partnerships/page.tsx",
-                                                                lineNumber: 250,
+                                                                lineNumber: 244,
                                                                 columnNumber: 25
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -837,7 +822,7 @@ function Partnerships() {
                                                                         children: benefit.title
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/partnerships/page.tsx",
-                                                                        lineNumber: 254,
+                                                                        lineNumber: 248,
                                                                         columnNumber: 27
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -845,31 +830,31 @@ function Partnerships() {
                                                                         children: benefit.description
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/partnerships/page.tsx",
-                                                                        lineNumber: 255,
+                                                                        lineNumber: 249,
                                                                         columnNumber: 27
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/app/partnerships/page.tsx",
-                                                                lineNumber: 253,
+                                                                lineNumber: 247,
                                                                 columnNumber: 25
                                                             }, this)
                                                         ]
                                                     }, idx, true, {
                                                         fileName: "[project]/app/partnerships/page.tsx",
-                                                        lineNumber: 249,
+                                                        lineNumber: 243,
                                                         columnNumber: 23
                                                     }, this);
                                                 })
                                             }, void 0, false, {
                                                 fileName: "[project]/app/partnerships/page.tsx",
-                                                lineNumber: 245,
+                                                lineNumber: 239,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/partnerships/page.tsx",
-                                        lineNumber: 234,
+                                        lineNumber: 231,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -878,17 +863,17 @@ function Partnerships() {
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "aspect-square rounded-3xl overflow-hidden",
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                                    src: "/students-and-teachers-collaborating-in-modern-clas.jpg",
+                                                    src: "/tutor.jpg",
                                                     alt: "Partnership collaboration",
                                                     className: "w-full h-full object-cover"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/partnerships/page.tsx",
-                                                    lineNumber: 264,
+                                                    lineNumber: 258,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/app/partnerships/page.tsx",
-                                                lineNumber: 263,
+                                                lineNumber: 257,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -899,7 +884,7 @@ function Partnerships() {
                                                         children: "85%"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/partnerships/page.tsx",
-                                                        lineNumber: 271,
+                                                        lineNumber: 265,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -907,125 +892,125 @@ function Partnerships() {
                                                         children: "Success Rate"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/partnerships/page.tsx",
-                                                        lineNumber: 272,
+                                                        lineNumber: 266,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/partnerships/page.tsx",
-                                                lineNumber: 270,
+                                                lineNumber: 264,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/partnerships/page.tsx",
-                                        lineNumber: 262,
+                                        lineNumber: 256,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/partnerships/page.tsx",
-                                lineNumber: 233,
+                                lineNumber: 230,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/partnerships/page.tsx",
-                            lineNumber: 232,
+                            lineNumber: 229,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/partnerships/page.tsx",
-                        lineNumber: 231,
+                        lineNumber: 228,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                        className: "py-20 md:py-28 px-4",
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "max-w-7xl mx-auto",
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "text-center mb-16",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4",
-                                            children: "Our Network"
+                        className: "jsx-eda0580b443f2b7d" + " " + "py-20 md:py-28 px-4",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "jsx-eda0580b443f2b7d" + " " + "max-w-7xl mx-auto",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "jsx-eda0580b443f2b7d" + " " + "text-center mb-16",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                                className: "jsx-eda0580b443f2b7d" + " " + "font-display font-bold text-3xl md:text-4xl mb-4 text-foreground",
+                                                children: "Trusted by Leading Institutions"
+                                            }, void 0, false, {
+                                                fileName: "[project]/app/partnerships/page.tsx",
+                                                lineNumber: 276,
+                                                columnNumber: 7
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                className: "jsx-eda0580b443f2b7d" + " " + "text-foreground/60 max-w-2xl mx-auto",
+                                                children: "Join our growing network of schools, organizations, and NGOs committed to quality tech education."
+                                            }, void 0, false, {
+                                                fileName: "[project]/app/partnerships/page.tsx",
+                                                lineNumber: 279,
+                                                columnNumber: 7
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/app/partnerships/page.tsx",
+                                        lineNumber: 275,
+                                        columnNumber: 5
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "jsx-eda0580b443f2b7d" + " " + "relative overflow-hidden",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "jsx-eda0580b443f2b7d" + " " + "flex gap-10 animate-scroll hover:[animation-play-state:paused]",
+                                            children: partners.concat(partners).map((partner, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    style: {
+                                                        animationDelay: `${idx * 0.2}s`
+                                                    },
+                                                    className: "jsx-eda0580b443f2b7d" + " " + "shrink-0 w-40 h-28 flex flex-col items-center justify-center opacity-0 animate-fade",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                                            src: `/.jpg?height=80&width=160&query=${partner.name.toLowerCase().replace(/\s+/g, "-")}-logo`,
+                                                            alt: partner.name,
+                                                            className: "jsx-eda0580b443f2b7d" + " " + "h-12 md:h-16 object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/partnerships/page.tsx",
+                                                            lineNumber: 295,
+                                                            columnNumber: 13
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                            className: "jsx-eda0580b443f2b7d" + " " + "text-foreground/70 text-sm font-medium mt-2 text-center",
+                                                            children: partner.name
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/partnerships/page.tsx",
+                                                            lineNumber: 302,
+                                                            columnNumber: 13
+                                                        }, this)
+                                                    ]
+                                                }, idx, true, {
+                                                    fileName: "[project]/app/partnerships/page.tsx",
+                                                    lineNumber: 290,
+                                                    columnNumber: 11
+                                                }, this))
                                         }, void 0, false, {
                                             fileName: "[project]/app/partnerships/page.tsx",
-                                            lineNumber: 282,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                            className: "font-display font-bold text-3xl md:text-4xl mb-4 text-foreground",
-                                            children: "Trusted by Leading Institutions"
-                                        }, void 0, false, {
-                                            fileName: "[project]/app/partnerships/page.tsx",
-                                            lineNumber: 285,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "text-foreground/60 max-w-2xl mx-auto",
-                                            children: "Join our growing network of schools, organizations, and NGOs committed to quality tech education."
-                                        }, void 0, false, {
-                                            fileName: "[project]/app/partnerships/page.tsx",
-                                            lineNumber: 288,
-                                            columnNumber: 15
+                                            lineNumber: 286,
+                                            columnNumber: 7
                                         }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/app/partnerships/page.tsx",
-                                    lineNumber: 281,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6",
-                                    children: partners.map((partner, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "group bg-card border border-border rounded-xl p-8 flex flex-col items-center justify-center hover:border-primary/50 hover:shadow-lg transition-all duration-300",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                                    src: `/.jpg?height=80&width=160&query=${partner.name.toLowerCase().replace(/\s+/g, "-")}-logo`,
-                                                    alt: partner.name,
-                                                    className: "h-12 md:h-16 object-contain mb-4 grayscale group-hover:grayscale-0 transition-all"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/app/partnerships/page.tsx",
-                                                    lineNumber: 298,
-                                                    columnNumber: 19
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-foreground/70 text-sm font-medium",
-                                                    children: partner.name
-                                                }, void 0, false, {
-                                                    fileName: "[project]/app/partnerships/page.tsx",
-                                                    lineNumber: 303,
-                                                    columnNumber: 19
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "text-xs text-primary/70 mt-1",
-                                                    children: partner.type
-                                                }, void 0, false, {
-                                                    fileName: "[project]/app/partnerships/page.tsx",
-                                                    lineNumber: 304,
-                                                    columnNumber: 19
-                                                }, this)
-                                            ]
-                                        }, idx, true, {
-                                            fileName: "[project]/app/partnerships/page.tsx",
-                                            lineNumber: 294,
-                                            columnNumber: 17
-                                        }, this))
-                                }, void 0, false, {
-                                    fileName: "[project]/app/partnerships/page.tsx",
-                                    lineNumber: 292,
-                                    columnNumber: 13
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/app/partnerships/page.tsx",
-                            lineNumber: 280,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
+                                    }, void 0, false, {
+                                        fileName: "[project]/app/partnerships/page.tsx",
+                                        lineNumber: 285,
+                                        columnNumber: 5
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/app/partnerships/page.tsx",
+                                lineNumber: 274,
+                                columnNumber: 3
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(void 0, {
+                                id: "eda0580b443f2b7d",
+                                children: "@keyframes scroll{0%{transform:translate(0)}to{transform:translate(-50%)}}.animate-scroll.jsx-eda0580b443f2b7d{animation:20s linear infinite scroll}@keyframes fade{0%{opacity:0;transform:translateY(10px)}50%{opacity:1;transform:translateY(0)}to{opacity:.3}}.animate-fade.jsx-eda0580b443f2b7d{animation:2s ease-in-out forwards fade}"
+                            }, void 0, false, void 0, this)
+                        ]
+                    }, void 0, true, {
                         fileName: "[project]/app/partnerships/page.tsx",
-                        lineNumber: 279,
+                        lineNumber: 273,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1041,7 +1026,7 @@ function Partnerships() {
                                             children: "Getting Started"
                                         }, void 0, false, {
                                             fileName: "[project]/app/partnerships/page.tsx",
-                                            lineNumber: 314,
+                                            lineNumber: 348,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -1049,7 +1034,7 @@ function Partnerships() {
                                             children: "Partnership Process"
                                         }, void 0, false, {
                                             fileName: "[project]/app/partnerships/page.tsx",
-                                            lineNumber: 317,
+                                            lineNumber: 351,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1057,13 +1042,13 @@ function Partnerships() {
                                             children: "A simple, streamlined process to get your partnership started."
                                         }, void 0, false, {
                                             fileName: "[project]/app/partnerships/page.tsx",
-                                            lineNumber: 318,
+                                            lineNumber: 352,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/partnerships/page.tsx",
-                                    lineNumber: 313,
+                                    lineNumber: 347,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1073,7 +1058,7 @@ function Partnerships() {
                                             className: "hidden md:block absolute top-8 left-[12.5%] right-[12.5%] h-0.5 bg-border"
                                         }, void 0, false, {
                                             fileName: "[project]/app/partnerships/page.tsx",
-                                            lineNumber: 323,
+                                            lineNumber: 357,
                                             columnNumber: 15
                                         }, this),
                                         [
@@ -1105,7 +1090,7 @@ function Partnerships() {
                                                         children: item.step
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/partnerships/page.tsx",
-                                                        lineNumber: 343,
+                                                        lineNumber: 377,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1113,7 +1098,7 @@ function Partnerships() {
                                                         children: item.title
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/partnerships/page.tsx",
-                                                        lineNumber: 346,
+                                                        lineNumber: 380,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1121,30 +1106,30 @@ function Partnerships() {
                                                         children: item.description
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/partnerships/page.tsx",
-                                                        lineNumber: 347,
+                                                        lineNumber: 381,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, idx, true, {
                                                 fileName: "[project]/app/partnerships/page.tsx",
-                                                lineNumber: 342,
+                                                lineNumber: 376,
                                                 columnNumber: 17
                                             }, this))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/partnerships/page.tsx",
-                                    lineNumber: 322,
+                                    lineNumber: 356,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/partnerships/page.tsx",
-                            lineNumber: 312,
+                            lineNumber: 346,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/partnerships/page.tsx",
-                        lineNumber: 311,
+                        lineNumber: 345,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1157,14 +1142,14 @@ function Partnerships() {
                                 }
                             }, void 0, false, {
                                 fileName: "[project]/app/partnerships/page.tsx",
-                                lineNumber: 355,
+                                lineNumber: 389,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "absolute inset-0 bg-foreground/90"
                             }, void 0, false, {
                                 fileName: "[project]/app/partnerships/page.tsx",
-                                lineNumber: 359,
+                                lineNumber: 393,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1175,7 +1160,7 @@ function Partnerships() {
                                         children: "Ready to Transform Education Together?"
                                     }, void 0, false, {
                                         fileName: "[project]/app/partnerships/page.tsx",
-                                        lineNumber: 361,
+                                        lineNumber: 395,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1183,7 +1168,7 @@ function Partnerships() {
                                         children: "Let's work together to bring quality tech education to your institution and create lasting impact in your community."
                                     }, void 0, false, {
                                         fileName: "[project]/app/partnerships/page.tsx",
-                                        lineNumber: 364,
+                                        lineNumber: 398,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1198,13 +1183,13 @@ function Partnerships() {
                                                         size: 20
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/partnerships/page.tsx",
-                                                        lineNumber: 374,
+                                                        lineNumber: 408,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/partnerships/page.tsx",
-                                                lineNumber: 369,
+                                                lineNumber: 403,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
@@ -1213,25 +1198,25 @@ function Partnerships() {
                                                 children: "View Our Programs"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/partnerships/page.tsx",
-                                                lineNumber: 376,
+                                                lineNumber: 410,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/partnerships/page.tsx",
-                                        lineNumber: 368,
+                                        lineNumber: 402,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/partnerships/page.tsx",
-                                lineNumber: 360,
+                                lineNumber: 394,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/partnerships/page.tsx",
-                        lineNumber: 354,
+                        lineNumber: 388,
                         columnNumber: 9
                     }, this)
                 ]
@@ -1242,7 +1227,7 @@ function Partnerships() {
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$footer$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/app/partnerships/page.tsx",
-                lineNumber: 386,
+                lineNumber: 420,
                 columnNumber: 7
             }, this)
         ]

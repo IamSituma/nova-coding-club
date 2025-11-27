@@ -127,7 +127,7 @@ export default function Footer() {
               </li>
               <li className="flex gap-2 md:gap-3 text-white/80 hover:text-white transition-colors cursor-pointer">
                 <Phone size={16} className="flex-shrink-0 mt-0.5" />
-                <span>+256 700 000 000</span>
+                <span> +256 741 004 466</span>
               </li>
               <li className="flex gap-2 md:gap-3 text-white/80 hover:text-white transition-colors cursor-pointer">
                 <Mail size={16} className="flex-shrink-0 mt-0.5" />

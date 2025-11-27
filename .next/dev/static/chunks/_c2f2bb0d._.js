@@ -724,738 +724,906 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
 }
 }),
-"[project]/app/programs/page.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"[project]/app/partnerships/page.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
 __turbopack_context__.s([
     "default",
-    ()=>ProgramsPage
+    ()=>Partnerships
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$jsx$2f$style$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/styled-jsx/style.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$navbar$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/navbar.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$footer$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/footer.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2d$big$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/circle-check-big.js [app-client] (ecmascript) <export default as CheckCircle>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$users$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Users$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/users.js [app-client] (ecmascript) <export default as Users>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$zap$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Zap$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/zap.js [app-client] (ecmascript) <export default as Zap>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trending$2d$up$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__TrendingUp$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/trending-up.js [app-client] (ecmascript) <export default as TrendingUp>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$award$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Award$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/award.js [app-client] (ecmascript) <export default as Award>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$globe$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Globe$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/globe.js [app-client] (ecmascript) <export default as Globe>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/arrow-right.js [app-client] (ecmascript) <export default as ArrowRight>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/x.js [app-client] (ecmascript) <export default as X>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/chevron-down.js [app-client] (ecmascript) <export default as ChevronDown>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$handshake$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Handshake$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/handshake.js [app-client] (ecmascript) <export default as Handshake>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$building$2d$2$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Building2$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/building-2.js [app-client] (ecmascript) <export default as Building2>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$graduation$2d$cap$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__GraduationCap$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/graduation-cap.js [app-client] (ecmascript) <export default as GraduationCap>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.js [app-client] (ecmascript)");
-;
-var _s = __turbopack_context__.k.signature();
 "use client";
 ;
 ;
 ;
 ;
 ;
-function ProgramsPage() {
-    _s();
-    const [selectedCategory, setSelectedCategory] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("all");
-    const [openFAQ, setOpenFAQ] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
-    const allPrograms = [
+;
+function Partnerships() {
+    const benefits = [
         {
-            title: "School Coding Club",
-            duration: "12 Weeks (Per Term)",
-            price: "250,000",
-            level: "Beginner",
-            description: "Perfect for high school students looking to learn programming fundamentals.",
-            features: [
-                "HTML & CSS Basics",
-                "Introduction to JavaScript",
-                "Responsive Design Fundamentals",
-                "Building a Personal Portfolio",
-                "3 hours/week",
-                "In-Person"
-            ],
-            image: "/school.png",
-            slug: "school-coding-club",
-            category: "web-development"
+            title: "Proven Curriculum",
+            description: "Industry-designed, student-tested programs that deliver results and measurable outcomes.",
+            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$award$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Award$3e$__["Award"]
         },
         {
-            title: "Bootcamp - Web Development",
-            duration: "8 Weeks",
-            price: "450,000",
-            level: "Begineer",
-            description: "Intensive bootcamp to become a full-stack web developer ready for the job market.",
-            features: [
-                "HTML & CSS Foundations",
-                "JavaScript Basics",
-                "Using Git & GitHub for Projects",
-                "Deploying a Simple Website",
-                "3 Days/Week",
-                "In-Person & Online"
-            ],
-            image: "/web.jpg",
-            slug: "web-development-bootcamp",
-            category: "web-development"
+            title: "Expert Instructors",
+            description: "Experienced professionals who bring real-world knowledge and industry insights to the classroom.",
+            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$users$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Users$3e$__["Users"]
         },
         {
-            title: "Bootcamp - Mobile Development",
-            duration: "16 Weeks",
-            price: "850,000",
-            level: "Advanced",
-            description: "Master mobile app development for iOS and Android platforms.",
-            features: [
-                "React Native",
-                "Flutter",
-                "APIs",
-                "App Publishing",
-                "4-5 days/week",
-                "Portfolio Projects"
-            ],
-            image: "/app.jpg",
-            slug: "mobile-development-bootcamp",
-            category: "mobile-development"
+            title: "Flexible Delivery",
+            description: "Programs designed to fit your institution’s schedule, budget, and unique needs.",
+            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$zap$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Zap$3e$__["Zap"]
         },
         {
-            title: "Advanced Python Programming",
-            duration: "8 Weeks",
-            price: "400,000",
-            level: "Intermediate",
-            description: "Deep dive into Python for data science and automation.",
-            features: [
-                "Data Structures",
-                "OOP",
-                "Automation",
-                "Best Practices",
-                "2-3 hours/week"
-            ],
-            image: "/python.jpg",
-            slug: "advanced-python",
-            category: "web-development"
+            title: "Student Success",
+            description: "85% job placement rate and strong community satisfaction across all our training programs.",
+            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trending$2d$up$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__TrendingUp$3e$__["TrendingUp"]
         },
         {
-            title: "UI/UX Design Fundamentals",
-            duration: "10 Weeks",
-            price: "500,000",
-            level: "Beginner",
-            description: "Learn design principles and tools for creating beautiful interfaces.",
-            features: [
-                "Figma",
-                "Design Principles",
-                "Prototyping",
-                "User Research",
-                "2-3 hours/week"
-            ],
-            image: "/ui.jpg",
-            slug: "ui-ux-design",
-            category: "design"
+            title: "Dedicated Support",
+            description: "Our support team ensures smooth program delivery and continuous improvement.",
+            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2d$big$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle$3e$__["CheckCircle"]
         },
         {
-            title: "Data Science & Analytics",
-            duration: "12 Weeks",
-            price: "700,000",
-            level: "Intermediate",
-            description: "Master data analysis, visualization, and machine learning basics.",
-            features: [
-                "Python",
-                "Pandas & NumPy",
-                "Visualization",
-                "ML Basics",
-                "3-4 hours/week"
-            ],
-            image: "/data.jpg",
-            slug: "data-science",
-            category: "design"
+            title: "Institutional Recognition",
+            description: "Join a network of forward-thinking organizations shaping the future of tech education in Africa.",
+            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$globe$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Globe$3e$__["Globe"]
         }
     ];
-    const categories = [
+    const stats = [
         {
-            id: "school-coding-club",
-            name: "School Coding Club",
-            count: 1
+            value: "50+",
+            label: "Partner Institutions"
         },
         {
-            id: "all",
-            name: "All Programs",
-            count: allPrograms.length
+            value: "10,000+",
+            label: "Students Trained"
         },
         {
-            id: "web-development",
-            name: "Web Development",
-            count: allPrograms.filter((p)=>p.category === "web-development").length
+            value: "85%",
+            label: "Success Rate"
         },
         {
-            id: "mobile-development",
-            name: "Mobile Development",
-            count: allPrograms.filter((p)=>p.category === "mobile-development").length
-        },
-        {
-            id: "design",
-            name: "Design",
-            count: allPrograms.filter((p)=>p.category === "design").length
+            value: "15+",
+            label: "Countries Reached"
         }
     ];
-    const filteredPrograms = selectedCategory === "all" ? allPrograms : selectedCategory === "school-coding-club" ? allPrograms.filter((p)=>p.slug === "school-coding-club") : allPrograms.filter((p)=>p.category === selectedCategory);
-    const faqs = [
+    const partners = [
         {
-            question: "Do I need prior coding experience to join a bootcamp?",
-            answer: "No! Our programs cater to beginners as well as advanced learners. Each course clearly lists its prerequisites."
+            name: "Lincoln High School",
+            type: "School"
         },
         {
-            question: "Are classes online or in-person?",
-            answer: "We offer flexible delivery. Some programs are fully online, while others combine online lessons with in-person sessions."
+            name: "St. Mary Secondary",
+            type: "School"
         },
         {
-            question: "What support is available if I get stuck?",
-            answer: "Our instructors and mentors are available for guidance through chat, email, and scheduled office hours."
+            name: "Tech Innovation Hub",
+            type: "Organization"
         },
         {
-            question: "Can I pay in installments?",
-            answer: "Yes, many programs allow installment plans. Contact us to discuss the available payment options."
+            name: "Digital Minds Academy",
+            type: "School"
         },
         {
-            question: "Do you provide a certificate?",
-            answer: "Yes! All students completing a program receive a certificate of completion recognized by Nova Coding Club."
+            name: "Future Leaders Institute",
+            type: "Organization"
+        },
+        {
+            name: "CodeWorks Studio",
+            type: "Organization"
+        },
+        {
+            name: "Kampala Tech Center",
+            type: "Organization"
+        },
+        {
+            name: "African Innovation Hub",
+            type: "Organization"
+        },
+        {
+            name: "Youth Development Program",
+            type: "NGO"
         }
     ];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$navbar$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
-                fileName: "[project]/app/programs/page.tsx",
-                lineNumber: 146,
+                fileName: "[project]/app/partnerships/page.tsx",
+                lineNumber: 80,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
-                className: "min-h-screen bg-background pt-24",
+                className: "min-h-screen bg-background",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                        className: "relative h-[500px] md:h-[600px] overflow-hidden",
+                        className: "relative min-h-[70vh] flex items-center justify-center",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "absolute inset-0 bg-black/40 z-10"
+                                className: "absolute inset-0 bg-cover bg-center",
+                                style: {
+                                    backgroundImage: "url('/partner.jpg')"
+                                }
                             }, void 0, false, {
-                                fileName: "[project]/app/programs/page.tsx",
-                                lineNumber: 152,
-                                columnNumber: 9
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                src: "/robots.jpg",
-                                alt: "Our Programs",
-                                className: "absolute inset-0 w-full h-full object-cover"
-                            }, void 0, false, {
-                                fileName: "[project]/app/programs/page.tsx",
-                                lineNumber: 154,
+                                fileName: "[project]/app/partnerships/page.tsx",
+                                lineNumber: 85,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "absolute inset-0 bg-black/50"
+                                className: "absolute inset-0 bg-black/70"
                             }, void 0, false, {
-                                fileName: "[project]/app/programs/page.tsx",
-                                lineNumber: 159,
+                                fileName: "[project]/app/partnerships/page.tsx",
+                                lineNumber: 89,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "relative z-10 max-w-4xl mx-auto px-4 h-full flex flex-col justify-center text-center",
+                                className: "relative z-10 max-w-7xl mx-auto px-4 py-32 md:py-40",
                                 children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                                        className: "font-display font-bold text-4xl sm:text-5xl md:text-6xl text-white leading-tight",
-                                        children: "Our Programs"
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: "inline-block px-4 py-2 bg-white/80 text-black rounded-full text-sm font-medium mb-6",
+                                        children: "Partner With Us"
                                     }, void 0, false, {
-                                        fileName: "[project]/app/programs/page.tsx",
-                                        lineNumber: 161,
+                                        fileName: "[project]/app/partnerships/page.tsx",
+                                        lineNumber: 92,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                                        className: "font-display font-bold text-4xl md:text-5xl lg:text-6xl text-white mb-6",
+                                        children: "Building the Future of Tech Education Together"
+                                    }, void 0, false, {
+                                        fileName: "[project]/app/partnerships/page.tsx",
+                                        lineNumber: 96,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "mt-4 text-lg md:text-2xl text-white/80",
-                                        children: "Choose from our comprehensive range of coding programs designed for every skill level. From school-friendly clubs to intensive bootcamps, we have something for everyone."
+                                        className: "text-lg md:text-xl text-white/80 mb-8",
+                                        children: "Join our network of institutions transforming lives through modern tech education across Uganda and Africa."
                                     }, void 0, false, {
-                                        fileName: "[project]/app/programs/page.tsx",
-                                        lineNumber: 164,
+                                        fileName: "[project]/app/partnerships/page.tsx",
+                                        lineNumber: 100,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "flex flex-col sm:flex-row gap-4",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                href: "/contact",
+                                                className: "inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground rounded-full font-semibold hover:bg-primary/90 transition",
+                                                children: [
+                                                    "Become a Partner",
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
+                                                        size: 20
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/app/partnerships/page.tsx",
+                                                        lineNumber: 110,
+                                                        columnNumber: 17
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/app/partnerships/page.tsx",
+                                                lineNumber: 105,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                href: "/programs",
+                                                className: "inline-flex items-center gap-2 px-8 py-4 bg-white/10 border border-white/20 text-white rounded-full backdrop-blur-sm font-semibold hover:bg-white/20 transition",
+                                                children: "Explore Programs"
+                                            }, void 0, false, {
+                                                fileName: "[project]/app/partnerships/page.tsx",
+                                                lineNumber: 113,
+                                                columnNumber: 15
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/app/partnerships/page.tsx",
+                                        lineNumber: 104,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
-                                fileName: "[project]/app/programs/page.tsx",
-                                lineNumber: 160,
+                                fileName: "[project]/app/partnerships/page.tsx",
+                                lineNumber: 91,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
-                        fileName: "[project]/app/programs/page.tsx",
-                        lineNumber: 151,
+                        fileName: "[project]/app/partnerships/page.tsx",
+                        lineNumber: 84,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                        className: "py-12 px-4 bg-secondary/5 border-b border-border",
+                        className: "bg-foreground py-8",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "max-w-6xl mx-auto",
+                            className: "max-w-7xl mx-auto px-4",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex flex-wrap gap-3",
-                                children: categories.map((cat)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                        onClick: ()=>setSelectedCategory(cat.id),
-                                        className: `px-4 py-2 rounded-full font-semibold transition-all duration-300 flex items-center gap-2 ${selectedCategory === cat.id ? "bg-teal-600 text-white border border-teal-600" : "bg-secondary/30 text-foreground border border-border hover:border-teal-600 hover:bg-secondary/50"}`,
+                                className: "grid grid-cols-2 md:grid-cols-4 gap-8 text-center",
+                                children: stats.map((stat, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         children: [
-                                            cat.name,
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "text-sm opacity-70",
-                                                children: [
-                                                    "(",
-                                                    cat.count,
-                                                    ")"
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/app/programs/page.tsx",
-                                                lineNumber: 185,
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                className: "font-display font-bold text-3xl text-primary",
+                                                children: stat.value
+                                            }, void 0, false, {
+                                                fileName: "[project]/app/partnerships/page.tsx",
+                                                lineNumber: 129,
                                                 columnNumber: 19
                                             }, this),
-                                            selectedCategory === cat.id && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__["X"], {
-                                                size: 16
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                className: "text-background/70 text-sm",
+                                                children: stat.label
                                             }, void 0, false, {
-                                                fileName: "[project]/app/programs/page.tsx",
-                                                lineNumber: 186,
-                                                columnNumber: 51
+                                                fileName: "[project]/app/partnerships/page.tsx",
+                                                lineNumber: 132,
+                                                columnNumber: 19
                                             }, this)
                                         ]
-                                    }, cat.id, true, {
-                                        fileName: "[project]/app/programs/page.tsx",
-                                        lineNumber: 175,
+                                    }, i, true, {
+                                        fileName: "[project]/app/partnerships/page.tsx",
+                                        lineNumber: 128,
                                         columnNumber: 17
                                     }, this))
                             }, void 0, false, {
-                                fileName: "[project]/app/programs/page.tsx",
-                                lineNumber: 173,
+                                fileName: "[project]/app/partnerships/page.tsx",
+                                lineNumber: 126,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
-                            fileName: "[project]/app/programs/page.tsx",
-                            lineNumber: 172,
+                            fileName: "[project]/app/partnerships/page.tsx",
+                            lineNumber: 125,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
-                        fileName: "[project]/app/programs/page.tsx",
-                        lineNumber: 171,
+                        fileName: "[project]/app/partnerships/page.tsx",
+                        lineNumber: 124,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
                         className: "py-20 md:py-28 px-4",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "max-w-6xl mx-auto",
+                            className: "max-w-7xl mx-auto",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "mb-8",
+                                    className: "text-center mb-16",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                             className: "font-display font-bold text-3xl md:text-4xl text-foreground",
-                                            children: selectedCategory === "all" ? "All Programs" : categories.find((c)=>c.id === selectedCategory)?.name
+                                            children: "Partnership Models"
                                         }, void 0, false, {
-                                            fileName: "[project]/app/programs/page.tsx",
-                                            lineNumber: 197,
+                                            fileName: "[project]/app/partnerships/page.tsx",
+                                            lineNumber: 143,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "text-foreground/60 mt-2",
-                                            children: [
-                                                "Showing ",
-                                                filteredPrograms.length,
-                                                " program(s)"
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/app/programs/page.tsx",
-                                            lineNumber: 200,
+                                            className: "text-foreground/60 max-w-2xl mx-auto mt-2",
+                                            children: "Choose a partnership model that aligns with your institution’s goals."
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/partnerships/page.tsx",
+                                            lineNumber: 146,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
-                                    fileName: "[project]/app/programs/page.tsx",
-                                    lineNumber: 196,
+                                    fileName: "[project]/app/partnerships/page.tsx",
+                                    lineNumber: 142,
                                     columnNumber: 13
                                 }, this),
-                                filteredPrograms.length > 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8",
-                                    children: filteredPrograms.map((prog, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                            href: `/programs/${prog.slug}`,
-                                            className: "card-bend bg-card border border-border rounded-2xl overflow-hidden hover:border-teal-600 hover:bg-secondary/30 transition-all duration-300 flex flex-col cursor-pointer",
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "grid md:grid-cols-3 gap-8",
+                                    children: [
+                                        {
+                                            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$graduation$2d$cap$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__GraduationCap$3e$__["GraduationCap"],
+                                            title: "School Programs",
+                                            text: "Bring coding into your school with our flexible on-site or online programs.",
+                                            points: [
+                                                "Fits your school schedule",
+                                                "Beginner to advanced",
+                                                "Certification included"
+                                            ]
+                                        },
+                                        {
+                                            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$building$2d$2$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Building2$3e$__["Building2"],
+                                            title: "Corporate Training",
+                                            text: "Upskill your workforce with tailored programs designed for your team.",
+                                            points: [
+                                                "Custom curriculum",
+                                                "Remote or on-site",
+                                                "Performance tracking"
+                                            ]
+                                        },
+                                        {
+                                            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$handshake$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Handshake$3e$__["Handshake"],
+                                            title: "Community Initiatives",
+                                            text: "Empowering underserved communities through accessible tech education.",
+                                            points: [
+                                                "Scholarship opportunities",
+                                                "Community training centers",
+                                                "Impact measurement"
+                                            ]
+                                        }
+                                    ].map((item, idx)=>{
+                                        const Icon = item.icon;
+                                        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "group bg-card border rounded-2xl p-8 hover:border-primary hover:shadow-xl transition",
                                             children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                                    src: prog.image || "/placeholder.svg",
-                                                    alt: prog.title,
-                                                    className: "w-full h-48 object-cover"
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition",
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Icon, {
+                                                        size: 32,
+                                                        className: "text-primary group-hover:text-white"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/app/partnerships/page.tsx",
+                                                        lineNumber: 191,
+                                                        columnNumber: 23
+                                                    }, this)
                                                 }, void 0, false, {
-                                                    fileName: "[project]/app/programs/page.tsx",
-                                                    lineNumber: 211,
+                                                    fileName: "[project]/app/partnerships/page.tsx",
+                                                    lineNumber: 190,
                                                     columnNumber: 21
                                                 }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "p-6 flex flex-col flex-1",
-                                                    children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "flex justify-between items-start mb-3",
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                    className: "font-display font-bold text-xl mb-3 text-foreground",
+                                                    children: item.title
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/partnerships/page.tsx",
+                                                    lineNumber: 194,
+                                                    columnNumber: 21
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                    className: "text-foreground/70 mb-6",
+                                                    children: item.text
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/partnerships/page.tsx",
+                                                    lineNumber: 196,
+                                                    columnNumber: 21
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                                                    className: "space-y-3 text-sm text-foreground/60 mb-6",
+                                                    children: item.points.map((p, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                            className: "flex items-center gap-2",
                                                             children: [
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                                    className: "font-display font-bold text-xl text-foreground flex-1",
-                                                                    children: prog.title
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2d$big$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle$3e$__["CheckCircle"], {
+                                                                    size: 16,
+                                                                    className: "text-primary"
                                                                 }, void 0, false, {
-                                                                    fileName: "[project]/app/programs/page.tsx",
-                                                                    lineNumber: 214,
-                                                                    columnNumber: 25
-                                                                }, this),
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                    className: `px-3 py-1 rounded-full text-xs font-semibold whitespace-nowrap ml-2 ${prog.level === "Beginner" ? "bg-green-500/20 text-green-800" : prog.level === "Intermediate" ? "bg-yellow-500/20 text-yellow-700" : "bg-red-500/20 text-red-700"}`,
-                                                                    children: prog.level
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/app/programs/page.tsx",
-                                                                    lineNumber: 215,
-                                                                    columnNumber: 25
-                                                                }, this)
-                                                            ]
-                                                        }, void 0, true, {
-                                                            fileName: "[project]/app/programs/page.tsx",
-                                                            lineNumber: 213,
-                                                            columnNumber: 23
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                            className: "text-foreground/60 text-sm mb-4",
-                                                            children: prog.description
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/app/programs/page.tsx",
-                                                            lineNumber: 227,
-                                                            columnNumber: 23
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "space-y-2 mb-6 flex-1",
-                                                            children: prog.features.map((feature, fIdx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                    className: "text-sm text-foreground/70 flex items-center gap-2",
-                                                                    children: [
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                            className: "w-1.5 h-1.5 bg-teal-600 rounded-full"
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/app/programs/page.tsx",
-                                                                            lineNumber: 233,
-                                                                            columnNumber: 29
-                                                                        }, this),
-                                                                        feature
-                                                                    ]
-                                                                }, fIdx, true, {
-                                                                    fileName: "[project]/app/programs/page.tsx",
-                                                                    lineNumber: 232,
+                                                                    fileName: "[project]/app/partnerships/page.tsx",
+                                                                    lineNumber: 201,
                                                                     columnNumber: 27
-                                                                }, this))
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/app/programs/page.tsx",
-                                                            lineNumber: 230,
-                                                            columnNumber: 23
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "space-y-3 border-t border-border pt-4 mb-6",
-                                                            children: [
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                    className: "flex justify-between",
-                                                                    children: [
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                            className: "text-foreground/60",
-                                                                            children: "Duration:"
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/app/programs/page.tsx",
-                                                                            lineNumber: 242,
-                                                                            columnNumber: 27
-                                                                        }, this),
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                            className: "font-semibold text-foreground",
-                                                                            children: prog.duration
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/app/programs/page.tsx",
-                                                                            lineNumber: 243,
-                                                                            columnNumber: 27
-                                                                        }, this)
-                                                                    ]
-                                                                }, void 0, true, {
-                                                                    fileName: "[project]/app/programs/page.tsx",
-                                                                    lineNumber: 241,
-                                                                    columnNumber: 25
                                                                 }, this),
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                    className: "flex justify-between",
-                                                                    children: [
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                            className: "text-foreground/60",
-                                                                            children: "Price:"
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/app/programs/page.tsx",
-                                                                            lineNumber: 246,
-                                                                            columnNumber: 27
-                                                                        }, this),
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                            className: "font-semibold text-teal-600",
-                                                                            children: [
-                                                                                "UGX ",
-                                                                                prog.price
-                                                                            ]
-                                                                        }, void 0, true, {
-                                                                            fileName: "[project]/app/programs/page.tsx",
-                                                                            lineNumber: 247,
-                                                                            columnNumber: 27
-                                                                        }, this)
-                                                                    ]
-                                                                }, void 0, true, {
-                                                                    fileName: "[project]/app/programs/page.tsx",
-                                                                    lineNumber: 245,
-                                                                    columnNumber: 25
-                                                                }, this)
+                                                                " ",
+                                                                p
                                                             ]
-                                                        }, void 0, true, {
-                                                            fileName: "[project]/app/programs/page.tsx",
-                                                            lineNumber: 240,
-                                                            columnNumber: 23
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                            className: "w-full py-3 bg-teal-600 text-white rounded-lg font-semibold hover:shadow-lg hover:shadow-teal-300 transition-all duration-300 flex items-center justify-center gap-2",
-                                                            children: [
-                                                                "Enroll Now ",
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
-                                                                    size: 18
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/app/programs/page.tsx",
-                                                                    lineNumber: 252,
-                                                                    columnNumber: 36
-                                                                }, this)
-                                                            ]
-                                                        }, void 0, true, {
-                                                            fileName: "[project]/app/programs/page.tsx",
-                                                            lineNumber: 251,
-                                                            columnNumber: 23
+                                                        }, i, true, {
+                                                            fileName: "[project]/app/partnerships/page.tsx",
+                                                            lineNumber: 200,
+                                                            columnNumber: 25
+                                                        }, this))
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/partnerships/page.tsx",
+                                                    lineNumber: 198,
+                                                    columnNumber: 21
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                    href: "/contact",
+                                                    className: "inline-flex items-center gap-2 text-primary font-medium hover:gap-3 transition-all",
+                                                    children: [
+                                                        "Learn more ",
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
+                                                            size: 16
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/partnerships/page.tsx",
+                                                            lineNumber: 210,
+                                                            columnNumber: 34
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
-                                                    fileName: "[project]/app/programs/page.tsx",
-                                                    lineNumber: 212,
+                                                    fileName: "[project]/app/partnerships/page.tsx",
+                                                    lineNumber: 206,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, idx, true, {
-                                            fileName: "[project]/app/programs/page.tsx",
-                                            lineNumber: 206,
+                                            fileName: "[project]/app/partnerships/page.tsx",
+                                            lineNumber: 186,
                                             columnNumber: 19
-                                        }, this))
+                                        }, this);
+                                    })
                                 }, void 0, false, {
-                                    fileName: "[project]/app/programs/page.tsx",
-                                    lineNumber: 204,
-                                    columnNumber: 15
-                                }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "text-center py-16",
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-foreground/60 text-lg",
-                                        children: "No programs found in this category."
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/programs/page.tsx",
-                                        lineNumber: 260,
-                                        columnNumber: 17
-                                    }, this)
-                                }, void 0, false, {
-                                    fileName: "[project]/app/programs/page.tsx",
-                                    lineNumber: 259,
-                                    columnNumber: 15
+                                    fileName: "[project]/app/partnerships/page.tsx",
+                                    lineNumber: 151,
+                                    columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
-                            fileName: "[project]/app/programs/page.tsx",
-                            lineNumber: 195,
+                            fileName: "[project]/app/partnerships/page.tsx",
+                            lineNumber: 141,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
-                        fileName: "[project]/app/programs/page.tsx",
-                        lineNumber: 194,
+                        fileName: "[project]/app/partnerships/page.tsx",
+                        lineNumber: 140,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                        className: "py-20 md:py-28 px-4 bg-teal-600",
+                        className: "py-20 md:py-28 px-4 bg-muted/30",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "max-w-3xl mx-auto text-center",
+                            className: "max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center",
                             children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                    className: "font-display font-bold text-3xl text-white md:text-4xl mb-4 text-foreground",
-                                    children: "Not sure which program is right for you?"
-                                }, void 0, false, {
-                                    fileName: "[project]/app/programs/page.tsx",
-                                    lineNumber: 269,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "text-foreground/70 text-lg mb-8 text-white",
-                                    children: "Chat with our advisors to find the perfect match for your goals and schedule."
-                                }, void 0, false, {
-                                    fileName: "[project]/app/programs/page.tsx",
-                                    lineNumber: 272,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                    href: "/contact",
-                                    passHref: true,
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                        className: "px-8 py-4 bg-white  text-teal-600 rounded-full font-semibold hover:shadow-lg hover:shadow-teal-500 transition-all duration-300",
-                                        children: "Schedule a Free Consultation"
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/programs/page.tsx",
-                                        lineNumber: 276,
-                                        columnNumber: 15
-                                    }, this)
-                                }, void 0, false, {
-                                    fileName: "[project]/app/programs/page.tsx",
-                                    lineNumber: 275,
-                                    columnNumber: 13
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/app/programs/page.tsx",
-                            lineNumber: 268,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "[project]/app/programs/page.tsx",
-                        lineNumber: 267,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                        className: "py-16 md:py-24 px-4 bg-gradient-to-r from-secondary/20 to-secondary/5",
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "max-w-7xl mx-auto",
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex flex-col lg:flex-row gap-8 md:gap-12",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "lg:w-1/3 lg:sticky lg:top-32 lg:self-start",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                                className: "font-display font-bold text-2xl md:text-4xl mb-3 md:mb-4 text-foreground",
-                                                children: "Frequently Asked Questions"
-                                            }, void 0, false, {
-                                                fileName: "[project]/app/programs/page.tsx",
-                                                lineNumber: 289,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "text-foreground/60 text-base md:text-lg mb-4 md:mb-6",
-                                                children: "Find answers to common questions about our programs."
-                                            }, void 0, false, {
-                                                fileName: "[project]/app/programs/page.tsx",
-                                                lineNumber: 292,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "text-foreground/60 text-sm md:text-base",
-                                                children: [
-                                                    "Can't find what you're looking for? Feel free to",
-                                                    " ",
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                        href: "/contact",
-                                                        className: "text-teal-600 hover:underline font-medium",
-                                                        children: "contact us"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/app/programs/page.tsx",
-                                                        lineNumber: 297,
-                                                        columnNumber: 19
-                                                    }, this),
-                                                    " ",
-                                                    "and we'll be happy to help."
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/app/programs/page.tsx",
-                                                lineNumber: 295,
-                                                columnNumber: 17
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/app/programs/page.tsx",
-                                        lineNumber: 288,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "lg:w-2/3 space-y-2 md:space-y-3",
-                                        children: faqs.map((faq, idx)=>{
-                                            const isOpen = openFAQ === idx;
-                                            return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "bg-background/50 border border-border rounded-lg overflow-hidden transition-all duration-300",
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                        onClick: ()=>setOpenFAQ(isOpen ? null : idx),
-                                                        className: "group w-full p-4 md:p-6 flex justify-between items-center hover:bg-teal-600 transition-colors duration-300 text-left",
-                                                        children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                                className: `font-display group-hover:text-white font-semibold text-sm md:text-lg pr-4 ${isOpen ? "text-white" : "text-foreground"}`,
-                                                                children: faq.question
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                            className: "font-display font-bold text-3xl md:text-4xl mb-6",
+                                            children: "Why Partner with Nova Coding Club?"
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/partnerships/page.tsx",
+                                            lineNumber: 223,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "text-foreground/60 text-lg mb-8",
+                                            children: "We’re more than just a training provider. We’re your strategic partner in creating a future-ready generation."
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/partnerships/page.tsx",
+                                            lineNumber: 227,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "grid gap-6",
+                                            children: benefits.slice(0, 4).map((benefit, idx)=>{
+                                                const Icon = benefit.icon;
+                                                return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "flex gap-4",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0",
+                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Icon, {
+                                                                className: "text-primary",
+                                                                size: 24
                                                             }, void 0, false, {
-                                                                fileName: "[project]/app/programs/page.tsx",
-                                                                lineNumber: 318,
-                                                                columnNumber: 25
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__["ChevronDown"], {
-                                                                size: 20,
-                                                                className: `text-teal-600 transition-transform duration-300 flex-shrink-0 ${isOpen ? "rotate-180 text-white" : ""}`
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/app/programs/page.tsx",
-                                                                lineNumber: 321,
+                                                                fileName: "[project]/app/partnerships/page.tsx",
+                                                                lineNumber: 237,
                                                                 columnNumber: 25
                                                             }, this)
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "[project]/app/programs/page.tsx",
-                                                        lineNumber: 314,
-                                                        columnNumber: 23
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: `px-4 md:px-6 overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? "max-h-40 md:max-h-48 py-4 md:py-6" : "max-h-0 py-0"}`,
-                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                            className: "text-foreground/70 leading-relaxed text-sm md:text-base",
-                                                            children: faq.answer
                                                         }, void 0, false, {
-                                                            fileName: "[project]/app/programs/page.tsx",
-                                                            lineNumber: 330,
-                                                            columnNumber: 25
+                                                            fileName: "[project]/app/partnerships/page.tsx",
+                                                            lineNumber: 236,
+                                                            columnNumber: 23
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                                    className: "font-display font-bold text-lg text-foreground",
+                                                                    children: benefit.title
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/app/partnerships/page.tsx",
+                                                                    lineNumber: 240,
+                                                                    columnNumber: 25
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                    className: "text-foreground/60 text-sm",
+                                                                    children: benefit.description
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/app/partnerships/page.tsx",
+                                                                    lineNumber: 241,
+                                                                    columnNumber: 25
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/app/partnerships/page.tsx",
+                                                            lineNumber: 239,
+                                                            columnNumber: 23
                                                         }, this)
+                                                    ]
+                                                }, idx, true, {
+                                                    fileName: "[project]/app/partnerships/page.tsx",
+                                                    lineNumber: 235,
+                                                    columnNumber: 21
+                                                }, this);
+                                            })
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/partnerships/page.tsx",
+                                            lineNumber: 231,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/app/partnerships/page.tsx",
+                                    lineNumber: 222,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "relative",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "aspect-square rounded-3xl overflow-hidden",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                                src: "/tutor.jpg",
+                                                className: "w-full h-full object-cover",
+                                                alt: "Partnership"
+                                            }, void 0, false, {
+                                                fileName: "[project]/app/partnerships/page.tsx",
+                                                lineNumber: 251,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/partnerships/page.tsx",
+                                            lineNumber: 250,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "absolute -bottom-6 -left-6 bg-primary text-primary-foreground p-6 rounded-2xl shadow-xl",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                    className: "font-display font-bold text-3xl",
+                                                    children: "85%"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/partnerships/page.tsx",
+                                                    lineNumber: 255,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                    className: "text-sm text-primary-foreground/80",
+                                                    children: "Success Rate"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/partnerships/page.tsx",
+                                                    lineNumber: 256,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/app/partnerships/page.tsx",
+                                            lineNumber: 254,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/app/partnerships/page.tsx",
+                                    lineNumber: 249,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/app/partnerships/page.tsx",
+                            lineNumber: 221,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/app/partnerships/page.tsx",
+                        lineNumber: 220,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+                        className: "py-20 md:py-28 px-4",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "jsx-59cf164c67682429" + " " + "max-w-7xl mx-auto",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "jsx-59cf164c67682429" + " " + "text-center mb-16",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                            className: "jsx-59cf164c67682429" + " " + "font-display font-bold text-3xl md:text-4xl mb-4",
+                                            children: "Trusted by Leading Institutions"
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/partnerships/page.tsx",
+                                            lineNumber: 266,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "jsx-59cf164c67682429" + " " + "text-foreground/60 max-w-2xl mx-auto",
+                                            children: "Our partners include respected schools, organizations, and NGOs across Africa."
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/partnerships/page.tsx",
+                                            lineNumber: 269,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/app/partnerships/page.tsx",
+                                    lineNumber: 265,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "jsx-59cf164c67682429" + " " + "relative overflow-hidden",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "jsx-59cf164c67682429" + " " + "flex gap-10 animate-scroll logo-track",
+                                        children: partners.concat(partners).map((partner, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "jsx-59cf164c67682429" + " " + "logo-item shrink-0 w-40 h-28 flex flex-col items-center justify-center transition-all",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                                        src: "/placeholder-logo.png",
+                                                        alt: partner.name,
+                                                        className: "jsx-59cf164c67682429" + " " + "logo-img h-12 md:h-16 object-contain grayscale transition-all"
                                                     }, void 0, false, {
-                                                        fileName: "[project]/app/programs/page.tsx",
-                                                        lineNumber: 327,
-                                                        columnNumber: 23
+                                                        fileName: "[project]/app/partnerships/page.tsx",
+                                                        lineNumber: 281,
+                                                        columnNumber: 21
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                        className: "jsx-59cf164c67682429" + " " + "logo-text text-foreground/70 text-sm font-medium mt-2 transition-all",
+                                                        children: partner.name
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/app/partnerships/page.tsx",
+                                                        lineNumber: 286,
+                                                        columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, idx, true, {
-                                                fileName: "[project]/app/programs/page.tsx",
-                                                lineNumber: 310,
-                                                columnNumber: 21
-                                            }, this);
-                                        })
+                                                fileName: "[project]/app/partnerships/page.tsx",
+                                                lineNumber: 277,
+                                                columnNumber: 19
+                                            }, this))
                                     }, void 0, false, {
-                                        fileName: "[project]/app/programs/page.tsx",
-                                        lineNumber: 305,
+                                        fileName: "[project]/app/partnerships/page.tsx",
+                                        lineNumber: 275,
                                         columnNumber: 15
                                     }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/app/programs/page.tsx",
-                                lineNumber: 286,
-                                columnNumber: 13
-                            }, this)
-                        }, void 0, false, {
-                            fileName: "[project]/app/programs/page.tsx",
-                            lineNumber: 285,
+                                }, void 0, false, {
+                                    fileName: "[project]/app/partnerships/page.tsx",
+                                    lineNumber: 274,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$jsx$2f$style$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                    id: "59cf164c67682429",
+                                    children: "@keyframes scroll{0%{transform:translate(0)}to{transform:translate(-50%)}}.animate-scroll.jsx-59cf164c67682429{animation:22s linear infinite scroll}.logo-track.jsx-59cf164c67682429:hover{animation-play-state:paused}.logo-item.jsx-59cf164c67682429{opacity:.4}.logo-track.jsx-59cf164c67682429:hover .logo-item.jsx-59cf164c67682429{opacity:.2}.logo-item.jsx-59cf164c67682429:hover{transform:scale(1.15);opacity:1!important}.logo-item.jsx-59cf164c67682429:hover .logo-img.jsx-59cf164c67682429{filter:grayscale(0)}.logo-item.jsx-59cf164c67682429:hover .logo-text.jsx-59cf164c67682429{opacity:1;color:var(--foreground)}"
+                                }, void 0, false, void 0, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/app/partnerships/page.tsx",
+                            lineNumber: 264,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
-                        fileName: "[project]/app/programs/page.tsx",
-                        lineNumber: 284,
+                        fileName: "[project]/app/partnerships/page.tsx",
+                        lineNumber: 263,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+                        className: "py-20 md:py-28 px-4 bg-muted/30",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "max-w-7xl mx-auto text-center mb-16",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: "inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4",
+                                        children: "Getting Started"
+                                    }, void 0, false, {
+                                        fileName: "[project]/app/partnerships/page.tsx",
+                                        lineNumber: 337,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                        className: "font-display font-bold text-3xl md:text-4xl",
+                                        children: "Partnership Process"
+                                    }, void 0, false, {
+                                        fileName: "[project]/app/partnerships/page.tsx",
+                                        lineNumber: 340,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: "text-foreground/60 max-w-2xl mx-auto mt-2",
+                                        children: "A simple and clear step-by-step journey."
+                                    }, void 0, false, {
+                                        fileName: "[project]/app/partnerships/page.tsx",
+                                        lineNumber: 343,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/app/partnerships/page.tsx",
+                                lineNumber: 336,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "max-w-6xl mx-auto relative",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "flex flex-col md:flex-row items-center justify-between gap-12",
+                                    children: [
+                                        {
+                                            step: "01",
+                                            title: "Discovery",
+                                            desc: "Discuss your institution’s needs and goals."
+                                        },
+                                        {
+                                            step: "02",
+                                            title: "Consultation",
+                                            desc: "We recommend the best partnership approach."
+                                        },
+                                        {
+                                            step: "03",
+                                            title: "Customization",
+                                            desc: "Programs tailored to your institution."
+                                        },
+                                        {
+                                            step: "04",
+                                            title: "Launch",
+                                            desc: "Begin implementation with full support."
+                                        }
+                                    ].map((item, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "relative flex flex-col items-center text-center w-full",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "w-16 h-16 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-display font-bold text-xl shadow-md",
+                                                    children: item.step
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/partnerships/page.tsx",
+                                                    lineNumber: 358,
+                                                    columnNumber: 19
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                    className: "font-display font-bold text-lg mt-4",
+                                                    children: item.title
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/partnerships/page.tsx",
+                                                    lineNumber: 362,
+                                                    columnNumber: 19
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                    className: "text-foreground/60 text-sm max-w-[200px]",
+                                                    children: item.desc
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/partnerships/page.tsx",
+                                                    lineNumber: 363,
+                                                    columnNumber: 19
+                                                }, this),
+                                                idx < 3 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "hidden md:block absolute top-8 right-[-55px]",
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
+                                                        size: 28,
+                                                        className: "text-primary/60"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/app/partnerships/page.tsx",
+                                                        lineNumber: 368,
+                                                        columnNumber: 23
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/partnerships/page.tsx",
+                                                    lineNumber: 367,
+                                                    columnNumber: 21
+                                                }, this)
+                                            ]
+                                        }, idx, true, {
+                                            fileName: "[project]/app/partnerships/page.tsx",
+                                            lineNumber: 357,
+                                            columnNumber: 17
+                                        }, this))
+                                }, void 0, false, {
+                                    fileName: "[project]/app/partnerships/page.tsx",
+                                    lineNumber: 349,
+                                    columnNumber: 13
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/app/partnerships/page.tsx",
+                                lineNumber: 348,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/app/partnerships/page.tsx",
+                        lineNumber: 335,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+                        className: "relative py-20 md:py-28 px-4",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "absolute inset-0 bg-cover bg-center",
+                                style: {
+                                    backgroundImage: "url('/college.jpg')"
+                                }
+                            }, void 0, false, {
+                                fileName: "[project]/app/partnerships/page.tsx",
+                                lineNumber: 379,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "absolute inset-0 bg-foreground/70"
+                            }, void 0, false, {
+                                fileName: "[project]/app/partnerships/page.tsx",
+                                lineNumber: 385,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "relative z-10 max-w-7xl mx-auto text-center",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                        className: "font-display font-bold text-3xl md:text-4xl lg:text-5xl text-background mb-6",
+                                        children: "Ready to Transform Education Together?"
+                                    }, void 0, false, {
+                                        fileName: "[project]/app/partnerships/page.tsx",
+                                        lineNumber: 388,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: "text-background/70 text-lg max-w-2xl mx-auto mb-8",
+                                        children: "Let's partner and bring high-quality tech education to your institution and community."
+                                    }, void 0, false, {
+                                        fileName: "[project]/app/partnerships/page.tsx",
+                                        lineNumber: 392,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "flex flex-col sm:flex-row gap-4 justify-center",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                href: "/contact",
+                                                className: "inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground rounded-full font-semibold hover:bg-primary/90 transition",
+                                                children: [
+                                                    "Start a Partnership",
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
+                                                        size: 20
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/app/partnerships/page.tsx",
+                                                        lineNumber: 402,
+                                                        columnNumber: 17
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/app/partnerships/page.tsx",
+                                                lineNumber: 397,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                href: "/programs",
+                                                className: "inline-flex items-center gap-2 px-8 py-4 bg-background text-foreground rounded-full font-semibold hover:bg-background/90 transition",
+                                                children: "View Programs"
+                                            }, void 0, false, {
+                                                fileName: "[project]/app/partnerships/page.tsx",
+                                                lineNumber: 405,
+                                                columnNumber: 15
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/app/partnerships/page.tsx",
+                                        lineNumber: 396,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/app/partnerships/page.tsx",
+                                lineNumber: 387,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/app/partnerships/page.tsx",
+                        lineNumber: 378,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
-                fileName: "[project]/app/programs/page.tsx",
-                lineNumber: 148,
+                fileName: "[project]/app/partnerships/page.tsx",
+                lineNumber: 81,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$footer$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
-                fileName: "[project]/app/programs/page.tsx",
-                lineNumber: 342,
+                fileName: "[project]/app/partnerships/page.tsx",
+                lineNumber: 416,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true);
 }
-_s(ProgramsPage, "1Xk32NTzmv/M1wX3nqsySENsFIw=");
-_c = ProgramsPage;
+_c = Partnerships;
 var _c;
-__turbopack_context__.k.register(_c, "ProgramsPage");
+__turbopack_context__.k.register(_c, "Partnerships");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
 }
 }),
 ]);
 
-//# sourceMappingURL=_64d9d91d._.js.map
+//# sourceMappingURL=_c2f2bb0d._.js.map

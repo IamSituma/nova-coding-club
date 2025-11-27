@@ -1,8 +1,7 @@
 {
-  "/contact/page": "app/contact/page.js",
-  "/gallery/[albumId]/page": "app/gallery/[albumId]/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
   "/gallery/page": "app/gallery/page.js",
-  "/page": "app/page.js",
-  "/programs/[slug]/page": "app/programs/[slug]/page.js",
-  "/programs/page": "app/programs/page.js"
+  "/partnerships/page": "app/partnerships/page.js",
+  "/programs/page": "app/programs/page.js",
+  "/register/page": "app/register/page.js"
 }
