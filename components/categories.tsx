@@ -4,40 +4,40 @@ import Link from "next/link"
 export default function Categories() {
   const categories = [
     {
-      name: "Web Development",
-      count: "3 Programs",
-      image: "/web.jpg",
-      slug: "web-development",
-    },
-    {
-      name: "Mobile Development",
-      count: "2 Programs",
-      image: "/app.jpg",
-      slug: "mobile-development",
-    },
-    {
-      name: "Data Science",
-      count: "2 Programs",
-      image: "/data.jpg",
-      slug: "data-science",
-    },
-    {
-      name: "UI/UX Design",
+      name: "School Coding Club",
       count: "1 Program",
-      image: "/ui.jpg",
-      slug: "design",
+      image: "/school.png",
+      slug: "school-coding-club",
+    },
+    {
+      name: "Web Development Bootcamp",
+      count: "1 Program",
+      image: "/web.jpg",
+      slug: "web-development-bootcamp",
+    },
+    {
+      name: "Mobile Development Bootcamp",
+      count: "1 Program",
+      image: "/app.jpg",
+      slug: "mobile-development-bootcamp",
     },
     {
       name: "Python Programming",
-      count: "2 Programs",
+      count: "1 Program",
       image: "/python.jpg",
-      slug: "web-development",
+      slug: "advanced-python",
     },
     {
-      name: "AI & Machine Learning",
+      name: "UI/UX Design Fundamentals",
       count: "1 Program",
-      image: "/ai.jpg",
-      slug: "design",
+      image: "/ui.jpg",
+      slug: "ui-ux-design",
+    },
+    {
+      name: "Data Science & Analytics",
+      count: "1 Program",
+      image: "/data.jpg",
+      slug: "data-science",
     },
   ]
 

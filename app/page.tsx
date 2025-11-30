@@ -10,11 +10,13 @@ import Testimonials from "@/components/testimonials"
 import FAQ from "@/components/faq"
 import CTA from "@/components/cta"
 import Footer from "@/components/footer"
+import ImagePopup from "@/components/image-popup" // import the popup component
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-background">
       <Navbar />
+      <ImagePopup /> {/* Add the popup here */}
       <Hero />
       <Features />
       <Programs />

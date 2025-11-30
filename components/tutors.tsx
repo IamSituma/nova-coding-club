@@ -3,25 +3,25 @@ export default function Tutors() {
     {
       name: "John Doe",
       title: "Web Development Lead",
-      image: "/female-tutor-web-developer.jpg",
+      image: "/john2.png",
       bio: "Full-stack developer with 8+ years of experience at tech startups.",
     },
     {
       name: "Jane Doe",
       title: "Mobile Development Expert",
-      image: "/male-tutor-mobile-developer.jpg",
+      image: "/jane2.png",
       bio: "React Native specialist who has shipped 15+ mobile apps.",
     },
     {
       name: "Jane Doe",
       title: "Data Science Instructor",
-      image: "/female-tutor-data-scientist.jpg",
+      image: "/jane.png",
       bio: "Machine learning engineer with 5+ years in fintech and analytics.",
     },
     {
       name: "John Doe",
       title: "UI/UX Design Mentor",
-      image: "/male-tutor-designer.jpg",
+      image: "/john.png",
       bio: "Award-winning designer focused on user-centered design principles.",
     },
   ]

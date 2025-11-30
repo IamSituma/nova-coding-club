@@ -41,7 +41,9 @@ export default function Navbar() {
           {/* Register Button */}
           <div className="hidden md:flex gap-4">
             <Link
-              href="/register"
+              href="https://forms.gle/Zy9xThYnnZXSZ95d7"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-6 py-2 bg-gradient-to-r from-[#009696] to-[#006f6f] text-white rounded-full font-medium hover:shadow-lg hover:shadow-[#009696]/50 transition-all duration-300"
             >
               Register with Us

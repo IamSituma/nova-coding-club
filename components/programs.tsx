@@ -4,6 +4,7 @@ import { useState } from "react"
 import { ArrowRight } from "lucide-react"
 import Link from "next/link"
 
+
 export default function Programs() {
   const [showMore, setShowMore] = useState(false)
 
@@ -24,7 +25,7 @@ export default function Programs() {
       description: "Intensive bootcamp to become a full-stack web developer ready for job market.",
       features: ["Frontend & Backend", "Database Design", "Deployment", "Job Prep"],
       image: "/web.jpg",
-      slug: "web-development",
+      slug: "web-development-bootcamp",
     },
     {
       title: "Bootcamp - Mobile Development",
@@ -33,7 +34,7 @@ export default function Programs() {
       description: "Master mobile app development for iOS and Android platforms.",
       features: ["React Native", "Flutter", "APIs", "App Publishing"],
       image: "/app.jpg",
-      slug: "mobile-development",
+      slug: "mobile-development-bootcamp",
     },
   ]
 

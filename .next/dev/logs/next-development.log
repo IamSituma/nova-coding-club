@@ -1,75 +1,717 @@
-[00:00:00.921] Server  LOG      ✓ Ready in 608ms
-[00:00:05.911] Server  LOG      ○ Compiling / ...
-[00:00:07.684] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:07.962] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:07.962] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:00:07.962] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764246642482}
-[00:00:10.568] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/gallery color: rgb(120, 120, 120) color: inherit {"dp":"/gallery","o":"http://localhost:3000/gallery","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764246644968}
-[00:00:10.726] Browser WARN    Image with src "http://localhost:3000/logo1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:19.263] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/gallery/bootcamp-graduation-2024 color: rgb(120, 120, 120) color: inherit {"dp":"/gallery/[albumId]","o":"http://localhost:3000/gallery/bootcamp-graduation-2024","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764246653779}
-[00:00:29.419] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/gallery color: rgb(120, 120, 120) color: inherit {"dp":"/gallery","o":"http://localhost:3000/gallery","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764246663935}
-[00:01:32.484] Server  LOG      ✓ Compiled in 228ms
-[00:01:33.069] Browser ERROR   ./app/gallery
-Invalid import
-'client-only' cannot be imported from a Server Component module. It should only be used from a Client Component.
-The error was caused by using 'styled-jsx'. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
-[00:02:39.879] Server  LOG      ✓ Compiled in 121ms
-[00:03:49.425] Server  LOG      ✓ Compiled in 96ms
-[00:04:33.259] Server  LOG      ✓ Compiled in 85ms
-[00:04:50.045] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764246924256}
-[00:05:09.994] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/contact color: rgb(120, 120, 120) color: inherit {"dp":"/contact","o":"http://localhost:3000/contact","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764246944511}
-[00:09:04.217] Server  LOG      ✓ Compiled in 116ms
-[00:09:20.778] Server  LOG      ✓ Compiled in 97ms
-[00:10:03.966] Server  LOG      ✓ Compiled in 98ms
-[00:10:15.149] Server  LOG      ✓ Compiled in 94ms
-[00:11:54.879] Server  LOG      ✓ Compiled in 214ms
-[00:15:46.531] Server  LOG      ✓ Compiled in 187ms
-[00:17:11.243] Server  LOG      ✓ Compiled in 217ms
-[00:17:47.560] Server  LOG      ✓ Compiled in 180ms
-[00:18:05.721] Server  LOG      ✓ Compiled in 105ms
-[00:18:14.760] Server  LOG      ✓ Compiled in 210ms
-[00:18:19.153] Server  LOG      ✓ Compiled in 214ms
-[00:18:22.809] Server  LOG      ✓ Compiled in 268ms
-[00:18:26.791] Server  LOG      ✓ Compiled in 197ms
-[00:18:32.553] Server  LOG      ✓ Compiled in 185ms
-[00:18:48.634] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/gallery color: rgb(120, 120, 120) color: inherit {"dp":"/gallery","o":"http://localhost:3000/gallery","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764247763029}
-[00:18:51.328] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/contact color: rgb(120, 120, 120) color: inherit {"dp":"/contact","o":"http://localhost:3000/contact","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764247765835}
-[00:20:31.855] Server  LOG      ✓ Compiled in 93ms
-[00:21:29.980] Server  LOG      ✓ Compiled in 261ms
-[00:21:42.977] Server  LOG      ✓ Compiled in 181ms
-[00:22:07.202] Server  LOG      ✓ Compiled in 219ms
-[00:22:10.976] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:22:11.233] Browser WARN    Image with src "http://localhost:3000/logo1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:22:11.558] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:22:11.558] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/contact","route":"/contact"}
-[00:22:11.558] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/contact color: rgb(120, 120, 120) color: inherit {"dp":"/contact","o":"http://localhost:3000/contact","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764247966077}
-[00:22:49.352] Server  LOG      ✓ Compiled in 190ms
-[00:23:05.547] Server  LOG      ✓ Compiled in 129ms
-[00:23:15.064] Server  LOG      ✓ Compiled in 82ms
-[00:23:23.403] Server  LOG      ✓ Compiled in 83ms
-[00:23:27.586] Server  LOG      ✓ Compiled in 83ms
-[00:24:21.084] Server  LOG      ✓ Compiled in 95ms
-[00:25:18.703] Server  LOG      ✓ Compiled in 110ms
-[00:26:22.239] Server  LOG      ✓ Compiled in 196ms
-[00:26:31.693] Server  LOG      ✓ Compiled in 296ms
-[00:26:38.336] Server  LOG      ✓ Compiled in 191ms
-[00:26:45.902] Server  LOG      ✓ Compiled in 166ms
-[00:26:51.375] Server  LOG      ✓ Compiled in 189ms
-[00:26:59.562] Server  LOG      ✓ Compiled in 200ms
-[00:27:09.993] Server  LOG      ✓ Compiled in 157ms
-[00:27:42.405] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764248296780}
-[00:27:58.455] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/contact color: rgb(120, 120, 120) color: inherit {"dp":"/contact","o":"http://localhost:3000/contact","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764248312860}
-[00:29:16.813] Server  LOG      ✓ Compiled in 73ms
-[00:29:54.178] Server  LOG      ✓ Compiled in 95ms
-[00:30:04.139] Server  LOG      ✓ Compiled in 95ms
-[00:30:12.895] Server  LOG      ✓ Compiled in 200ms
-[00:30:22.159] Server  LOG      ✓ Compiled in 174ms
-[00:30:31.297] Server  LOG      ✓ Compiled in 180ms
-[00:30:42.025] Server  LOG      ✓ Compiled in 183ms
-[00:30:48.763] Server  LOG      ✓ Compiled in 83ms
-[00:31:40.728] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764248535244}
-[00:32:12.512] Server  LOG      ✓ Compiled in 76ms
-[00:32:28.752] Browser ERROR   A param property was accessed directly with `params.slug`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
-[00:32:28.752] Browser ERROR   A param property was accessed directly with `params.slug`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
-[00:32:28.752] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs/school-coding-club color: rgb(120, 120, 120) color: inherit {"dp":"/programs/[slug]","o":"http://localhost:3000/programs/school-coding-club","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764248583270}
-[00:32:32.842] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764248587359}
+[00:00:01.283] Server  LOG      ✓ Ready in 902ms
+[00:00:07.889] Server  LOG      ○ Compiling / ...
+[00:00:09.380] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:09.380] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:09.380] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:09.380] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764505943319}
+[00:00:12.674] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764505946523}
+[00:00:13.203] Browser WARN    Image with src "http://localhost:3000/logo1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:15.977] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs/school-coding-club color: rgb(120, 120, 120) color: inherit {"dp":"/programs/[slug]","o":"http://localhost:3000/programs/school-coding-club","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764505949763}
+[00:00:33.839] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764505967673}
+[00:01:07.902] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764506001704}
+[00:01:24.817] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs/school-coding-club color: rgb(120, 120, 120) color: inherit {"dp":"/programs/[slug]","o":"http://localhost:3000/programs/school-coding-club","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764506018654}
+[00:05:19.737] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764506253502}
+[00:17:43.817] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/about color: rgb(120, 120, 120) color: inherit {"dp":"/about","o":"http://localhost:3000/about","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764506997616}
+[00:17:53.960] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764507007633}
+[00:17:58.818] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs/web-development color: rgb(120, 120, 120) color: inherit {"dp":"/programs/[slug]","o":"http://localhost:3000/programs/web-development","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764507012667}
+[00:18:01.766] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764507015563}
+[00:18:06.245] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs/school-coding-club color: rgb(120, 120, 120) color: inherit {"dp":"/programs/[slug]","o":"http://localhost:3000/programs/school-coding-club","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764507020030}
+[00:18:22.321] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764507036097}
+[00:18:25.973] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs/web-development-bootcamp color: rgb(120, 120, 120) color: inherit {"dp":"/programs/[slug]","o":"http://localhost:3000/programs/web-development-bootcamp","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764507039823}
+[00:18:28.692] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764507042362}
+[00:18:35.517] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764507049258}
+[00:18:41.197] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764507054821}
+[00:19:08.713] Server  LOG      ✓ Compiled in 138ms
+[00:19:13.835] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs/web-development-bootcamp color: rgb(120, 120, 120) color: inherit {"dp":"/programs/[slug]","o":"http://localhost:3000/programs/web-development-bootcamp","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764507087683}
+[00:19:17.173] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764507090954}
+[00:19:29.074] Server  LOG      ✓ Compiled in 101ms
+[00:19:36.040] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs/mobile-development-bootcamp color: rgb(120, 120, 120) color: inherit {"dp":"/programs/[slug]","o":"http://localhost:3000/programs/mobile-development-bootcamp","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764507109888}
+[00:19:51.108] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764507124918}
+[00:19:53.424] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs/school-coding-club color: rgb(120, 120, 120) color: inherit {"dp":"/programs/[slug]","o":"http://localhost:3000/programs/school-coding-club","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764507127257}
+[00:21:44.617] Server  LOG      ✓ Compiled in 91ms
+[00:22:16.319] Server  LOG      ✓ Compiled in 80ms
+[00:23:33.188] Server  LOG      ✓ Compiled in 89ms
+[00:26:29.209] Server  LOG      ✓ Compiled in 85ms
+[00:27:28.406] Server  LOG      ✓ Compiled in 194ms
+[00:27:28.537] Browser ERROR   ./app/programs/[slug]/page.tsx:41:7
+Parsing ecmascript source code failed
+  39 |             { name: "Responsive Web Design", image: "/course-5.jpg" },
+  40 |           ],
+> 41 |       ],
+     |       ^
+  42 |     },
+  43 |     "web-development-bootcamp": {
+  44 |       title: "Web Development Bootcamp",
+
+Unexpected token `]`. Expected identifier, string literal, numeric literal or [ for the computed key
+
+Import traces:
+  Client Component Browser:
+    ./app/programs/[slug]/page.tsx [Client Component Browser]
+    ./app/programs/[slug]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/programs/[slug]/page.tsx [Client Component SSR]
+    ./app/programs/[slug]/page.tsx [Server Component]
+[00:29:06.745] Server  LOG      ✓ Compiled in 134ms
+[00:29:23.092] Server  LOG      ✓ Compiled in 103ms
+[00:33:18.882] Server  LOG      ✓ Compiled in 237ms
+[00:33:19.848] Browser ERROR   A param property was accessed directly with `params.slug`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:33:19.848] Browser ERROR   A param property was accessed directly with `params.slug`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:33:25.972] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764507939774}
+[00:33:31.689] Browser ERROR   A param property was accessed directly with `params.slug`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:33:31.689] Browser ERROR   A param property was accessed directly with `params.slug`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:33:31.689] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs/school-coding-club color: rgb(120, 120, 120) color: inherit {"dp":"/programs/[slug]","o":"http://localhost:3000/programs/school-coding-club","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764507945539}
+[00:33:35.738] Server  LOG      ✓ Compiled in 124ms
+[00:37:20.680] Server  LOG      ✓ Compiled in 246ms
+[00:37:20.847] Browser ERROR   A param property was accessed directly with `params.slug`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:37:20.847] Browser ERROR   A param property was accessed directly with `params.slug`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:37:27.504] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764508181151}
+[00:37:30.329] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764508183979}
+[00:37:39.651] Browser ERROR   A param property was accessed directly with `params.slug`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:37:39.651] Browser ERROR   A param property was accessed directly with `params.slug`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:37:39.651] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs/school-coding-club color: rgb(120, 120, 120) color: inherit {"dp":"/programs/[slug]","o":"http://localhost:3000/programs/school-coding-club","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764508193502}
+[00:37:46.191] Server  LOG      ✓ Compiled in 108ms
+[00:38:11.476] Server  LOG      ✓ Compiled in 82ms
+[00:38:15.446] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:38:15.672] Browser WARN    Image with src "http://localhost:3000/logo1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:38:16.173] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:38:16.173] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/programs/school-coding-club","route":"/programs/[slug]"}
+[00:38:16.173] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs/school-coding-club color: rgb(120, 120, 120) color: inherit {"dp":"/programs/[slug]","o":"http://localhost:3000/programs/school-coding-club","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764508230023}
+[00:38:27.008] Server  LOG      ✓ Compiled in 112ms
+[00:38:30.402] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:38:30.544] Browser WARN    Image with src "http://localhost:3000/logo1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:38:30.544] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:38:30.544] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/programs/school-coding-club","route":"/programs/[slug]"}
+[00:38:30.544] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs/school-coding-club color: rgb(120, 120, 120) color: inherit {"dp":"/programs/[slug]","o":"http://localhost:3000/programs/school-coding-club","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764508244395}
+[00:38:44.291] Server  LOG      ✓ Compiled in 85ms
+[00:38:48.797] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764508262483}
+[00:38:53.064] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764508266895}
+[00:38:59.082] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/partnerships color: rgb(120, 120, 120) color: inherit {"dp":"/partnerships","o":"http://localhost:3000/partnerships","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764508272651}
+[00:39:06.316] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764508280063}
+[00:39:10.181] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs/school-coding-club color: rgb(120, 120, 120) color: inherit {"dp":"/programs/[slug]","o":"http://localhost:3000/programs/school-coding-club","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764508283948}
+[00:40:24.802] Server  LOG      ✓ Compiled in 89ms
+[00:41:03.062] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764508396739}
+[00:46:11.218] Server  LOG      ✓ Compiled in 69ms
+[00:46:18.057] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764508711888}
+[00:46:20.960] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs/school-coding-club color: rgb(120, 120, 120) color: inherit {"dp":"/programs/[slug]","o":"http://localhost:3000/programs/school-coding-club","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764508714797}
+[00:46:47.574] Server  LOG      ✓ Compiled in 218ms
+[00:46:56.489] Server  LOG      ✓ Compiled in 93ms
+[00:47:01.261] Server  LOG      ✓ Compiled in 90ms
+[00:47:10.482] Server  LOG      ✓ Compiled in 199ms
+[00:47:14.721] Server  LOG      ✓ Compiled in 92ms
+[00:47:22.316] Server  LOG      ✓ Compiled in 76ms
+[00:47:27.908] Server  LOG      ✓ Compiled in 82ms
+[00:47:34.233] Server  LOG      ✓ Compiled in 108ms
+[00:47:38.545] Server  LOG      ✓ Compiled in 68ms
+[00:47:42.201] Server  LOG      ✓ Compiled in 75ms
+[00:47:55.799] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764508809484}
+[00:48:10.561] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs/advanced-python color: rgb(120, 120, 120) color: inherit {"dp":"/programs/[slug]","o":"http://localhost:3000/programs/advanced-python","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764508824409}
+[00:48:22.609] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764508836432}
+[00:48:25.564] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs/web-development-bootcamp color: rgb(120, 120, 120) color: inherit {"dp":"/programs/[slug]","o":"http://localhost:3000/programs/web-development-bootcamp","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764508839414}
+[00:49:21.456] Server  LOG      ✓ Compiled in 80ms
+[00:49:21.848] Browser ERROR   uncaughtError: TypeError: url is not a function
+[00:49:50.603] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:49:50.616] Server  LOG      ✓ Compiled in 120ms
+[00:49:50.928] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs/web-development-bootcamp color: rgb(120, 120, 120) color: inherit {"dp":"/programs/[slug]","o":"http://localhost:3000/programs/web-development-bootcamp","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764508924592}
+[00:49:51.207] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:49:51.848] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:49:51.849] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/programs/web-development-bootcamp","route":"/programs/[slug]"}
+[00:49:51.849] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs/web-development-bootcamp color: rgb(120, 120, 120) color: inherit {"dp":"/programs/[slug]","o":"http://localhost:3000/programs/web-development-bootcamp","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764508925262}
+[00:49:53.833] Browser WARN    Image with src "http://localhost:3000/logo1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:49:57.455] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764508931231}
+[00:50:22.022] Browser ERROR   ./components/programs.tsx:17:14
+Parsing ecmascript source code failed
+  15 |       description: "Perfect for high school students looking to learn programming fundamentals.",
+  16 |       features: ["Python Basics", "Web Development", "Project Portfolio", "Career Guidance"],
+> 17 |       image: "/school.png,
+     |              ^^^^^^^^^^^^^
+  18 |       slug: "school-coding-club",
+  19 |     },
+  20 |     {
+
+Unterminated string constant
+
+Import trace:
+  Server Component:
+    ./components/programs.tsx
+    ./app/page.tsx
+[00:50:31.206] Server  LOG      ✓ Compiled in 92ms
+[00:50:34.561] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:50:34.762] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:50:34.762] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/programs","route":"/programs"}
+[00:50:34.762] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764508968613}
+[00:50:40.280] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764508973919}
+[00:50:59.482] Server  LOG      ✓ Compiled in 88ms
+[00:51:06.376] Server  LOG      ✓ Compiled in 89ms
+[00:51:34.767] Server  LOG      ✓ Compiled in 84ms
+[00:51:39.767] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764509033607}
+[00:51:42.697] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs/school-coding-club color: rgb(120, 120, 120) color: inherit {"dp":"/programs/[slug]","o":"http://localhost:3000/programs/school-coding-club","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764509036510}
+[00:51:42.892] Browser WARN    Image with src "http://localhost:3000/logo1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:51:45.527] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764509039273}
+[00:52:55.633] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:52:55.799] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:52:55.799] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/programs","route":"/programs"}
+[00:52:55.799] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764509109650}
+[00:52:56.776] Browser WARN    Image with src "http://localhost:3000/logo1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:53:26.813] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:53:26.990] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:53:26.990] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/programs","route":"/programs"}
+[00:53:26.990] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764509140841}
+[00:53:27.905] Browser WARN    Image with src "http://localhost:3000/logo1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:53:30.912] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764509144571}
+[00:54:20.048] Server  LOG      ✓ Compiled in 97ms
+[00:54:54.301] Server  LOG      ✓ Compiled in 82ms
+[00:55:01.193] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:55:01.391] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:55:01.391] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:55:01.391] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764509235243}
+[00:55:23.620] Server  LOG      ✓ Compiled in 120ms
+[00:55:42.884] Server  LOG      ✓ Compiled in 75ms
+[00:56:00.691] Server  LOG      ✓ Compiled in 90ms
+[00:56:21.467] Server  LOG      ✓ Compiled in 70ms
+[00:56:29.952] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs/school-coding-club color: rgb(120, 120, 120) color: inherit {"dp":"/programs/[slug]","o":"http://localhost:3000/programs/school-coding-club","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764509323757}
+[00:56:30.100] Browser WARN    Image with src "http://localhost:3000/logo1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:56:34.710] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764509328554}
+[00:56:37.689] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs/school-coding-club color: rgb(120, 120, 120) color: inherit {"dp":"/programs/[slug]","o":"http://localhost:3000/programs/school-coding-club","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764509331503}
+[00:56:40.632] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764509334278}
+[00:58:07.980] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764509421382}
+[00:59:28.022] Server  LOG      ✓ Compiled in 103ms
+[00:59:32.639] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764509506431}
+[01:02:02.288] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764510326237}
+[01:02:07.763] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764510331845}
+[01:02:40.351] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/partnerships color: rgb(120, 120, 120) color: inherit {"dp":"/partnerships","o":"http://localhost:3000/partnerships","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764510364351}
+[01:02:41.801] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764510365883}
+[01:02:43.386] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/partnerships color: rgb(120, 120, 120) color: inherit {"dp":"/partnerships","o":"http://localhost:3000/partnerships","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764510367473}
+[01:02:44.349] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764510368433}
+[01:03:45.638] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs/school-coding-club color: rgb(120, 120, 120) color: inherit {"dp":"/programs/[slug]","o":"http://localhost:3000/programs/school-coding-club","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764510429724}
+[01:03:48.653] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764510432730}
+[01:04:40.988] Server  LOG      ✓ Compiled in 40ms
+[01:04:44.366] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs/school-coding-club color: rgb(120, 120, 120) color: inherit {"dp":"/programs/[slug]","o":"http://localhost:3000/programs/school-coding-club","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764510488445}
+[01:04:51.590] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:04:51.723] Browser WARN    Image with src "http://localhost:3000/logo1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:04:52.050] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[01:04:52.050] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/programs/school-coding-club","route":"/programs/[slug]"}
+[01:04:52.051] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs/school-coding-club color: rgb(120, 120, 120) color: inherit {"dp":"/programs/[slug]","o":"http://localhost:3000/programs/school-coding-club","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764510496139}
+[01:04:54.574] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764510498610}
+[01:05:04.003] Server  LOG      ✓ Compiled in 47ms
+[01:05:19.116] Server  LOG      ✓ Compiled in 51ms
+[01:05:29.796] Server  LOG      ✓ Compiled in 44ms
+[01:05:41.491] Server  LOG      ✓ Compiled in 51ms
+[01:05:50.005] Server  LOG      ✓ Compiled in 43ms
+[01:05:59.134] Server  LOG      ✓ Compiled in 40ms
+[01:06:04.539] Server  LOG      ✓ Compiled in 48ms
+[01:06:15.085] Server  LOG      ✓ Compiled in 30ms
+[01:08:19.488] Server  LOG      ✓ Compiled in 39ms
+[01:08:36.708] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764510720754}
+[01:09:31.443] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs/data-science color: rgb(120, 120, 120) color: inherit {"dp":"/programs/[slug]","o":"http://localhost:3000/programs/data-science","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764510775532}
+[01:09:40.416] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764510784481}
+[01:09:57.145] Server  LOG      ✓ Compiled in 56ms
+[01:10:03.204] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs/advanced-python color: rgb(120, 120, 120) color: inherit {"dp":"/programs/[slug]","o":"http://localhost:3000/programs/advanced-python","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764510807293}
+[01:10:15.132] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764510819219}
+[01:10:49.835] Server  LOG      ✓ Compiled in 47ms
+[01:10:57.053] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764510861002}
+[01:11:00.085] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs/advanced-python color: rgb(120, 120, 120) color: inherit {"dp":"/programs/[slug]","o":"http://localhost:3000/programs/advanced-python","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764510864174}
+[01:11:08.854] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764510872942}
+[01:11:11.962] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs/advanced-python color: rgb(120, 120, 120) color: inherit {"dp":"/programs/[slug]","o":"http://localhost:3000/programs/advanced-python","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764510876049}
+[01:11:49.131] Server  LOG      ✓ Compiled in 53ms
+[01:12:44.732] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764510968753}
+[01:12:47.039] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs/school-coding-club color: rgb(120, 120, 120) color: inherit {"dp":"/programs/[slug]","o":"http://localhost:3000/programs/school-coding-club","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764510971126}
+[01:13:08.253] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764510992341}
+[01:13:11.652] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs/advanced-python color: rgb(120, 120, 120) color: inherit {"dp":"/programs/[slug]","o":"http://localhost:3000/programs/advanced-python","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764510995741}
+[01:13:18.497] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764511002585}
+[01:13:20.014] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs/school-coding-club color: rgb(120, 120, 120) color: inherit {"dp":"/programs/[slug]","o":"http://localhost:3000/programs/school-coding-club","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764511004103}
+[01:13:34.952] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/about color: rgb(120, 120, 120) color: inherit {"dp":"/about","o":"http://localhost:3000/about","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764511019040}
+[01:13:39.082] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764511023124}
+[01:17:37.647] Server  LOG      ✓ Compiled in 97ms
+[01:26:05.062] Server  LOG      ✓ Compiled in 96ms
+[01:26:13.715] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:26:14.123] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[01:26:14.123] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[01:26:14.123] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764511778212}
+[01:27:01.156] Server  LOG      ✓ Compiled in 104ms
+[01:28:18.032] Server  LOG      ✓ Compiled in 87ms
+[01:28:24.287] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:28:24.484] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[01:28:24.484] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[01:28:24.484] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764511908541}
+[01:28:28.001] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/register color: rgb(120, 120, 120) color: inherit {"dp":"/register","o":"http://localhost:3000/register","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764511912053}
+[01:28:28.001] Browser WARN    Image with src "http://localhost:3000/logo1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:28:51.457] Server  LOG      ✓ Compiled in 95ms
+[01:29:37.719] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764511981470}
+[01:29:43.024] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764511987109}
+[01:29:51.952] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764511995799}
+[01:29:54.735] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/register color: rgb(120, 120, 120) color: inherit {"dp":"/register","o":"http://localhost:3000/register","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764511998822}
+[01:33:22.067] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764512206002}
+[01:33:26.011] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/register color: rgb(120, 120, 120) color: inherit {"dp":"/register","o":"http://localhost:3000/register","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764512210097}
+[01:33:28.883] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764512212903}
+[01:35:20.274] Server  LOG      ✓ Compiled in 216ms
+[01:35:52.768] Server  LOG      ✓ Compiled in 94ms
+[01:36:06.812] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:36:06.955] Browser WARN    Image with src "http://localhost:3000/logo1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:36:07.135] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[01:36:07.136] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/register","route":"/register"}
+[01:36:07.136] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/register color: rgb(120, 120, 120) color: inherit {"dp":"/register","o":"http://localhost:3000/register","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764512371224}
+[01:36:11.582] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:36:11.755] Browser WARN    Image with src "http://localhost:3000/logo1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:36:11.755] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[01:36:11.755] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[01:36:11.755] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764512375844}
+[01:36:23.043] Server  LOG      ✓ Compiled in 99ms
+[01:38:28.462] Server  LOG      ✓ Compiled in 197ms
+[01:38:40.972] Server  LOG      ✓ Compiled in 110ms
+[01:39:17.800] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:39:18.023] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[01:39:18.023] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[01:39:18.023] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764512562112}
+[01:40:40.218] Server  LOG      ✓ Compiled in 170ms
+[01:46:17.595] Server  ERROR    ⨯ ./app/page.tsx:13:1
+Module not found: Can't resolve '@/components/image-popup'
+  11 | import CTA from "@/components/cta"
+  12 | import Footer from "@/components/footer"
+> 13 | import ImagePopup from "@/components/image-popup" // import the popup component
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | export default function Home() {
+  16 |   return (
+
+Import map: aliased to relative './components/image-popup' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:46:17.596] Server  ERROR    ⨯ ./app/page.tsx:13:1
+Module not found: Can't resolve '@/components/image-popup'
+  11 | import CTA from "@/components/cta"
+  12 | import Footer from "@/components/footer"
+> 13 | import ImagePopup from "@/components/image-popup" // import the popup component
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | export default function Home() {
+  16 |   return (
+
+Import map: aliased to relative './components/image-popup' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:46:17.597] Server  ERROR    ⨯ ./app/page.tsx:13:1
+Module not found: Can't resolve '@/components/image-popup'
+  11 | import CTA from "@/components/cta"
+  12 | import Footer from "@/components/footer"
+> 13 | import ImagePopup from "@/components/image-popup" // import the popup component
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | export default function Home() {
+  16 |   return (
+
+Import map: aliased to relative './components/image-popup' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:46:17.598] Server  ERROR    ⨯ ./app/page.tsx:13:1
+Module not found: Can't resolve '@/components/image-popup'
+  11 | import CTA from "@/components/cta"
+  12 | import Footer from "@/components/footer"
+> 13 | import ImagePopup from "@/components/image-popup" // import the popup component
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | export default function Home() {
+  16 |   return (
+
+Import map: aliased to relative './components/image-popup' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:46:17.599] Server  ERROR    ⨯ ./app/page.tsx:13:1
+Module not found: Can't resolve '@/components/image-popup'
+  11 | import CTA from "@/components/cta"
+  12 | import Footer from "@/components/footer"
+> 13 | import ImagePopup from "@/components/image-popup" // import the popup component
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | export default function Home() {
+  16 |   return (
+
+Import map: aliased to relative './components/image-popup' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:46:17.599] Server  ERROR    ⨯ ./app/page.tsx:13:1
+Module not found: Can't resolve '@/components/image-popup'
+  11 | import CTA from "@/components/cta"
+  12 | import Footer from "@/components/footer"
+> 13 | import ImagePopup from "@/components/image-popup" // import the popup component
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | export default function Home() {
+  16 |   return (
+
+Import map: aliased to relative './components/image-popup' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:46:17.600] Server  ERROR    ⨯ ./app/page.tsx:13:1
+Module not found: Can't resolve '@/components/image-popup'
+  11 | import CTA from "@/components/cta"
+  12 | import Footer from "@/components/footer"
+> 13 | import ImagePopup from "@/components/image-popup" // import the popup component
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | export default function Home() {
+  16 |   return (
+
+Import map: aliased to relative './components/image-popup' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:46:17.601] Server  ERROR    ⨯ ./app/page.tsx:13:1
+Module not found: Can't resolve '@/components/image-popup'
+  11 | import CTA from "@/components/cta"
+  12 | import Footer from "@/components/footer"
+> 13 | import ImagePopup from "@/components/image-popup" // import the popup component
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | export default function Home() {
+  16 |   return (
+
+Import map: aliased to relative './components/image-popup' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:46:17.602] Server  ERROR    ⨯ ./app/page.tsx:13:1
+Module not found: Can't resolve '@/components/image-popup'
+  11 | import CTA from "@/components/cta"
+  12 | import Footer from "@/components/footer"
+> 13 | import ImagePopup from "@/components/image-popup" // import the popup component
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | export default function Home() {
+  16 |   return (
+
+Import map: aliased to relative './components/image-popup' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:46:17.602] Server  ERROR    ⨯ ./app/page.tsx:13:1
+Module not found: Can't resolve '@/components/image-popup'
+  11 | import CTA from "@/components/cta"
+  12 | import Footer from "@/components/footer"
+> 13 | import ImagePopup from "@/components/image-popup" // import the popup component
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | export default function Home() {
+  16 |   return (
+
+Import map: aliased to relative './components/image-popup' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:46:17.603] Server  ERROR    ⨯ ./app/page.tsx:13:1
+Module not found: Can't resolve '@/components/image-popup'
+  11 | import CTA from "@/components/cta"
+  12 | import Footer from "@/components/footer"
+> 13 | import ImagePopup from "@/components/image-popup" // import the popup component
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | export default function Home() {
+  16 |   return (
+
+Import map: aliased to relative './components/image-popup' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:46:17.604] Server  ERROR    ⨯ ./app/page.tsx:13:1
+Module not found: Can't resolve '@/components/image-popup'
+  11 | import CTA from "@/components/cta"
+  12 | import Footer from "@/components/footer"
+> 13 | import ImagePopup from "@/components/image-popup" // import the popup component
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | export default function Home() {
+  16 |   return (
+
+Import map: aliased to relative './components/image-popup' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:46:17.847] Browser ERROR   ./app/page.tsx:13:1
+Module not found: Can't resolve '@/components/image-popup'
+  11 | import CTA from "@/components/cta"
+  12 | import Footer from "@/components/footer"
+> 13 | import ImagePopup from "@/components/image-popup" // import the popup component
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | export default function Home() {
+  16 |   return (
+
+Import map: aliased to relative './components/image-popup' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[01:47:56.971] Server  ERROR    ⨯ ./app/page.tsx:13:1
+Module not found: Can't resolve '@/components/image-popup'
+  11 | import CTA from "@/components/cta"
+  12 | import Footer from "@/components/footer"
+> 13 | import ImagePopup from "@/components/image-popup" // import the popup component
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | export default function Home() {
+  16 |   return (
+
+Import map: aliased to relative './components/image-popup' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:47:56.972] Server  ERROR    ⨯ ./app/page.tsx:13:1
+Module not found: Can't resolve '@/components/image-popup'
+  11 | import CTA from "@/components/cta"
+  12 | import Footer from "@/components/footer"
+> 13 | import ImagePopup from "@/components/image-popup" // import the popup component
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | export default function Home() {
+  16 |   return (
+
+Import map: aliased to relative './components/image-popup' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:47:56.974] Server  ERROR    ⨯ ./app/page.tsx:13:1
+Module not found: Can't resolve '@/components/image-popup'
+  11 | import CTA from "@/components/cta"
+  12 | import Footer from "@/components/footer"
+> 13 | import ImagePopup from "@/components/image-popup" // import the popup component
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | export default function Home() {
+  16 |   return (
+
+Import map: aliased to relative './components/image-popup' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:47:56.974] Server  ERROR    ⨯ ./app/page.tsx:13:1
+Module not found: Can't resolve '@/components/image-popup'
+  11 | import CTA from "@/components/cta"
+  12 | import Footer from "@/components/footer"
+> 13 | import ImagePopup from "@/components/image-popup" // import the popup component
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | export default function Home() {
+  16 |   return (
+
+Import map: aliased to relative './components/image-popup' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:47:56.975] Server  ERROR    ⨯ ./app/page.tsx:13:1
+Module not found: Can't resolve '@/components/image-popup'
+  11 | import CTA from "@/components/cta"
+  12 | import Footer from "@/components/footer"
+> 13 | import ImagePopup from "@/components/image-popup" // import the popup component
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | export default function Home() {
+  16 |   return (
+
+Import map: aliased to relative './components/image-popup' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:47:56.976] Server  ERROR    ⨯ ./app/page.tsx:13:1
+Module not found: Can't resolve '@/components/image-popup'
+  11 | import CTA from "@/components/cta"
+  12 | import Footer from "@/components/footer"
+> 13 | import ImagePopup from "@/components/image-popup" // import the popup component
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | export default function Home() {
+  16 |   return (
+
+Import map: aliased to relative './components/image-popup' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:47:56.977] Server  ERROR    ⨯ ./app/page.tsx:13:1
+Module not found: Can't resolve '@/components/image-popup'
+  11 | import CTA from "@/components/cta"
+  12 | import Footer from "@/components/footer"
+> 13 | import ImagePopup from "@/components/image-popup" // import the popup component
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | export default function Home() {
+  16 |   return (
+
+Import map: aliased to relative './components/image-popup' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:47:56.978] Server  ERROR    ⨯ ./app/page.tsx:13:1
+Module not found: Can't resolve '@/components/image-popup'
+  11 | import CTA from "@/components/cta"
+  12 | import Footer from "@/components/footer"
+> 13 | import ImagePopup from "@/components/image-popup" // import the popup component
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | export default function Home() {
+  16 |   return (
+
+Import map: aliased to relative './components/image-popup' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:47:56.980] Server  ERROR    ⨯ ./app/page.tsx:13:1
+Module not found: Can't resolve '@/components/image-popup'
+  11 | import CTA from "@/components/cta"
+  12 | import Footer from "@/components/footer"
+> 13 | import ImagePopup from "@/components/image-popup" // import the popup component
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | export default function Home() {
+  16 |   return (
+
+Import map: aliased to relative './components/image-popup' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:47:56.982] Server  ERROR    ⨯ ./app/page.tsx:13:1
+Module not found: Can't resolve '@/components/image-popup'
+  11 | import CTA from "@/components/cta"
+  12 | import Footer from "@/components/footer"
+> 13 | import ImagePopup from "@/components/image-popup" // import the popup component
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | export default function Home() {
+  16 |   return (
+
+Import map: aliased to relative './components/image-popup' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:47:56.983] Server  ERROR    ⨯ ./app/page.tsx:13:1
+Module not found: Can't resolve '@/components/image-popup'
+  11 | import CTA from "@/components/cta"
+  12 | import Footer from "@/components/footer"
+> 13 | import ImagePopup from "@/components/image-popup" // import the popup component
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | export default function Home() {
+  16 |   return (
+
+Import map: aliased to relative './components/image-popup' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:47:56.983] Server  ERROR    ⨯ ./app/page.tsx:13:1
+Module not found: Can't resolve '@/components/image-popup'
+  11 | import CTA from "@/components/cta"
+  12 | import Footer from "@/components/footer"
+> 13 | import ImagePopup from "@/components/image-popup" // import the popup component
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | export default function Home() {
+  16 |   return (
+
+Import map: aliased to relative './components/image-popup' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:47:57.003] Server  LOG      ✓ Compiled in 108ms
+[01:47:57.847] Browser ERROR   ./app/page.tsx:13:1
+Module not found: Can't resolve '@/components/image-popup'
+  11 | import CTA from "@/components/cta"
+  12 | import Footer from "@/components/footer"
+> 13 | import ImagePopup from "@/components/image-popup" // import the popup component
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | export default function Home() {
+  16 |   return (
+
+Import map: aliased to relative './components/image-popup' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[01:48:58.847] Browser WARN    Image with src "http://localhost:3000/logo1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:54:24.857] Server  LOG      ✓ Compiled in 47ms
+[01:54:43.562] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:54:43.750] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[01:54:43.750] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[01:54:43.750] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764513487840}
+[01:55:02.438] Server  LOG      ✓ Compiled in 44ms
+[01:55:04.819] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:55:04.958] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[01:55:04.958] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[01:55:04.958] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764513509047}
+[01:55:32.641] Server  LOG      ✓ Compiled in 52ms
+[01:56:18.506] Server  LOG      ✓ Compiled in 28ms
+[01:56:25.804] Server  LOG      ✓ Compiled in 50ms
+[01:56:30.869] Server  LOG      ✓ Compiled in 45ms
+[01:56:35.920] Server  LOG      ✓ Compiled in 55ms
+[01:56:42.130] Server  LOG      ✓ Compiled in 104ms
+[01:56:45.451] Server  LOG      ✓ Compiled in 56ms
+[01:56:51.162] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/about color: rgb(120, 120, 120) color: inherit {"dp":"/about","o":"http://localhost:3000/about","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764513615240}
+[01:56:51.162] Browser WARN    Image with src "http://localhost:3000/logo1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:56:53.590] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764513617649}
+[01:57:50.490] Server  LOG      ✓ Compiled in 36ms
+[01:57:53.987] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764513678009}
+[01:57:55.863] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764513679951}
+[01:57:59.971] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:58:00.126] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[01:58:00.126] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[01:58:00.126] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764513684215}
+[01:58:02.977] Browser WARN    Image with src "http://localhost:3000/logo1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:58:07.739] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/about color: rgb(120, 120, 120) color: inherit {"dp":"/about","o":"http://localhost:3000/about","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764513691826}
+[01:58:08.977] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764513693051}
+[01:58:10.700] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764513694788}
+[01:59:43.400] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:59:43.566] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[01:59:43.566] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[01:59:43.566] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764513787656}
+[01:59:58.855] Browser WARN    Image with src "http://localhost:3000/logo1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[02:00:14.429] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764513818517}
+[02:00:16.853] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs/school-coding-club color: rgb(120, 120, 120) color: inherit {"dp":"/programs/[slug]","o":"http://localhost:3000/programs/school-coding-club","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764513820924}

@@ -20,7 +20,7 @@ export default function FAQ() {
     {
       question: "Is job placement guaranteed after the bootcamp?",
       answer:
-        "While we cannot guarantee placement, our bootcamp graduates have an 85% job placement rate within 3 months. We provide career coaching, resume review, and interview preparation.",
+        "While we cannot guarantee placement, our bootcamp graduates have an 85% job placement due to the skills they have earned. We provide career coaching, resume review, and interview preparation.",
     },
     {
       question: "Can I study part-time?",

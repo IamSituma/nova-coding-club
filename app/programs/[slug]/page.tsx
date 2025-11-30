@@ -1,12 +1,13 @@
 "use client"
 
-import { useState } from "react"
+import { useState, use } from "react"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import { Star } from "lucide-react"
 import Link from "next/link"
 
-export default function ProgramDetail({ params }: { params: { slug: string } }) {
+export default function ProgramDetail({ params }: { params: Promise<{ slug: string }> }) {
+  const resolvedParams = use(params)
   const [selectedLevel, setSelectedLevel] = useState("Beginner")
   const [carouselIndex, setCarouselIndex] = useState(0)
 
@@ -19,27 +20,9 @@ export default function ProgramDetail({ params }: { params: { slug: string } }) 
       image: "/students-coding-programming-learning.jpg",
       description: "Perfect for high school students looking to learn programming fundamentals.",
       fullDescription:
-        "If you like learning programming fundamentals and building projects with a supportive community, the School Coding Club is perfect for you.",
-      detailedDescription:
-        "Our School Coding Club brings together young developers to learn, build, and grow together. With hands-on projects and mentorship from experienced instructors, you'll develop skills that matter in today's tech industry.",
+        "If you like learning programming fundamentals and building projects with a supportive community, the School Coding Club is perfect for you. Our School Coding Club brings together young developers to learn, build, and grow together. With hands-on projects and mentorship from experienced instructors, you'll develop skills that matter in today's tech industry.",
       icon: "📚",
       credentials: [
-        {
-          title: "Python Programming Fundamentals",
-          description: "Master the basics of Python programming",
-          skills: "Python Basics, Variables & Data Types, Control Flow, Functions, Lists & Dictionaries",
-          rating: 4.8,
-          reviews: 342,
-          level: "Beginner",
-          duration: "3 weeks",
-          courses: [
-            { name: "Introduction to Python", image: "/course-1.jpg" },
-            { name: "Python Data Types & Operations", image: "/course-2.jpg" },
-            { name: "Functions & Modules", image: "/course-3.jpg" },
-            { name: "Working with Collections", image: "/course-4.jpg" },
-            { name: "Python Best Practices", image: "/course-5.jpg" },
-          ],
-        },
         {
           title: "Web Development Essentials",
           description: "Build your first web projects",
@@ -54,22 +37,6 @@ export default function ProgramDetail({ params }: { params: { slug: string } }) 
             { name: "JavaScript Essentials", image: "/course-3.jpg" },
             { name: "DOM & Interactions", image: "/course-4.jpg" },
             { name: "Responsive Web Design", image: "/course-5.jpg" },
-          ],
-        },
-        {
-          title: "Building Your Portfolio",
-          description: "Create projects and deploy them",
-          skills: "Project Development, Git & GitHub, Deployment, Portfolio Building, Resume Skills",
-          rating: 4.7,
-          reviews: 215,
-          level: "Beginner",
-          duration: "4 weeks",
-          courses: [
-            { name: "Project Planning & Execution", image: "/course-1.jpg" },
-            { name: "Git Version Control", image: "/course-2.jpg" },
-            { name: "GitHub Collaboration", image: "/course-3.jpg" },
-            { name: "Deployment & Hosting", image: "/course-4.jpg" },
-            { name: "Portfolio Showcase", image: "/course-5.jpg" },
           ],
         },
       ],
@@ -200,7 +167,7 @@ export default function ProgramDetail({ params }: { params: { slug: string } }) 
       ],
     },
     "advanced-python": {
-      title: "Advanced Python Programming",
+      title: "Python Programming",
       duration: "10 Weeks",
       price: "600,000",
       level: "Advanced",
@@ -387,7 +354,7 @@ export default function ProgramDetail({ params }: { params: { slug: string } }) 
     },
   }
 
-  const program = programs[params.slug]
+  const program = programs[resolvedParams.slug]
 
   if (!program) {
     return (
@@ -412,7 +379,7 @@ export default function ProgramDetail({ params }: { params: { slug: string } }) 
   return (
     <>
       <Navbar />
-      <main className="min-h-screen bg-background pt-24">
+      <main className="min-h-screen bg-background">
         {/* Hero Section - Left text, Right image */}
         <section
           className="py-32 md:py-40 px-4 bg-cover bg-center relative overflow-hidden"
@@ -505,7 +472,7 @@ export default function ProgramDetail({ params }: { params: { slug: string } }) 
                             Enroll for free
                           </button>
                           <a
-                            href={`https://wa.me/256700000000?text=${encodeURIComponent(`Hello! I'm interested in learning more about the "${credential.title}" credential under the "${program.title}" program. Could you please provide more details?`)}`}
+                            href={`https://wa.me/256741004466?text=${encodeURIComponent(`Hello! I'm interested in learning more about the "${credential.title}" credential under the "${program.title}" program. Could you please provide more details?`)}`}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="px-4 md:px-6 py-2 border border-green-500 text-green-600 rounded-lg font-semibold hover:bg-green-50 transition-all flex items-center gap-2 text-sm md:text-base"
@@ -513,7 +480,7 @@ export default function ProgramDetail({ params }: { params: { slug: string } }) 
                             <svg viewBox="0 0 24 24" className="w-4 h-4 md:w-5 md:h-5 fill-current">
                               <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
                             </svg>
-                            Contact us for more
+                            Contact us For More
                           </a>
                         </div>
                       </div>
