@@ -112,16 +112,6 @@ export default function Programs() {
             ))}
           </div>
 
-          {/* View More Button */}
-          <div className="flex justify-center">
-            <Link
-              href="/programs"
-              className="inline-block px-8 py-4 bg-white text-black border border-teal-600 rounded-full font-semibold hover:bg-white/10 transition-all duration-300"
-            >
-              Explore More Programs
-            </Link>
-          </div>
-
         </div>
       </div>
     </section>

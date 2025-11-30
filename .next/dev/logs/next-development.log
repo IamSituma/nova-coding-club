@@ -1,963 +1,378 @@
-[00:00:00.962] Server  LOG      ✓ Ready in 637ms
-[00:00:11.458] Server  LOG      ○ Compiling / ...
-[00:00:14.272] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:15.360] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:15.361] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:00:15.361] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764522742212}
-[00:00:23.633] Browser WARN    Image with src "http://localhost:3000/logo1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:27.332] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764522754600}
-[00:00:33.304] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs/school-coding-club color: rgb(120, 120, 120) color: inherit {"dp":"/programs/[slug]","o":"http://localhost:3000/programs/school-coding-club","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764522760783}
-[00:00:50.118] Server  ERROR    ⨯ ./app/programs/[slug]/page.tsx:9:1
-Module not found: Can't resolve '@/components/CTA'
-   7 | import { Star } from "lucide-react"
-   8 | import Link from "next/link"
->  9 | import CTA from "@/components/CTA"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  10 |
-  11 | interface ProgramDetailProps {
-  12 |   params: Promise<{ slug: string }>
+[00:00:00.931] Server  LOG      ✓ Ready in 608ms
+[00:00:08.795] Server  LOG      ○ Compiling /programs ...
+[00:00:10.278] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:10.691] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:10.691] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/programs","route":"/programs"}
+[00:00:10.691] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764526646235}
+[00:00:18.610] Browser WARN    Image with src "http://localhost:3000/logo1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:01:16.298] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/programs/page.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:01:16.606] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:16.826] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:01:16.826] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/programs","route":"/programs"}
+[00:01:16.826] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764526712277}
+[00:01:31.403] Server  LOG      ✓ Compiled in 105ms
+[00:01:31.507] Browser ERROR   ./app/programs/page.tsx:20:9
+Parsing ecmascript source code failed
+  18 |       description: "Perfect for high school students looking to learn programming fundamentals.",
+  19 |       features: [
+> 20 |         "Pyth,
+     |         ^^^^^^
+  21 |         "Web Development",
+  22 |         "Project Portfolio",
+  23 |         "Career Guidance",
 
-Import map: aliased to relative './components/CTA' inside of [project]/
-
-
-Import traces:
-  Client Component Browser:
-    ./app/programs/[slug]/page.tsx [Client Component Browser]
-    ./app/programs/[slug]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/programs/[slug]/page.tsx [Client Component SSR]
-    ./app/programs/[slug]/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:00:50.123] Server  ERROR    ⨯ ./app/programs/[slug]/page.tsx:9:1
-Module not found: Can't resolve '@/components/CTA'
-   7 | import { Star } from "lucide-react"
-   8 | import Link from "next/link"
->  9 | import CTA from "@/components/CTA"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  10 |
-  11 | interface ProgramDetailProps {
-  12 |   params: Promise<{ slug: string }>
-
-Import map: aliased to relative './components/CTA' inside of [project]/
-
+Unterminated string constant
 
 Import traces:
   Client Component Browser:
-    ./app/programs/[slug]/page.tsx [Client Component Browser]
-    ./app/programs/[slug]/page.tsx [Server Component]
+    ./app/programs/page.tsx [Client Component Browser]
+    ./app/programs/page.tsx [Server Component]
 
   Client Component SSR:
-    ./app/programs/[slug]/page.tsx [Client Component SSR]
-    ./app/programs/[slug]/page.tsx [Server Component]
+    ./app/programs/page.tsx [Client Component SSR]
+    ./app/programs/page.tsx [Server Component]
+[00:01:35.835] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/programs/page.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:01:36.150] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:36.353] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:01:36.353] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/programs","route":"/programs"}
+[00:01:36.353] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764526731846}
+[00:01:36.353] Browser WARN    Image with src "http://localhost:3000/logo1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:01:44.133] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs/school-coding-club color: rgb(120, 120, 120) color: inherit {"dp":"/programs/[slug]","o":"http://localhost:3000/programs/school-coding-club","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764526739674}
+[00:01:55.550] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764526750714}
+[00:01:58.277] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764526753727}
+[00:02:26.358] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/programs/page.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:02:26.826] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:27.298] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:02:27.298] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/programs","route":"/programs"}
+[00:02:27.298] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764526782597}
+[00:02:40.678] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs/school-coding-club color: rgb(120, 120, 120) color: inherit {"dp":"/programs/[slug]","o":"http://localhost:3000/programs/school-coding-club","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764526796205}
+[00:02:40.678] Browser WARN    Image with src "http://localhost:3000/logo1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:02:44.001] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764526799543}
+[00:02:45.314] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs/web-development-bootcamp color: rgb(120, 120, 120) color: inherit {"dp":"/programs/[slug]","o":"http://localhost:3000/programs/web-development-bootcamp","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764526800855}
+[00:02:49.127] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764526804669}
+[00:02:50.689] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs/mobile-development-bootcamp color: rgb(120, 120, 120) color: inherit {"dp":"/programs/[slug]","o":"http://localhost:3000/programs/mobile-development-bootcamp","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764526806230}
+[00:03:04.023] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764526819410}
+[00:03:15.429] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs/mobile-development-bootcamp color: rgb(120, 120, 120) color: inherit {"dp":"/programs/[slug]","o":"http://localhost:3000/programs/mobile-development-bootcamp","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764526830971}
+[00:03:30.874] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764526846247}
+[00:04:04.123] Server  LOG      ✓ Compiled in 88ms
+[00:04:10.243] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:10.382] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:04:10.382] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/programs","route":"/programs"}
+[00:04:10.382] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764526885925}
+[00:04:41.447] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:41.893] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:04:41.894] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/programs","route":"/programs"}
+[00:04:41.894] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764526917437}
+[00:10:51.105] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs/school-coding-club color: rgb(120, 120, 120) color: inherit {"dp":"/programs/[slug]","o":"http://localhost:3000/programs/school-coding-club","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764527286615}
+[00:10:51.105] Browser WARN    Image with src "http://localhost:3000/logo1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:10:55.168] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764527290552}
+[00:11:12.318] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs/school-coding-club color: rgb(120, 120, 120) color: inherit {"dp":"/programs/[slug]","o":"http://localhost:3000/programs/school-coding-club","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764527307673}
+[00:11:28.330] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764527323727}
+[00:11:37.775] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/contact color: rgb(120, 120, 120) color: inherit {"dp":"/contact","o":"http://localhost:3000/contact","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764527333204}
+[00:11:52.438] Server  LOG      ✓ Compiled in 242ms
+[00:11:52.484] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/programs/page.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:11:52.906] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:11:54.631] Browser WARN    Image with src "http://localhost:3000/logo1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:11:55.265] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:11:55.265] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/contact","route":"/contact"}
+[00:11:55.265] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/contact color: rgb(120, 120, 120) color: inherit {"dp":"/contact","o":"http://localhost:3000/contact","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764527350809}
+[00:11:56.910] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764527352215}
+[00:12:26.153] Server  LOG      ✓ Compiled in 90ms
+[00:12:31.028] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:12:31.216] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:12:31.216] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/programs","route":"/programs"}
+[00:12:31.216] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764527386750}
+[00:12:31.216] Browser WARN    Image with src "http://localhost:3000/logo1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:12:51.485] Server  LOG      ✓ Compiled in 99ms
+[00:13:40.997] Server  LOG      ✓ Compiled in 98ms
+[00:16:37.836] Server  LOG      ✓ Compiled in 98ms
+[00:19:54.960] Server  LOG      ✓ Compiled in 113ms
+[00:19:55.882] Server  ERROR    ⨯ Error: Failed to load chunk server/chunks/ssr/_1141eef8._.js from module [project]/node_modules/next/dist/esm/build/templates/app-page.js?page=/programs/page { GLOBAL_ERROR_MODULE => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_0 => "[project]/app/layout.tsx [app-rsc] (ecmascript, Next.js Server Component)", MODULE_1 => "[project]/node_modules/next/dist/client/components/builtin/not-found.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_2 => "[project]/node_modules/next/dist/client/components/builtin/forbidden.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_3 => "[project]/node_modules/next/dist/client/components/builtin/unauthorized.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_4 => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_5 => "[project]/app/programs/page.tsx [app-rsc] (ecmascript, Next.js Server Component)" } [app-rsc] (ecmascript) <locals>
+[00:19:56.494] Server  ERROR   Error: Failed to load chunk server/chunks/ssr/_1141eef8._.js from module [project]/node_modules/next/dist/esm/build/templates/app-page.js?page=/programs/page { GLOBAL_ERROR_MODULE => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_0 => "[project]/app/layout.tsx [app-rsc] (ecmascript, Next.js Server Component)", MODULE_1 => "[project]/node_modules/next/dist/client/components/builtin/not-found.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_2 => "[project]/node_modules/next/dist/client/components/builtin/forbidden.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_3 => "[project]/node_modules/next/dist/client/components/builtin/unauthorized.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_4 => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_5 => "[project]/app/programs/page.tsx [app-rsc] (ecmascript, Next.js Server Component)" } [app-rsc] (ecmascript) <locals>
+[00:19:57.109] Server  ERROR    ⨯ "unhandledRejection:" Error: Failed to load chunk server/chunks/ssr/_1141eef8._.js from module [project]/node_modules/next/dist/esm/build/templates/app-page.js?page=/programs/page { GLOBAL_ERROR_MODULE => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_0 => "[project]/app/layout.tsx [app-rsc] (ecmascript, Next.js Server Component)", MODULE_1 => "[project]/node_modules/next/dist/client/components/builtin/not-found.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_2 => "[project]/node_modules/next/dist/client/components/builtin/forbidden.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_3 => "[project]/node_modules/next/dist/client/components/builtin/unauthorized.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_4 => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_5 => "[project]/app/programs/page.tsx [app-rsc] (ecmascript, Next.js Server Component)" } [app-rsc] (ecmascript) <locals>
+[00:19:57.650] Server  ERROR    ⨯ "unhandledRejection: " Error: Failed to load chunk server/chunks/ssr/_1141eef8._.js from module [project]/node_modules/next/dist/esm/build/templates/app-page.js?page=/programs/page { GLOBAL_ERROR_MODULE => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_0 => "[project]/app/layout.tsx [app-rsc] (ecmascript, Next.js Server Component)", MODULE_1 => "[project]/node_modules/next/dist/client/components/builtin/not-found.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_2 => "[project]/node_modules/next/dist/client/components/builtin/forbidden.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_3 => "[project]/node_modules/next/dist/client/components/builtin/unauthorized.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_4 => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_5 => "[project]/app/programs/page.tsx [app-rsc] (ecmascript, Next.js Server Component)" } [app-rsc] (ecmascript) <locals>
+[00:19:57.856] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:19:58.301] Browser ERROR   uncaughtError: SyntaxError: Unexpected token '<'
+[00:21:26.129] Server  LOG      ✓ Compiled in 97ms
+[00:22:15.871] Server  LOG      ✓ Compiled in 93ms
+[00:22:41.723] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:22:42.071] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:22:42.071] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/programs","route":"/programs"}
+[00:22:42.071] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764527997611}
+[00:22:42.071] Browser WARN    Image with src "http://localhost:3000/logo1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:22:53.782] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/about color: rgb(120, 120, 120) color: inherit {"dp":"/about","o":"http://localhost:3000/about","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764528009323}
+[00:22:56.460] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764528011908}
+[00:24:18.118] Server  LOG      ✓ Compiled in 222ms
+[00:25:18.799] Server  LOG      ✓ Compiled in 78ms
+[00:25:22.045] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:25:22.192] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:25:22.192] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/register","route":"/register"}
+[00:25:22.192] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/register color: rgb(120, 120, 120) color: inherit {"dp":"/register","o":"http://localhost:3000/register","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764528157736}
+[00:25:45.392] Browser ERROR   ./app/programs/page.tsx:34:17
+Parsing ecmascript source code failed
+  32 |             >
+  33 |               Contact Us <ArrowRight size={20} />
+> 34 |           </div>
+     |                 ^
+> 35 |         </div>
+     | ^^^^^^^^^
+  36 |       </section>
+  37 |
+  38 |       <Programs />
 
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:00:50.128] Server  ERROR    ⨯ ./app/programs/[slug]/page.tsx:9:1
-Module not found: Can't resolve '@/components/CTA'
-   7 | import { Star } from "lucide-react"
-   8 | import Link from "next/link"
->  9 | import CTA from "@/components/CTA"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  10 |
-  11 | interface ProgramDetailProps {
-  12 |   params: Promise<{ slug: string }>
-
-Import map: aliased to relative './components/CTA' inside of [project]/
-
+Expected '</', got 'jsx text (
+        )'
 
 Import traces:
   Client Component Browser:
-    ./app/programs/[slug]/page.tsx [Client Component Browser]
-    ./app/programs/[slug]/page.tsx [Server Component]
+    ./app/programs/page.tsx [Client Component Browser]
+    ./app/programs/page.tsx [Server Component]
 
   Client Component SSR:
-    ./app/programs/[slug]/page.tsx [Client Component SSR]
-    ./app/programs/[slug]/page.tsx [Server Component]
+    ./app/programs/page.tsx [Client Component SSR]
+    ./app/programs/page.tsx [Server Component]
+[00:25:49.313] Server  ERROR    ⨯ ./app/programs/page.tsx:34:17
+Parsing ecmascript source code failed
+  32 |             >
+  33 |               Contact Us <ArrowRight size={20} />
+> 34 |           </div>
+     |                 ^
+> 35 |         </div>
+     | ^^^^^^^^^
+  36 |       </section>
+  37 |
+  38 |       <Programs />
 
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:00:50.132] Server  ERROR    ⨯ ./app/programs/[slug]/page.tsx:9:1
-Module not found: Can't resolve '@/components/CTA'
-   7 | import { Star } from "lucide-react"
-   8 | import Link from "next/link"
->  9 | import CTA from "@/components/CTA"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  10 |
-  11 | interface ProgramDetailProps {
-  12 |   params: Promise<{ slug: string }>
-
-Import map: aliased to relative './components/CTA' inside of [project]/
-
+Expected '</', got 'jsx text (
+        )'
 
 Import traces:
   Client Component Browser:
-    ./app/programs/[slug]/page.tsx [Client Component Browser]
-    ./app/programs/[slug]/page.tsx [Server Component]
+    ./app/programs/page.tsx [Client Component Browser]
+    ./app/programs/page.tsx [Server Component]
 
   Client Component SSR:
-    ./app/programs/[slug]/page.tsx [Client Component SSR]
-    ./app/programs/[slug]/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
+    ./app/programs/page.tsx [Client Component SSR]
+    ./app/programs/page.tsx [Server Component]
 
 
-[00:00:50.147] Server  ERROR    ⨯ ./app/programs/[slug]/page.tsx:9:1
-Module not found: Can't resolve '@/components/CTA'
-   7 | import { Star } from "lucide-react"
-   8 | import Link from "next/link"
->  9 | import CTA from "@/components/CTA"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  10 |
-  11 | interface ProgramDetailProps {
-  12 |   params: Promise<{ slug: string }>
+[00:25:49.431] Browser ERROR   ./app/programs/page.tsx:34:17
+Parsing ecmascript source code failed
+  32 |             >
+  33 |               Contact Us <ArrowRight size={20} />
+> 34 |           </div>
+     |                 ^
+> 35 |         </div>
+     | ^^^^^^^^^
+  36 |       </section>
+  37 |
+  38 |       <Programs />
 
-Import map: aliased to relative './components/CTA' inside of [project]/
-
+Expected '</', got 'jsx text (
+        )'
 
 Import traces:
   Client Component Browser:
-    ./app/programs/[slug]/page.tsx [Client Component Browser]
-    ./app/programs/[slug]/page.tsx [Server Component]
+    ./app/programs/page.tsx [Client Component Browser]
+    ./app/programs/page.tsx [Server Component]
 
   Client Component SSR:
-    ./app/programs/[slug]/page.tsx [Client Component SSR]
-    ./app/programs/[slug]/page.tsx [Server Component]
+    ./app/programs/page.tsx [Client Component SSR]
+    ./app/programs/page.tsx [Server Component]
+[00:25:50.303] Browser ERROR   ./app/programs/page.tsx:34:17
+Parsing ecmascript source code failed
+  32 |             >
+  33 |               Contact Us <ArrowRight size={20} />
+> 34 |           </div>
+     |                 ^
+> 35 |         </div>
+     | ^^^^^^^^^
+  36 |       </section>
+  37 |
+  38 |       <Programs />
 
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:00:50.151] Server  ERROR    ⨯ ./app/programs/[slug]/page.tsx:9:1
-Module not found: Can't resolve '@/components/CTA'
-   7 | import { Star } from "lucide-react"
-   8 | import Link from "next/link"
->  9 | import CTA from "@/components/CTA"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  10 |
-  11 | interface ProgramDetailProps {
-  12 |   params: Promise<{ slug: string }>
-
-Import map: aliased to relative './components/CTA' inside of [project]/
-
+Expected '</', got 'jsx text (
+        )'
 
 Import traces:
   Client Component Browser:
-    ./app/programs/[slug]/page.tsx [Client Component Browser]
-    ./app/programs/[slug]/page.tsx [Server Component]
+    ./app/programs/page.tsx [Client Component Browser]
+    ./app/programs/page.tsx [Server Component]
 
   Client Component SSR:
-    ./app/programs/[slug]/page.tsx [Client Component SSR]
-    ./app/programs/[slug]/page.tsx [Server Component]
+    ./app/programs/page.tsx [Client Component SSR]
+    ./app/programs/page.tsx [Server Component]
+[00:25:50.424] Browser ERROR   ./app/programs/page.tsx:34:17
+Parsing ecmascript source code failed
+  32 |             >
+  33 |               Contact Us <ArrowRight size={20} />
+> 34 |           </div>
+     |                 ^
+> 35 |         </div>
+     | ^^^^^^^^^
+  36 |       </section>
+  37 |
+  38 |       <Programs />
 
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:00:50.155] Server  ERROR    ⨯ ./app/programs/[slug]/page.tsx:9:1
-Module not found: Can't resolve '@/components/CTA'
-   7 | import { Star } from "lucide-react"
-   8 | import Link from "next/link"
->  9 | import CTA from "@/components/CTA"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  10 |
-  11 | interface ProgramDetailProps {
-  12 |   params: Promise<{ slug: string }>
-
-Import map: aliased to relative './components/CTA' inside of [project]/
-
+Expected '</', got 'jsx text (
+        )'
 
 Import traces:
   Client Component Browser:
-    ./app/programs/[slug]/page.tsx [Client Component Browser]
-    ./app/programs/[slug]/page.tsx [Server Component]
+    ./app/programs/page.tsx [Client Component Browser]
+    ./app/programs/page.tsx [Server Component]
 
   Client Component SSR:
-    ./app/programs/[slug]/page.tsx [Client Component SSR]
-    ./app/programs/[slug]/page.tsx [Server Component]
+    ./app/programs/page.tsx [Client Component SSR]
+    ./app/programs/page.tsx [Server Component]
+[00:25:51.134] Browser ERROR   uncaughtError: Error: ./app/programs/page.tsx:34:17
+Parsing ecmascript source code failed
+  32 |             >
+  33 |               Contact Us <ArrowRight size={20} />
+> 34 |           </div>
+     |                 ^
+> 35 |         </div>
+     | ^^^^^^^^^
+  36 |       </section>
+  37 |
+  38 |       <Programs />
 
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:00:50.160] Server  ERROR    ⨯ ./app/programs/[slug]/page.tsx:9:1
-Module not found: Can't resolve '@/components/CTA'
-   7 | import { Star } from "lucide-react"
-   8 | import Link from "next/link"
->  9 | import CTA from "@/components/CTA"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  10 |
-  11 | interface ProgramDetailProps {
-  12 |   params: Promise<{ slug: string }>
-
-Import map: aliased to relative './components/CTA' inside of [project]/
-
+Expected '</', got 'jsx text (
+        )'
 
 Import traces:
   Client Component Browser:
-    ./app/programs/[slug]/page.tsx [Client Component Browser]
-    ./app/programs/[slug]/page.tsx [Server Component]
+    ./app/programs/page.tsx [Client Component Browser]
+    ./app/programs/page.tsx [Server Component]
 
   Client Component SSR:
-    ./app/programs/[slug]/page.tsx [Client Component SSR]
-    ./app/programs/[slug]/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
+    ./app/programs/page.tsx [Client Component SSR]
+    ./app/programs/page.tsx [Server Component]
 
 
-[00:00:50.166] Server  ERROR    ⨯ ./app/programs/[slug]/page.tsx:9:1
-Module not found: Can't resolve '@/components/CTA'
-   7 | import { Star } from "lucide-react"
-   8 | import Link from "next/link"
->  9 | import CTA from "@/components/CTA"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  10 |
-  11 | interface ProgramDetailProps {
-  12 |   params: Promise<{ slug: string }>
+[00:25:51.336] Browser ERROR   ./app/programs/page.tsx:34:17
+Parsing ecmascript source code failed
+  32 |             >
+  33 |               Contact Us <ArrowRight size={20} />
+> 34 |           </div>
+     |                 ^
+> 35 |         </div>
+     | ^^^^^^^^^
+  36 |       </section>
+  37 |
+  38 |       <Programs />
 
-Import map: aliased to relative './components/CTA' inside of [project]/
-
+Expected '</', got 'jsx text (
+        )'
 
 Import traces:
   Client Component Browser:
-    ./app/programs/[slug]/page.tsx [Client Component Browser]
-    ./app/programs/[slug]/page.tsx [Server Component]
+    ./app/programs/page.tsx [Client Component Browser]
+    ./app/programs/page.tsx [Server Component]
 
   Client Component SSR:
-    ./app/programs/[slug]/page.tsx [Client Component SSR]
-    ./app/programs/[slug]/page.tsx [Server Component]
+    ./app/programs/page.tsx [Client Component SSR]
+    ./app/programs/page.tsx [Server Component]
+[00:25:51.336] Browser ERROR   ./app/programs/page.tsx:34:17
+Parsing ecmascript source code failed
+  32 |             >
+  33 |               Contact Us <ArrowRight size={20} />
+> 34 |           </div>
+     |                 ^
+> 35 |         </div>
+     | ^^^^^^^^^
+  36 |       </section>
+  37 |
+  38 |       <Programs />
 
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:00:50.170] Server  ERROR    ⨯ ./app/programs/[slug]/page.tsx:9:1
-Module not found: Can't resolve '@/components/CTA'
-   7 | import { Star } from "lucide-react"
-   8 | import Link from "next/link"
->  9 | import CTA from "@/components/CTA"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  10 |
-  11 | interface ProgramDetailProps {
-  12 |   params: Promise<{ slug: string }>
-
-Import map: aliased to relative './components/CTA' inside of [project]/
-
+Expected '</', got 'jsx text (
+        )'
 
 Import traces:
   Client Component Browser:
-    ./app/programs/[slug]/page.tsx [Client Component Browser]
-    ./app/programs/[slug]/page.tsx [Server Component]
+    ./app/programs/page.tsx [Client Component Browser]
+    ./app/programs/page.tsx [Server Component]
 
   Client Component SSR:
-    ./app/programs/[slug]/page.tsx [Client Component SSR]
-    ./app/programs/[slug]/page.tsx [Server Component]
+    ./app/programs/page.tsx [Client Component SSR]
+    ./app/programs/page.tsx [Server Component]
+[00:25:53.373] Browser ERROR   uncaughtError: Error: ./app/programs/page.tsx:34:17
+Parsing ecmascript source code failed
+  32 |             >
+  33 |               Contact Us <ArrowRight size={20} />
+> 34 |           </div>
+     |                 ^
+> 35 |         </div>
+     | ^^^^^^^^^
+  36 |       </section>
+  37 |
+  38 |       <Programs />
 
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:00:50.172] Server  ERROR    ⨯ ./app/programs/[slug]/page.tsx:9:1
-Module not found: Can't resolve '@/components/CTA'
-   7 | import { Star } from "lucide-react"
-   8 | import Link from "next/link"
->  9 | import CTA from "@/components/CTA"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  10 |
-  11 | interface ProgramDetailProps {
-  12 |   params: Promise<{ slug: string }>
-
-Import map: aliased to relative './components/CTA' inside of [project]/
-
+Expected '</', got 'jsx text (
+        )'
 
 Import traces:
   Client Component Browser:
-    ./app/programs/[slug]/page.tsx [Client Component Browser]
-    ./app/programs/[slug]/page.tsx [Server Component]
+    ./app/programs/page.tsx [Client Component Browser]
+    ./app/programs/page.tsx [Server Component]
 
   Client Component SSR:
-    ./app/programs/[slug]/page.tsx [Client Component SSR]
-    ./app/programs/[slug]/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
+    ./app/programs/page.tsx [Client Component SSR]
+    ./app/programs/page.tsx [Server Component]
 
 
-[00:00:50.174] Server  ERROR    ⨯ ./app/programs/[slug]/page.tsx:9:1
-Module not found: Can't resolve '@/components/CTA'
-   7 | import { Star } from "lucide-react"
-   8 | import Link from "next/link"
->  9 | import CTA from "@/components/CTA"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  10 |
-  11 | interface ProgramDetailProps {
-  12 |   params: Promise<{ slug: string }>
+[00:25:53.562] Browser ERROR   ./app/programs/page.tsx:34:17
+Parsing ecmascript source code failed
+  32 |             >
+  33 |               Contact Us <ArrowRight size={20} />
+> 34 |           </div>
+     |                 ^
+> 35 |         </div>
+     | ^^^^^^^^^
+  36 |       </section>
+  37 |
+  38 |       <Programs />
 
-Import map: aliased to relative './components/CTA' inside of [project]/
-
+Expected '</', got 'jsx text (
+        )'
 
 Import traces:
   Client Component Browser:
-    ./app/programs/[slug]/page.tsx [Client Component Browser]
-    ./app/programs/[slug]/page.tsx [Server Component]
+    ./app/programs/page.tsx [Client Component Browser]
+    ./app/programs/page.tsx [Server Component]
 
   Client Component SSR:
-    ./app/programs/[slug]/page.tsx [Client Component SSR]
-    ./app/programs/[slug]/page.tsx [Server Component]
+    ./app/programs/page.tsx [Client Component SSR]
+    ./app/programs/page.tsx [Server Component]
+[00:25:53.563] Browser ERROR   ./app/programs/page.tsx:34:17
+Parsing ecmascript source code failed
+  32 |             >
+  33 |               Contact Us <ArrowRight size={20} />
+> 34 |           </div>
+     |                 ^
+> 35 |         </div>
+     | ^^^^^^^^^
+  36 |       </section>
+  37 |
+  38 |       <Programs />
 
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:00:50.179] Server  LOG      ✓ Compiled in 182ms
-[00:00:50.360] Browser ERROR   ./app/programs/[slug]/page.tsx:4:10
-Ecmascript file had an error
-  2 |
-  3 | import { useState, use } from "react"
-> 4 | import { use } from "react"
-    |          ^^^
-  5 | import Navbar from "@/components/navbar"
-  6 | import Footer from "@/components/footer"
-  7 | import { Star } from "lucide-react"
-
-the name `use` is defined multiple times
+Expected '</', got 'jsx text (
+        )'
 
 Import traces:
   Client Component Browser:
-    ./app/programs/[slug]/page.tsx [Client Component Browser]
-    ./app/programs/[slug]/page.tsx [Server Component]
+    ./app/programs/page.tsx [Client Component Browser]
+    ./app/programs/page.tsx [Server Component]
 
   Client Component SSR:
-    ./app/programs/[slug]/page.tsx [Client Component SSR]
-    ./app/programs/[slug]/page.tsx [Server Component]
-[00:00:50.361] Browser ERROR   ./app/programs/[slug]/page.tsx:9:1
-Module not found: Can't resolve '@/components/CTA'
-   7 | import { Star } from "lucide-react"
-   8 | import Link from "next/link"
->  9 | import CTA from "@/components/CTA"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  10 |
-  11 | interface ProgramDetailProps {
-  12 |   params: Promise<{ slug: string }>
-
-Import map: aliased to relative './components/CTA' inside of [project]/
-
-Import traces:
-  Client Component Browser:
-    ./app/programs/[slug]/page.tsx [Client Component Browser]
-    ./app/programs/[slug]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/programs/[slug]/page.tsx [Client Component SSR]
-    ./app/programs/[slug]/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-[00:01:10.694] Server  ERROR    ⨯ ./app/programs/[slug]/page.tsx:8:1
-Module not found: Can't resolve '@/components/CTA'
-   6 | import { Star } from "lucide-react"
-   7 | import Link from "next/link"
->  8 | import CTA from "@/components/CTA"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 |
-  10 | interface ProgramDetailProps {
-  11 |   params: Promise<{ slug: string }>
-
-Import map: aliased to relative './components/CTA' inside of [project]/
-
-
-Import traces:
-  Client Component Browser:
-    ./app/programs/[slug]/page.tsx [Client Component Browser]
-    ./app/programs/[slug]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/programs/[slug]/page.tsx [Client Component SSR]
-    ./app/programs/[slug]/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:01:10.697] Server  ERROR    ⨯ ./app/programs/[slug]/page.tsx:8:1
-Module not found: Can't resolve '@/components/CTA'
-   6 | import { Star } from "lucide-react"
-   7 | import Link from "next/link"
->  8 | import CTA from "@/components/CTA"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 |
-  10 | interface ProgramDetailProps {
-  11 |   params: Promise<{ slug: string }>
-
-Import map: aliased to relative './components/CTA' inside of [project]/
-
-
-Import traces:
-  Client Component Browser:
-    ./app/programs/[slug]/page.tsx [Client Component Browser]
-    ./app/programs/[slug]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/programs/[slug]/page.tsx [Client Component SSR]
-    ./app/programs/[slug]/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:01:10.700] Server  ERROR    ⨯ ./app/programs/[slug]/page.tsx:8:1
-Module not found: Can't resolve '@/components/CTA'
-   6 | import { Star } from "lucide-react"
-   7 | import Link from "next/link"
->  8 | import CTA from "@/components/CTA"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 |
-  10 | interface ProgramDetailProps {
-  11 |   params: Promise<{ slug: string }>
-
-Import map: aliased to relative './components/CTA' inside of [project]/
-
-
-Import traces:
-  Client Component Browser:
-    ./app/programs/[slug]/page.tsx [Client Component Browser]
-    ./app/programs/[slug]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/programs/[slug]/page.tsx [Client Component SSR]
-    ./app/programs/[slug]/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:01:10.703] Server  ERROR    ⨯ ./app/programs/[slug]/page.tsx:8:1
-Module not found: Can't resolve '@/components/CTA'
-   6 | import { Star } from "lucide-react"
-   7 | import Link from "next/link"
->  8 | import CTA from "@/components/CTA"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 |
-  10 | interface ProgramDetailProps {
-  11 |   params: Promise<{ slug: string }>
-
-Import map: aliased to relative './components/CTA' inside of [project]/
-
-
-Import traces:
-  Client Component Browser:
-    ./app/programs/[slug]/page.tsx [Client Component Browser]
-    ./app/programs/[slug]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/programs/[slug]/page.tsx [Client Component SSR]
-    ./app/programs/[slug]/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:01:10.707] Server  ERROR    ⨯ ./app/programs/[slug]/page.tsx:8:1
-Module not found: Can't resolve '@/components/CTA'
-   6 | import { Star } from "lucide-react"
-   7 | import Link from "next/link"
->  8 | import CTA from "@/components/CTA"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 |
-  10 | interface ProgramDetailProps {
-  11 |   params: Promise<{ slug: string }>
-
-Import map: aliased to relative './components/CTA' inside of [project]/
-
-
-Import traces:
-  Client Component Browser:
-    ./app/programs/[slug]/page.tsx [Client Component Browser]
-    ./app/programs/[slug]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/programs/[slug]/page.tsx [Client Component SSR]
-    ./app/programs/[slug]/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:01:10.710] Server  ERROR    ⨯ ./app/programs/[slug]/page.tsx:8:1
-Module not found: Can't resolve '@/components/CTA'
-   6 | import { Star } from "lucide-react"
-   7 | import Link from "next/link"
->  8 | import CTA from "@/components/CTA"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 |
-  10 | interface ProgramDetailProps {
-  11 |   params: Promise<{ slug: string }>
-
-Import map: aliased to relative './components/CTA' inside of [project]/
-
-
-Import traces:
-  Client Component Browser:
-    ./app/programs/[slug]/page.tsx [Client Component Browser]
-    ./app/programs/[slug]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/programs/[slug]/page.tsx [Client Component SSR]
-    ./app/programs/[slug]/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:01:10.713] Server  ERROR    ⨯ ./app/programs/[slug]/page.tsx:8:1
-Module not found: Can't resolve '@/components/CTA'
-   6 | import { Star } from "lucide-react"
-   7 | import Link from "next/link"
->  8 | import CTA from "@/components/CTA"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 |
-  10 | interface ProgramDetailProps {
-  11 |   params: Promise<{ slug: string }>
-
-Import map: aliased to relative './components/CTA' inside of [project]/
-
-
-Import traces:
-  Client Component Browser:
-    ./app/programs/[slug]/page.tsx [Client Component Browser]
-    ./app/programs/[slug]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/programs/[slug]/page.tsx [Client Component SSR]
-    ./app/programs/[slug]/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:01:10.717] Server  ERROR    ⨯ ./app/programs/[slug]/page.tsx:8:1
-Module not found: Can't resolve '@/components/CTA'
-   6 | import { Star } from "lucide-react"
-   7 | import Link from "next/link"
->  8 | import CTA from "@/components/CTA"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 |
-  10 | interface ProgramDetailProps {
-  11 |   params: Promise<{ slug: string }>
-
-Import map: aliased to relative './components/CTA' inside of [project]/
-
-
-Import traces:
-  Client Component Browser:
-    ./app/programs/[slug]/page.tsx [Client Component Browser]
-    ./app/programs/[slug]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/programs/[slug]/page.tsx [Client Component SSR]
-    ./app/programs/[slug]/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:01:10.722] Server  ERROR    ⨯ ./app/programs/[slug]/page.tsx:8:1
-Module not found: Can't resolve '@/components/CTA'
-   6 | import { Star } from "lucide-react"
-   7 | import Link from "next/link"
->  8 | import CTA from "@/components/CTA"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 |
-  10 | interface ProgramDetailProps {
-  11 |   params: Promise<{ slug: string }>
-
-Import map: aliased to relative './components/CTA' inside of [project]/
-
-
-Import traces:
-  Client Component Browser:
-    ./app/programs/[slug]/page.tsx [Client Component Browser]
-    ./app/programs/[slug]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/programs/[slug]/page.tsx [Client Component SSR]
-    ./app/programs/[slug]/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:01:10.725] Server  ERROR    ⨯ ./app/programs/[slug]/page.tsx:8:1
-Module not found: Can't resolve '@/components/CTA'
-   6 | import { Star } from "lucide-react"
-   7 | import Link from "next/link"
->  8 | import CTA from "@/components/CTA"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 |
-  10 | interface ProgramDetailProps {
-  11 |   params: Promise<{ slug: string }>
-
-Import map: aliased to relative './components/CTA' inside of [project]/
-
-
-Import traces:
-  Client Component Browser:
-    ./app/programs/[slug]/page.tsx [Client Component Browser]
-    ./app/programs/[slug]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/programs/[slug]/page.tsx [Client Component SSR]
-    ./app/programs/[slug]/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:01:10.728] Server  ERROR    ⨯ ./app/programs/[slug]/page.tsx:8:1
-Module not found: Can't resolve '@/components/CTA'
-   6 | import { Star } from "lucide-react"
-   7 | import Link from "next/link"
->  8 | import CTA from "@/components/CTA"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 |
-  10 | interface ProgramDetailProps {
-  11 |   params: Promise<{ slug: string }>
-
-Import map: aliased to relative './components/CTA' inside of [project]/
-
-
-Import traces:
-  Client Component Browser:
-    ./app/programs/[slug]/page.tsx [Client Component Browser]
-    ./app/programs/[slug]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/programs/[slug]/page.tsx [Client Component SSR]
-    ./app/programs/[slug]/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:01:10.732] Server  ERROR    ⨯ ./app/programs/[slug]/page.tsx:8:1
-Module not found: Can't resolve '@/components/CTA'
-   6 | import { Star } from "lucide-react"
-   7 | import Link from "next/link"
->  8 | import CTA from "@/components/CTA"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 |
-  10 | interface ProgramDetailProps {
-  11 |   params: Promise<{ slug: string }>
-
-Import map: aliased to relative './components/CTA' inside of [project]/
-
-
-Import traces:
-  Client Component Browser:
-    ./app/programs/[slug]/page.tsx [Client Component Browser]
-    ./app/programs/[slug]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/programs/[slug]/page.tsx [Client Component SSR]
-    ./app/programs/[slug]/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:01:10.736] Server  LOG      ✓ Compiled in 118ms
-[00:01:10.839] Browser ERROR   ./app/programs/[slug]/page.tsx:8:1
-Module not found: Can't resolve '@/components/CTA'
-   6 | import { Star } from "lucide-react"
-   7 | import Link from "next/link"
->  8 | import CTA from "@/components/CTA"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 |
-  10 | interface ProgramDetailProps {
-  11 |   params: Promise<{ slug: string }>
-
-Import map: aliased to relative './components/CTA' inside of [project]/
-
-Import traces:
-  Client Component Browser:
-    ./app/programs/[slug]/page.tsx [Client Component Browser]
-    ./app/programs/[slug]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/programs/[slug]/page.tsx [Client Component SSR]
-    ./app/programs/[slug]/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-[00:01:13.566] Server  ERROR    ⨯ ./app/programs/[slug]/page.tsx:8:1
-Module not found: Can't resolve '@/components/CTA'
-   6 | import { Star } from "lucide-react"
-   7 | import Link from "next/link"
->  8 | import CTA from "@/components/CTA"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 |
-  10 | interface ProgramDetailProps {
-  11 |   params: Promise<{ slug: string }>
-
-Import map: aliased to relative './components/CTA' inside of [project]/
-
-
-Import traces:
-  Client Component Browser:
-    ./app/programs/[slug]/page.tsx [Client Component Browser]
-    ./app/programs/[slug]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/programs/[slug]/page.tsx [Client Component SSR]
-    ./app/programs/[slug]/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:01:13.688] Browser ERROR   ./app/programs/[slug]/page.tsx:8:1
-Module not found: Can't resolve '@/components/CTA'
-   6 | import { Star } from "lucide-react"
-   7 | import Link from "next/link"
->  8 | import CTA from "@/components/CTA"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 |
-  10 | interface ProgramDetailProps {
-  11 |   params: Promise<{ slug: string }>
-
-Import map: aliased to relative './components/CTA' inside of [project]/
-
-Import traces:
-  Client Component Browser:
-    ./app/programs/[slug]/page.tsx [Client Component Browser]
-    ./app/programs/[slug]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/programs/[slug]/page.tsx [Client Component SSR]
-    ./app/programs/[slug]/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-[00:01:14.622] Browser ERROR   ./app/programs/[slug]/page.tsx:8:1
-Module not found: Can't resolve '@/components/CTA'
-   6 | import { Star } from "lucide-react"
-   7 | import Link from "next/link"
->  8 | import CTA from "@/components/CTA"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 |
-  10 | interface ProgramDetailProps {
-  11 |   params: Promise<{ slug: string }>
-
-Import map: aliased to relative './components/CTA' inside of [project]/
-
-Import traces:
-  Client Component Browser:
-    ./app/programs/[slug]/page.tsx [Client Component Browser]
-    ./app/programs/[slug]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/programs/[slug]/page.tsx [Client Component SSR]
-    ./app/programs/[slug]/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-[00:01:14.751] Browser ERROR   ./app/programs/[slug]/page.tsx:8:1
-Module not found: Can't resolve '@/components/CTA'
-   6 | import { Star } from "lucide-react"
-   7 | import Link from "next/link"
->  8 | import CTA from "@/components/CTA"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 |
-  10 | interface ProgramDetailProps {
-  11 |   params: Promise<{ slug: string }>
-
-Import map: aliased to relative './components/CTA' inside of [project]/
-
-Import traces:
-  Client Component Browser:
-    ./app/programs/[slug]/page.tsx [Client Component Browser]
-    ./app/programs/[slug]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/programs/[slug]/page.tsx [Client Component SSR]
-    ./app/programs/[slug]/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-[00:01:15.605] Browser ERROR   uncaughtError: Error: ./app/programs/[slug]/page.tsx:8:1
-Module not found: Can't resolve '@/components/CTA'
-   6 | import { Star } from "lucide-react"
-   7 | import Link from "next/link"
->  8 | import CTA from "@/components/CTA"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 |
-  10 | interface ProgramDetailProps {
-  11 |   params: Promise<{ slug: string }>
-
-Import map: aliased to relative './components/CTA' inside of [project]/
-
-
-Import traces:
-  Client Component Browser:
-    ./app/programs/[slug]/page.tsx [Client Component Browser]
-    ./app/programs/[slug]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/programs/[slug]/page.tsx [Client Component SSR]
-    ./app/programs/[slug]/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:01:15.794] Browser ERROR   ./app/programs/[slug]/page.tsx:8:1
-Module not found: Can't resolve '@/components/CTA'
-   6 | import { Star } from "lucide-react"
-   7 | import Link from "next/link"
->  8 | import CTA from "@/components/CTA"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 |
-  10 | interface ProgramDetailProps {
-  11 |   params: Promise<{ slug: string }>
-
-Import map: aliased to relative './components/CTA' inside of [project]/
-
-Import traces:
-  Client Component Browser:
-    ./app/programs/[slug]/page.tsx [Client Component Browser]
-    ./app/programs/[slug]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/programs/[slug]/page.tsx [Client Component SSR]
-    ./app/programs/[slug]/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-[00:01:15.795] Browser ERROR   ./app/programs/[slug]/page.tsx:8:1
-Module not found: Can't resolve '@/components/CTA'
-   6 | import { Star } from "lucide-react"
-   7 | import Link from "next/link"
->  8 | import CTA from "@/components/CTA"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 |
-  10 | interface ProgramDetailProps {
-  11 |   params: Promise<{ slug: string }>
-
-Import map: aliased to relative './components/CTA' inside of [project]/
-
-Import traces:
-  Client Component Browser:
-    ./app/programs/[slug]/page.tsx [Client Component Browser]
-    ./app/programs/[slug]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/programs/[slug]/page.tsx [Client Component SSR]
-    ./app/programs/[slug]/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-[00:01:34.439] Server  LOG      ✓ Compiled in 116ms
-[00:01:35.268] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:35.446] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:01:35.446] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/programs/school-coding-club","route":"/programs/[slug]"}
-[00:01:35.446] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs/school-coding-club color: rgb(120, 120, 120) color: inherit {"dp":"/programs/[slug]","o":"http://localhost:3000/programs/school-coding-club","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764522822926}
-[00:01:36.268] Browser WARN    Image with src "http://localhost:3000/logo1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:02:24.429] Server  LOG      ✓ Compiled in 86ms
-[00:02:40.879] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764522887983}
-[00:02:51.776] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/about color: rgb(120, 120, 120) color: inherit {"dp":"/about","o":"http://localhost:3000/about","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764522899250}
-[00:02:58.393] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764522905790}
-[00:03:04.288] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs/school-coding-club color: rgb(120, 120, 120) color: inherit {"dp":"/programs/[slug]","o":"http://localhost:3000/programs/school-coding-club","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764522911766}
-[00:03:26.178] Server  LOG      ✓ Compiled in 71ms
-[00:07:17.678] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764523164933}
-[00:07:20.342] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs/web-development-bootcamp color: rgb(120, 120, 120) color: inherit {"dp":"/programs/[slug]","o":"http://localhost:3000/programs/web-development-bootcamp","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764523167821}
-[00:07:23.559] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764523171037}
-[00:07:25.553] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs/mobile-development-bootcamp color: rgb(120, 120, 120) color: inherit {"dp":"/programs/[slug]","o":"http://localhost:3000/programs/mobile-development-bootcamp","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764523173032}
-[00:07:27.609] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764523175086}
-[00:07:47.126] Server  LOG      ✓ Compiled in 120ms
-[00:07:47.360] Browser ERROR   ./app/programs/[slug]/page.tsx:4:10
-Ecmascript file had an error
-  2 |
-  3 | import { useState, use } from "react"
-> 4 | import { use } from "react"
-    |          ^^^
-  5 | import Navbar from "@/components/navbar"
-  6 | import Footer from "@/components/footer"
-  7 | import CTA from "@/components/cta"
-
-the name `use` is defined multiple times
-
-Import traces:
-  Client Component Browser:
-    ./app/programs/[slug]/page.tsx [Client Component Browser]
-    ./app/programs/[slug]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/programs/[slug]/page.tsx [Client Component SSR]
-    ./app/programs/[slug]/page.tsx [Server Component]
-[00:07:56.325] Server  LOG      ✓ Compiled in 88ms
-[00:08:00.180] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs/school-coding-club color: rgb(120, 120, 120) color: inherit {"dp":"/programs/[slug]","o":"http://localhost:3000/programs/school-coding-club","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764523207658}
-[00:08:32.051] Server  LOG      ✓ Compiled in 96ms
-[00:09:12.218] Server  LOG      ✓ Compiled in 229ms
-[00:09:23.215] Server  LOG      ✓ Compiled in 114ms
-[00:09:28.670] Server  LOG      ✓ Compiled in 91ms
-[00:09:32.986] Server  LOG      ✓ Compiled in 189ms
-[00:11:09.163] Server  LOG      ✓ Compiled in 208ms
-[00:11:54.862] Server  LOG      ✓ Compiled in 211ms
-[00:12:18.821] Server  LOG      ✓ Compiled in 223ms
-[00:12:22.708] Server  LOG      ✓ Compiled in 171ms
-[00:12:26.074] Server  LOG      ✓ Compiled in 203ms
-[00:12:33.699] Server  LOG      ✓ Compiled in 135ms
-[00:12:36.691] Server  LOG      ✓ Compiled in 53ms
-[00:12:44.436] Server  LOG      ✓ Compiled in 157ms
-[00:13:02.307] Server  LOG      ✓ Compiled in 83ms
-[00:14:13.141] Server  LOG      ✓ Compiled in 59ms
-[00:17:34.390] Server  LOG      ✓ Compiled in 89ms
-[00:17:52.233] Server  LOG      ✓ Compiled in 71ms
-[00:19:21.062] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764523888361}
-[00:21:15.974] Server  LOG      ✓ Compiled in 108ms
-[00:21:21.212] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764524008592}
-[00:21:22.955] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs/school-coding-club color: rgb(120, 120, 120) color: inherit {"dp":"/programs/[slug]","o":"http://localhost:3000/programs/school-coding-club","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764524010433}
-[00:26:44.419] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764524331898}
-[00:27:25.093] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs/advanced-python color: rgb(120, 120, 120) color: inherit {"dp":"/programs/[slug]","o":"http://localhost:3000/programs/advanced-python","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764524372572}
-[00:27:26.968] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764524374446}
-[00:29:55.424] Server  LOG      ✓ Compiled in 96ms
-[00:32:12.077] Server  LOG      ✓ Compiled in 98ms
-[00:37:46.128] Server  LOG      ✓ Compiled in 109ms
-[00:38:10.169] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs/school-coding-club color: rgb(120, 120, 120) color: inherit {"dp":"/programs/[slug]","o":"http://localhost:3000/programs/school-coding-club","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764525017648}
-[00:39:37.469] Server  LOG      ✓ Compiled in 91ms
-[00:40:45.823] Server  LOG      ✓ Compiled in 95ms
-[00:40:46.360] Browser ERROR   ./app/programs/[slug]/page.tsx:4:10
-Ecmascript file had an error
-  2 |
-  3 | import { useState, use } from "react"
-> 4 | import { use } from "react"
-    |          ^^^
-  5 | import Navbar from "@/components/navbar"
-  6 | import Footer from "@/components/footer"
-  7 | import CTA from "@/components/cta"
-
-the name `use` is defined multiple times
-
-Import traces:
-  Client Component Browser:
-    ./app/programs/[slug]/page.tsx [Client Component Browser]
-    ./app/programs/[slug]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/programs/[slug]/page.tsx [Client Component SSR]
-    ./app/programs/[slug]/page.tsx [Server Component]
-[00:40:59.327] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764525186806}
-[00:41:01.756] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs/web-development-bootcamp color: rgb(120, 120, 120) color: inherit {"dp":"/programs/[slug]","o":"http://localhost:3000/programs/web-development-bootcamp","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764525189233}
-[00:41:09.202] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764525196476}
-[00:41:11.953] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs/mobile-development-bootcamp color: rgb(120, 120, 120) color: inherit {"dp":"/programs/[slug]","o":"http://localhost:3000/programs/mobile-development-bootcamp","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764525199431}
-[00:41:25.675] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764525212787}
-[00:54:15.581] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764525982845}
-[00:54:19.477] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs/ui-ux-design color: rgb(120, 120, 120) color: inherit {"dp":"/programs/[slug]","o":"http://localhost:3000/programs/ui-ux-design","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764525986956}
-[00:54:26.051] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764525993531}
-[00:54:32.984] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs/advanced-python color: rgb(120, 120, 120) color: inherit {"dp":"/programs/[slug]","o":"http://localhost:3000/programs/advanced-python","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764526000462}
-[00:54:35.372] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764526002851}
-[00:54:43.433] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs/advanced-python color: rgb(120, 120, 120) color: inherit {"dp":"/programs/[slug]","o":"http://localhost:3000/programs/advanced-python","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764526010913}
-[00:54:46.476] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764526013798}
-[00:54:49.735] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs/python-programming color: rgb(120, 120, 120) color: inherit {"dp":"/programs/[slug]","o":"http://localhost:3000/programs/python-programming","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764526017213}
-[00:54:59.692] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764526027171}
-[00:56:24.716] Server  LOG      ✓ Compiled in 79ms
-[00:56:33.059] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:56:33.254] Browser WARN    Image with src "http://localhost:3000/logo1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:56:33.398] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:56:33.398] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/programs","route":"/programs"}
-[00:56:33.398] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764526120879}
-[00:58:44.997] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs/school-coding-club color: rgb(120, 120, 120) color: inherit {"dp":"/programs/[slug]","o":"http://localhost:3000/programs/school-coding-club","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764526252476}
-[00:58:53.421] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764526260899}
-[00:59:07.810] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs/web-development-bootcamp color: rgb(120, 120, 120) color: inherit {"dp":"/programs/[slug]","o":"http://localhost:3000/programs/web-development-bootcamp","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764526275289}
-[00:59:33.328] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764526300587}
-[01:00:48.275] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764526375610}
-[01:01:19.110] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:01:19.856] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[01:01:19.856] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[01:01:19.856] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764526407336}
-[01:03:07.918] Server  LOG      ✓ Compiled in 222ms
-[01:03:14.249] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764526521505}
-[01:03:21.779] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/about color: rgb(120, 120, 120) color: inherit {"dp":"/about","o":"http://localhost:3000/about","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764526529232}
-[01:03:22.708] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764526530186}
-[01:03:48.933] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:03:49.092] Browser WARN    Image with src "http://localhost:3000/logo1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[01:03:49.093] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[01:03:49.093] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/programs","route":"/programs"}
-[01:03:49.093] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764526556573}
+    ./app/programs/page.tsx [Client Component SSR]
+    ./app/programs/page.tsx [Server Component]
+[00:26:09.424] Server  LOG      ✓ Compiled in 81ms
+[00:26:09.769] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:26:09.930] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:26:09.930] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/about","route":"/about"}
+[00:26:09.930] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/about color: rgb(120, 120, 120) color: inherit {"dp":"/about","o":"http://localhost:3000/about","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764528205469}
+[00:26:09.930] Browser WARN    Image with src "http://localhost:3000/logo1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:26:12.528] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764528207867}
+[00:26:16.422] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/contact color: rgb(120, 120, 120) color: inherit {"dp":"/contact","o":"http://localhost:3000/contact","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764528211963}
+[00:26:20.441] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764528215648}

@@ -1305,6 +1305,14 @@
     min-height: 400px;
   }
 
+  .min-h-\[500px\] {
+    min-height: 500px;
+  }
+
+  .min-h-\[600px\] {
+    min-height: 600px;
+  }
+
   .min-h-\[650px\] {
     min-height: 650px;
   }
@@ -2191,26 +2199,6 @@
     }
   }
 
-  .bg-black\/80 {
-    background-color: #000c;
-  }
-
-  @supports (color: color-mix(in lab, red, red)) {
-    .bg-black\/80 {
-      background-color: color-mix(in oklab, var(--color-black) 80%, transparent);
-    }
-  }
-
-  .bg-black\/90 {
-    background-color: #000000e6;
-  }
-
-  @supports (color: color-mix(in lab, red, red)) {
-    .bg-black\/90 {
-      background-color: color-mix(in oklab, var(--color-black) 90%, transparent);
-    }
-  }
-
   .bg-border {
     background-color: var(--border);
   }
@@ -2604,6 +2592,11 @@
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
 
+  .from-teal-700 {
+    --tw-gradient-from: var(--color-teal-700);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+
   .via-\[\#000000\]\/40 {
     --tw-gradient-via: #0006;
     --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
@@ -2714,6 +2707,11 @@
   }
 
   .to-secondary\/5 {
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+
+  .to-teal-500 {
+    --tw-gradient-to: var(--color-teal-500);
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
 
@@ -2894,6 +2892,10 @@
     padding-block: calc(var(--spacing) * 20);
   }
 
+  .py-24 {
+    padding-block: calc(var(--spacing) * 24);
+  }
+
   .py-32 {
     padding-block: calc(var(--spacing) * 32);
   }
@@ -3000,10 +3002,6 @@
 
   .text-left {
     text-align: left;
-  }
-
-  .text-right {
-    text-align: right;
   }
 
   .align-middle {
@@ -3309,6 +3307,10 @@
     .text-sidebar-foreground\/70 {
       color: color-mix(in oklab, var(--sidebar-foreground) 70%, transparent);
     }
+  }
+
+  .text-teal-700 {
+    color: var(--color-teal-700);
   }
 
   .text-white {
@@ -4427,18 +4429,6 @@
     @supports (color: color-mix(in lab, red, red)) {
       .hover\:shadow-\[\#009696\]\/50:hover {
         --tw-shadow-color: color-mix(in oklab, lab(55.7993% -34.0981 -10.071 / .5) var(--tw-shadow-alpha), transparent);
-      }
-    }
-  }
-
-  @media (hover: hover) {
-    .hover\:shadow-primary\/30:hover {
-      --tw-shadow-color: var(--primary);
-    }
-
-    @supports (color: color-mix(in lab, red, red)) {
-      .hover\:shadow-primary\/30:hover {
-        --tw-shadow-color: color-mix(in oklab, color-mix(in oklab, var(--primary) 30%, transparent) var(--tw-shadow-alpha), transparent);
       }
     }
   }
@@ -5996,12 +5986,6 @@
   }
 
   @media (min-width: 48rem) {
-    .md\:h-\[800px\] {
-      height: 800px;
-    }
-  }
-
-  @media (min-width: 48rem) {
     .md\:h-auto {
       height: auto;
     }
@@ -6028,6 +6012,18 @@
   @media (min-width: 48rem) {
     .md\:min-h-\[500px\] {
       min-height: 500px;
+    }
+  }
+
+  @media (min-width: 48rem) {
+    .md\:min-h-\[650px\] {
+      min-height: 650px;
+    }
+  }
+
+  @media (min-width: 48rem) {
+    .md\:min-h-\[700px\] {
+      min-height: 700px;
     }
   }
 
@@ -6268,12 +6264,6 @@
   @media (min-width: 48rem) {
     .md\:px-10 {
       padding-inline: calc(var(--spacing) * 10);
-    }
-  }
-
-  @media (min-width: 48rem) {
-    .md\:px-16 {
-      padding-inline: calc(var(--spacing) * 16);
     }
   }
 
@@ -6543,24 +6533,6 @@
   @media (min-width: 64rem) {
     .lg\:px-8 {
       padding-inline: calc(var(--spacing) * 8);
-    }
-  }
-
-  @media (min-width: 64rem) {
-    .lg\:px-40 {
-      padding-inline: calc(var(--spacing) * 40);
-    }
-  }
-
-  @media (min-width: 64rem) {
-    .lg\:px-60 {
-      padding-inline: calc(var(--spacing) * 60);
-    }
-  }
-
-  @media (min-width: 64rem) {
-    .lg\:px-80 {
-      padding-inline: calc(var(--spacing) * 80);
     }
   }
 
