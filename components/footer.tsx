@@ -68,23 +68,23 @@ export default function Footer() {
             <h4 className="font-display font-semibold text-white text-sm md:text-base">Programs</h4>
             <ul className="space-y-1.5 md:space-y-2 text-xs md:text-sm">
               <li>
-                <Link href="/programs" className="text-white/80 hover:text-white transition-colors">
+                <Link href="/programs/school-coding-club" className="text-white/80 hover:text-white transition-colors">
                   School Coding Club
                 </Link>
               </li>
               <li>
-                <Link href="/programs" className="text-white/80 hover:text-white transition-colors">
+                <Link href="/programs/web-development-bootcamp" className="text-white/80 hover:text-white transition-colors">
                   Web Dev Bootcamp
                 </Link>
               </li>
               <li>
-                <Link href="/programs" className="text-white/80 hover:text-white transition-colors">
+                <Link href="/programs/mobile-development-bootcamp" className="text-white/80 hover:text-white transition-colors">
                   Mobile Dev Bootcamp
                 </Link>
               </li>
               <li>
-                <Link href="/programs" className="text-white/80 hover:text-white transition-colors">
-                  Data Science
+                <Link href="/programs/ui-ux-design" className="text-white/80 hover:text-white transition-colors">
+                  UI/UX Design
                 </Link>
               </li>
             </ul>

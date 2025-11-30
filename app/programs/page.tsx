@@ -104,17 +104,20 @@ export default function ProgramsPage() {
   return (
     <>
       <Navbar />
-      <main className="min-h-screen bg-background pt-24">
+      <main className="min-h-screen bg-background pt-6 md:pt-8">
         {/* Hero */}
-        <section className="py-20 md:py-28 px-4">
-          <div className="max-w-4xl mx-auto">
-            <h1 className="font-display font-bold text-4xl md:text-6xl mb-6 text-foreground">Our Programs</h1>
-            <p className="text-xl text-foreground/70 leading-relaxed">
-              Choose from our comprehensive range of coding programs designed for every skill level. From
-              school-friendly clubs to intensive bootcamps, we have something for everyone.
-            </p>
-          </div>
-        </section>
+        <section className="py-12 md:py-24 px-4 bg-teal-100">
+  <div className="max-w-6xl mx-auto">
+    <h1 className="font-display font-bold text-4xl md:text-2xl mb-6 text-foreground">
+      Our Programs
+    </h1>
+    <p className="text-lg text-foreground/70 leading-relaxed">
+      Choose from our comprehensive range of coding programs designed for every skill level. From
+      school-friendly clubs to intensive bootcamps, we have something for everyone.
+    </p>
+  </div>
+</section>
+
 
         {/* Filter Section */}
         <section className="py-12 px-4 bg-secondary/5 border-b border-border">

@@ -4,7 +4,6 @@ import { useState } from "react"
 import { ArrowRight } from "lucide-react"
 import Link from "next/link"
 
-
 export default function Programs() {
   const [showMore, setShowMore] = useState(false)
 
@@ -14,7 +13,7 @@ export default function Programs() {
       duration: "12 Weeks",
       price: "250,000",
       description: "Perfect for high school students looking to learn programming fundamentals.",
-      features: ["Python Basics", "Web Development", "Project Portfolio", "Career Guidance"],
+      features: ["Web Development", "Project Portfolio", "Career Guidance"],
       image: "/school.png",
       slug: "school-coding-club",
     },
@@ -42,14 +41,18 @@ export default function Programs() {
     <section className="py-16 md:py-24 px-4 bg-background">
       <div className="max-w-7xl mx-auto">
         <div className="space-y-8 md:space-y-12">
+
+          {/* Header */}
           <div>
-            <h2 className="font-display font-bold text-2xl md:text-4xl mb-4 text-foreground">Our Programs</h2>
+            <h2 className="font-display font-bold text-2xl md:text-4xl mb-4 text-foreground">
+              Our Programs
+            </h2>
             <p className="text-foreground/60 text-base md:text-lg">
               Choose from our carefully designed programs tailored to your skill level and goals.
             </p>
           </div>
 
-          {/* Main Programs */}
+          {/* Program Cards */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {programs.map((program, idx) => (
               <Link
@@ -62,19 +65,45 @@ export default function Programs() {
                   alt={program.title}
                   className="w-full h-40 md:h-48 object-cover hover:scale-110 transition-transform duration-300"
                 />
+
                 <div className="p-4 md:p-6 flex flex-col flex-1">
-                  <h3 className="font-display font-bold text-lg md:text-xl mb-2 text-foreground">{program.title}</h3>
+                  <h3 className="font-display font-bold text-lg md:text-xl mb-2 text-foreground">
+                    {program.title}
+                  </h3>
+
                   <p className="text-foreground/60 text-sm mb-4">{program.description}</p>
+
+                  {/* Features */}
+                  <ul className="mt-3 mb-4 space-y-1">
+                    {program.features.map((feature, i) => (
+                      <li
+                        key={i}
+                        className="text-foreground/70 text-sm flex items-center gap-2"
+                      >
+                        <span className="w-1.5 h-1.5 bg-teal-500 rounded-full"></span>
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
+
+                  {/* Duration + Price */}
                   <div className="space-y-3 flex-1">
                     <div className="flex justify-between items-center py-2 border-t border-border">
                       <span className="text-foreground/60 text-sm">Duration:</span>
-                      <span className="font-semibold text-foreground text-sm">{program.duration}</span>
+                      <span className="font-semibold text-foreground text-sm">
+                        {program.duration}
+                      </span>
                     </div>
+
                     <div className="flex justify-between items-center py-2 border-t border-border">
                       <span className="text-foreground/60 text-sm">Price:</span>
-                      <span className="font-semibold text-primary text-sm">UGX {program.price}</span>
+                      <span className="font-semibold text-primary text-sm">
+                        UGX {program.price}
+                      </span>
                     </div>
                   </div>
+
+                  {/* Button */}
                   <button className="mt-4 md:mt-6 w-full py-2.5 md:py-3 bg-teal-600 text-primary-foreground rounded-lg font-semibold hover:shadow-lg hover:shadow-primary/50 transition-all duration-300 flex items-center justify-center gap-2 text-sm md:text-base">
                     Join Class <ArrowRight size={18} />
                   </button>
@@ -85,16 +114,14 @@ export default function Programs() {
 
           {/* View More Button */}
           <div className="flex justify-center">
-            <div>
-              <Link
-                href="/programs"
-                className="inline-block px-8 py-4 bg-white-500 text-black border border-teal-600 rounded-full font-semibold hover:bg-white/10 transition-all duration-300"
-              >
-                Explore More Programs
-              </Link>
-            </div>
-
+            <Link
+              href="/programs"
+              className="inline-block px-8 py-4 bg-white text-black border border-teal-600 rounded-full font-semibold hover:bg-white/10 transition-all duration-300"
+            >
+              Explore More Programs
+            </Link>
           </div>
+
         </div>
       </div>
     </section>
