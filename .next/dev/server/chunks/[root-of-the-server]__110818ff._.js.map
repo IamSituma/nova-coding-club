@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 46, "column": 0}, "map": {"version":3,"sources":["file:///home/esco/Downloads/coding-club-website%20%281%29/app/api/contact/route.ts"],"sourcesContent":["import { NextResponse } from \"next/server\";\n\nexport async function POST(req: Request) {\n  try {\n    const formData = await req.json();\n\n    const res = await fetch(\n      \"https://script.google.com/macros/s/AKfycbzp5grZr0Xq2QD0UOWJ9b_MsHM1qQnjAO_oD2gUGHZX7SwQsgBY6d0XsWv4ld2grjaM/exec\",\n      {\n        method: \"POST\",\n        headers: { \"Content-Type\": \"application/json\" },\n        body: JSON.stringify(formData),\n      }\n    );\n\n    const result = await res.json();\n\n    return NextResponse.json(result);\n  } catch (err) {\n    return NextResponse.json({ status: \"error\", message: \"Failed to send form\" });\n  }\n}\n"],"names":[],"mappings":";;;;AAAA;;AAEO,eAAe,KAAK,GAAY;IACrC,IAAI;QACF,MAAM,WAAW,MAAM,IAAI,IAAI;QAE/B,MAAM,MAAM,MAAM,MAChB,oHACA;YACE,QAAQ;YACR,SAAS;gBAAE,gBAAgB;YAAmB;YAC9C,MAAM,KAAK,SAAS,CAAC;QACvB;QAGF,MAAM,SAAS,MAAM,IAAI,IAAI;QAE7B,OAAO,gJAAY,CAAC,IAAI,CAAC;IAC3B,EAAE,OAAO,KAAK;QACZ,OAAO,gJAAY,CAAC,IAAI,CAAC;YAAE,QAAQ;YAAS,SAAS;QAAsB;IAC7E;AACF"}}]
+}

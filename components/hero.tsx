@@ -17,6 +17,10 @@ export default function Hero() {
   const [goals, setGoals] = useState("")
   const [agree, setAgree] = useState(false)
 
+  // Validation errors
+  const [emailError, setEmailError] = useState("")
+  const [phoneError, setPhoneError] = useState("")
+
   const openModal = () => setIsModalOpen(true)
   const closeModal = () => setIsModalOpen(false)
 
@@ -41,6 +45,30 @@ export default function Hero() {
     }
   }, [])
 
+  const validateEmail = (email: string) => {
+    if (!email.includes("@")) {
+      setEmailError("Please enter a valid email address")
+      return false
+    }
+    setEmailError("")
+    return true
+  }
+
+  const validatePhone = (phone: string) => {
+    const ugPrefixes = ["070", "071", "072", "073", "074", "075", "076", "077", "078", "079"]
+    const digitsOnly = phone.replace(/\D/g, "")
+    if (digitsOnly.length !== 10) {
+      setPhoneError("Phone number must be 10 digits")
+      return false
+    }
+    if (!ugPrefixes.includes(digitsOnly.slice(0, 3))) {
+      setPhoneError("Invalid Ugandan phone prefix")
+      return false
+    }
+    setPhoneError("")
+    return true
+  }
+
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
 
@@ -48,6 +76,8 @@ export default function Hero() {
       alert("You must agree to the terms and conditions")
       return
     }
+
+    if (!validateEmail(email) || !validatePhone(phone)) return
 
     if (isSubmitting) return
     setIsSubmitting(true)
@@ -65,7 +95,7 @@ export default function Hero() {
 
     try {
       const res = await fetch(
-        "https://script.google.com/macros/s/AKfycbwE5Ct7uyoKK-v4PfZf8EW8DFH3EZ3kRSdU0W0fAJ39dUdg7nEinFD3p4e3AibJbeq44A/exec",
+        "https://script.google.com/macros/s/AKfycbzpiuQefg00s9ljwNBMRlgnlgjoFgjx8ZsKdPjfvjY_QoiRaY2uX5JqlUUD_Uy57CLv/exec",
         {
           method: "POST",
           body: JSON.stringify(data),
@@ -168,44 +198,57 @@ export default function Hero() {
                     value={fullName}
                     onChange={(e) => setFullName(e.target.value)}
                     placeholder="John Doe"
-                    className="w-full px-4 py-3 bg-secondary/30 border border-border rounded-lg text-foreground placeholder:text-foreground/40 focus:border-primary focus:outline-none transition-colors"
+                    className="block w-full px-4 py-3 bg-secondary/30 border border-border rounded-lg text-foreground placeholder:text-foreground/40 focus:border-primary focus:outline-none transition-colors"
                   />
                 </div>
+
                 <div>
                   <label className="block text-foreground font-medium">Email *</label>
                   <input
                     type="email"
                     required
                     value={email}
-                    onChange={(e) => setEmail(e.target.value)}
+                    onChange={(e) => {
+                      setEmail(e.target.value)
+                      validateEmail(e.target.value)
+                    }}
                     placeholder="john@example.com"
-                    className="w-full px-4 py-3 bg-secondary/30 border border-border rounded-lg text-foreground placeholder:text-foreground/40 focus:border-primary focus:outline-none transition-colors"
+                    className="block w-full px-4 py-3 bg-secondary/30 border border-border rounded-lg text-foreground placeholder:text-foreground/40 focus:border-primary focus:outline-none transition-colors"
                   />
+                  {emailError && <p className="text-red-500 text-sm mt-1">{emailError}</p>}
                 </div>
+
                 <div>
                   <label className="block text-foreground font-medium">Phone *</label>
                   <input
                     type="tel"
                     required
                     value={phone}
-                    onChange={(e) => setPhone(e.target.value)}
+                    onChange={(e) => {
+                      setPhone(e.target.value)
+                      validatePhone(e.target.value)
+                    }}
                     placeholder="+256 700 000 000"
-                    className="w-full px-4 py-3 bg-secondary/30 border border-border rounded-lg text-foreground placeholder:text-foreground/40 focus:border-primary focus:outline-none transition-colors"
+                    className="block w-full px-4 py-3 bg-secondary/30 border border-border rounded-lg text-foreground placeholder:text-foreground/40 focus:border-primary focus:outline-none transition-colors"
                   />
+                  {phoneError && <p className="text-red-500 text-sm mt-1">{phoneError}</p>}
                 </div>
+
                 <div>
                   <label className="block text-foreground font-medium">Program *</label>
-                  <select
-                    required
-                    value={program}
-                    onChange={(e) => setProgram(e.target.value)}
-                    className="w-full px-4 py-3 bg-secondary/30 border border-border rounded-lg text-foreground focus:border-primary focus:outline-none transition-colors"
-                  >
-                    <option value="">Select a program</option>
-                    <option value="school">School Coding Club - UGX 250,000</option>
-                    <option value="webdev">Bootcamp - Web Development - UGX 450,000</option>
-                    <option value="mobiledev">Bootcamp - Mobile Development - UGX 650,000</option>
-                  </select>
+                  <div className="w-full">
+                    <select
+                      required
+                      value={program}
+                      onChange={(e) => setProgram(e.target.value)}
+                      className="block w-full max-w-full px-4 py-3 bg-secondary/30 border border-border rounded-lg text-foreground focus:border-primary focus:outline-none transition-colors"
+                    >
+                      <option value="">Select a program</option>
+                      <option value="school">School Coding Club - UGX 250,000</option>
+                      <option value="webdev">Bootcamp - Web Dev - UGX 450,000</option>
+                      <option value="mobiledev">Bootcamp - Summer - UGX 650,000</option>
+                    </select>
+                  </div>
                 </div>
               </div>
 
@@ -215,7 +258,7 @@ export default function Hero() {
                   required
                   value={experience}
                   onChange={(e) => setExperience(e.target.value)}
-                  className="w-full px-4 py-3 bg-secondary/30 border border-border rounded-lg text-foreground focus:border-primary focus:outline-none transition-colors"
+                  className="block w-full px-4 py-3 bg-secondary/30 border border-border rounded-lg text-foreground focus:border-primary focus:outline-none transition-colors"
                 >
                   <option value="">Select your level</option>
                   <option value="beginner">Beginner - No coding experience</option>
@@ -231,7 +274,7 @@ export default function Hero() {
                   value={goals}
                   onChange={(e) => setGoals(e.target.value)}
                   placeholder="Tell us about your learning goals..."
-                  className="w-full px-4 py-3 bg-secondary/30 border border-border rounded-lg text-foreground placeholder:text-foreground/40 focus:border-primary focus:outline-none transition-colors resize-none"
+                  className="block w-full px-4 py-3 bg-secondary/30 border border-border rounded-lg text-foreground placeholder:text-foreground/40 focus:border-primary focus:outline-none transition-colors resize-none"
                 ></textarea>
 
                 <div className="flex items-start gap-3">

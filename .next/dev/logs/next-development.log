@@ -1,25 +1,72 @@
-[00:00:00.928] Server  LOG      ✓ Ready in 609ms
-[00:00:07.679] Server  LOG      ○ Compiling /programs ...
-[00:00:10.502] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:10.703] Browser WARN    Image with src "http://localhost:3000/logo1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:11.049] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:11.049] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/programs","route":"/programs"}
-[00:00:11.049] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764588426680}
-[00:00:14.601] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764588429875}
-[00:00:24.312] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764588439941}
-[00:02:11.221] Server  LOG      ✓ Compiled in 182ms
-[00:02:15.483] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764588550689}
-[00:03:04.482] Server  LOG      ✓ Compiled in 101ms
-[00:07:33.634] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764588869007}
-[00:08:09.188] Server  LOG      ✓ Compiled in 112ms
-[00:11:33.833] Server  LOG      ✓ Compiled in 98ms
-[00:12:27.756] Server  LOG      ✓ Compiled in 102ms
-[00:13:58.233] Server  LOG      ✓ Compiled in 68ms
-[00:14:24.893] Server  LOG      ✓ Compiled in 100ms
-[00:14:34.740] Server  LOG      ✓ Compiled in 87ms
-[00:14:50.650] Server  LOG      ✓ Compiled in 106ms
-[00:15:09.367] Server  LOG      ✓ Compiled in 155ms
-[00:16:39.175] Server  LOG      ✓ Compiled in 100ms
-[00:16:44.666] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/about color: rgb(120, 120, 120) color: inherit {"dp":"/about","o":"http://localhost:3000/about","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764589420248}
-[00:16:47.882] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764589423335}
-[00:16:53.143] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/gallery color: rgb(120, 120, 120) color: inherit {"dp":"/gallery","o":"http://localhost:3000/gallery","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764589428672}
+[00:00:00.759] Server  LOG      ✓ Ready in 537ms
+[00:00:06.025] Server  LOG      ○ Compiling / ...
+[00:00:07.225] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:07.462] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:07.462] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:07.462] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764614006777}
+[00:12:37.602] Server  LOG      ✓ Compiled in 53ms
+[00:12:53.077] Server  LOG      ✓ Compiled in 56ms
+[00:13:01.466] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:13:01.635] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:13:01.635] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:13:01.635] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764614782335}
+[00:22:08.409] Server  LOG      ✓ Compiled in 56ms
+[00:22:19.997] Server  LOG      ✓ Compiled in 44ms
+[00:22:26.568] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:22:26.731] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:22:26.731] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:22:26.731] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764615348288}
+[00:26:01.897] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:26:02.060] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:26:02.060] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:26:02.060] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764615563616}
+[00:27:36.737] Server  LOG      ✓ Compiled in 35ms
+[00:27:43.235] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:27:43.371] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:27:43.371] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:27:43.371] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764615664927}
+[00:36:29.397] Server  LOG      ✓ Compiled in 106ms
+[00:36:29.844] Browser WARN    Image with src "http://localhost:3000/logo1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:39:38.924] Server  LOG      ✓ Compiled in 100ms
+[00:42:05.051] Server  LOG      ✓ Compiled in 47ms
+[00:44:34.813] Server  LOG      ✓ Compiled in 70ms
+[00:46:22.510] Server  LOG      ✓ Compiled in 103ms
+[00:46:31.140] Server  LOG      ✓ Compiled in 55ms
+[00:47:35.073] Server  LOG      ✓ Compiled in 59ms
+[00:51:11.746] Server  LOG      ✓ Compiled in 95ms
+[00:52:10.305] Server  LOG      ✓ Compiled in 70ms
+[00:52:21.265] Server  LOG      ✓ Compiled in 52ms
+[01:01:59.546] Server  LOG      ✓ Compiled in 106ms
+[01:02:11.183] Server  LOG      ✓ Compiled in 49ms
+[01:10:56.377] Server  LOG      ✓ Compiled in 82ms
+[01:13:23.177] Server  LOG      ✓ Compiled in 46ms
+[01:13:42.953] Server  LOG      ✓ Compiled in 48ms
+[01:30:03.172] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:30:03.466] Browser WARN    Image with src "http://localhost:3000/logo1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:30:03.716] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[01:30:03.716] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[01:30:03.716] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764619405739}
+[01:30:23.441] Server  LOG      ✓ Compiled in 64ms
+[01:32:46.265] Server  LOG      ✓ Compiled in 83ms
+[01:33:01.041] Server  LOG      ✓ Compiled in 152ms
+[01:33:01.493] Browser ERROR   ./components/hero.tsx:292:20
+Parsing ecmascript source code failed
+  290 |                 {isSubmitting ? "Submitting..." : "Complete Registration"}
+  291 |               </button>
+> 292 |             </form>
+      |                    ^
+> 293 |           </div>
+      | ^^^^^^^^^^^
+  294 |         </div>
+  295 |       )}
+  296 |     </>
+
+Expected '</', got 'jsx text (
+          )'
+
+Import trace:
+  Server Component:
+    ./components/hero.tsx
+    ./app/page.tsx
+[01:33:41.596] Server  LOG      ✓ Compiled in 78ms
+[01:38:06.706] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/gallery color: rgb(120, 120, 120) color: inherit {"dp":"/gallery","o":"http://localhost:3000/gallery","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764619888606}

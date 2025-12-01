@@ -81,7 +81,7 @@ export default function Programs() {
 
     try {
       const res = await fetch(
-        "https://script.google.com/macros/s/AKfycbwE5Ct7uyoKK-v4PfZf8EW8DFH3EZ3kRSdU0W0fAJ39dUdg7nEinFD3p4e3AibJbeq44A/exec", // Replace with your Apps Script URL
+        "https://script.google.com/macros/s/AKfycbzpiuQefg00s9ljwNBMRlgnlgjoFgjx8ZsKdPjfvjY_QoiRaY2uX5JqlUUD_Uy57CLv/exec", // Replace with your Apps Script URL
         { method: "POST", body: JSON.stringify(data) }
       )
       const result = await res.json()

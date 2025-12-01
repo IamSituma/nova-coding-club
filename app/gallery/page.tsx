@@ -8,19 +8,19 @@ import Footer from "@/components/footer"
 const albums = [
   {
     id: "bootcamp-graduation-2024",
-    title: "Bootcamp Graduation 2024",
+    title: "Seroma Christian High School ",
     cover: "/graduation-ceremony-students-celebrating-with-cert.jpg",
     imageCount: 24,
   },
   {
     id: "hackathon-2024",
-    title: "CodeClub Hackathon 2024",
+    title: "Bootcamp December 2025",
     cover: "/students-at-hackathon-working-on-laptops-coding.jpg",
     imageCount: 36,
   },
   {
     id: "school-coding-workshop",
-    title: "School Coding Workshop",
+    title: "Smart Girls",
     cover: "/children-learning-coding-in-classroom-with-teacher.jpg",
     imageCount: 18,
   },
@@ -29,30 +29,6 @@ const albums = [
     title: "Tech Conference 2024",
     cover: "/tech-conference-speakers-on-stage-presentation.jpg",
     imageCount: 42,
-  },
-  {
-    id: "web-dev-bootcamp",
-    title: "Web Development Bootcamp",
-    cover: "/students-learning-web-development-in-modern-classr.jpg",
-    imageCount: 28,
-  },
-  {
-    id: "mobile-dev-showcase",
-    title: "Mobile Dev Showcase",
-    cover: "/mobile-app-developers-presenting-apps-on-phones.jpg",
-    imageCount: 15,
-  },
-  {
-    id: "community-meetup",
-    title: "Community Meetup",
-    cover: "/tech-community-meetup-networking-event.jpg",
-    imageCount: 22,
-  },
-  {
-    id: "student-projects-expo",
-    title: "Student Projects Expo",
-    cover: "/students-presenting-tech-projects-at-exhibition.jpg",
-    imageCount: 31,
   },
 ]
 
@@ -79,7 +55,7 @@ export default function GalleryPage() {
             Our Gallery
           </h1>
           <p className="text-base md:text-xl text-white/90 max-w-2xl mx-auto">
-            Explore moments from our events, workshops, bootcamps, and community gatherings. See the CodeClub experience
+            Explore moments from our events, workshops, bootcamps, and community gatherings. See the Nova Coding Club experience
             through the eyes of our students and instructors.
           </p>
         </div>
@@ -124,7 +100,7 @@ export default function GalleryPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 md:py-24 px-4 bg-gradient-to-r from-[#009696] to-[#007a7a]">
+      <section className="py-16 md:py-24 px-4 bg-black">
   <div className="max-w-7xl mx-auto text-center">
     <div className="flex flex-col items-center justify-center space-y-6 md:space-y-8">
       <h2 className="font-display font-extrabold text-3xl md:text-5xl text-white">
@@ -135,12 +111,6 @@ export default function GalleryPage() {
       </p>
 
       <div className="flex flex-col sm:flex-row gap-4 md:gap-6">
-        <Link
-          href="/register"
-          className="flex items-center justify-center gap-2 px-8 py-3 md:px-10 md:py-4 bg-white text-[#009696] font-semibold rounded-xl text-sm md:text-base shadow-md hover:scale-105 hover:shadow-lg transition-transform duration-300"
-        >
-          Join Now <ArrowRight size={20} />
-        </Link>
         <Link
           href="/programs"
           className="flex items-center justify-center px-8 py-3 md:px-10 md:py-4 border border-white rounded-xl text-white text-sm md:text-base font-semibold hover:bg-white/20 transition-colors duration-300"

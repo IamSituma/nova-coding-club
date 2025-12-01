@@ -98,19 +98,6 @@ const albumsData: Record<
       "/placeholder.svg?height=600&width=900",
     ],
   },
-  "community-meetup": {
-    title: "Community Meetup",
-    date: "April 22, 2024",
-    description:
-      "Monthly community gathering where alumni, current students, and tech enthusiasts connect, share experiences, and build lasting professional relationships.",
-    images: [
-      "/placeholder.svg?height=600&width=900",
-      "/placeholder.svg?height=600&width=900",
-      "/placeholder.svg?height=600&width=900",
-      "/placeholder.svg?height=600&width=900",
-      "/placeholder.svg?height=600&width=900",
-    ],
-  },
   "student-projects-expo": {
     title: "Student Projects Expo",
     date: "March 15, 2024",
@@ -185,7 +172,6 @@ const otherAlbums = [
   { id: "school-coding-workshop", title: "School Coding Workshop", cover: "/placeholder.svg?height=200&width=300" },
   { id: "tech-conference-2024", title: "Tech Conference 2024", cover: "/placeholder.svg?height=200&width=300" },
   { id: "web-dev-bootcamp", title: "Web Development Bootcamp", cover: "/placeholder.svg?height=200&width=300" },
-  { id: "community-meetup", title: "Community Meetup", cover: "/placeholder.svg?height=200&width=300" },
 ]
 
 export default function AlbumDetailPage() {

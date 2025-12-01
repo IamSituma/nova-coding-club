@@ -1,10 +1,49 @@
 "use client"
 
+import { useState } from "react"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import { Mail, Phone, MapPin, Clock } from "lucide-react"
 
 export default function Contact() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: ""
+  })
+  const [isSubmitting, setIsSubmitting] = useState(false)
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value })
+  }
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    setIsSubmitting(true)
+
+    try {
+      const res = await fetch("https://script.google.com/macros/s/AKfycbz7NTROM5ApHz8tG7n-hkYxyUrIIg6YXA0GKceuSumgz5p02EU9oyClQXenJt7GhEJ5_g/exec", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ...formData, formType: "contact" }),
+      })
+
+      const result = await res.json()
+
+      if (result.status === "success") {
+        alert("Thank you! Your message has been submitted successfully. We will get in touch with you soon.")
+        setFormData({ name: "", email: "", phone: "", message: "" })
+      } else {
+        alert("Oops! Something went wrong. Please try again.")
+      }
+    } catch (err) {
+      alert("Oops! Something went wrong. Please try again.")
+    } finally {
+      setIsSubmitting(false)
+    }
+  }
+
   return (
     <>
       <Navbar />
@@ -12,22 +51,21 @@ export default function Contact() {
 
         {/* HERO */}
         <section className="flex items-center justify-center relative min-h-[40vh] sm:min-h-[70vh] md:min-h-[60vh] px-4 ">
-  <div
-    className="absolute inset-0 bg-cover bg-center z-0"
-    style={{ backgroundImage: "url('/contact.jpg')" }}
-  />
-  <div className="absolute inset-0 bg-black/60 z-0" />
+          <div
+            className="absolute inset-0 bg-cover bg-center z-0"
+            style={{ backgroundImage: "url('/contact.jpg')" }}
+          />
+          <div className="absolute inset-0 bg-black/60 z-0" />
 
-  <div className="relative max-w-7xl mx-auto text-center text-white z-10">
-    <h1 className="font-display font-extrabold text-3xl sm:text-4xl md:text-5xl mb-4">
-      Get in Touch
-    </h1>
-    <p className="text-base sm:text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
-      Have questions or want to collaborate? Our team is here to help. Reach out and we'll get back to you as soon as possible.
-    </p>
-  </div>
-</section>
-
+          <div className="relative max-w-7xl mx-auto text-center text-white z-10">
+            <h1 className="font-display font-extrabold text-3xl sm:text-4xl md:text-5xl mb-4">
+              Get in Touch
+            </h1>
+            <p className="text-base sm:text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
+              Have questions or want to collaborate? Our team is here to help. Reach out and we'll get back to you as soon as possible.
+            </p>
+          </div>
+        </section>
 
         {/* CONTACT SECTION */}
         <section className="py-16 md:py-20 px-4">
@@ -65,13 +103,20 @@ export default function Contact() {
               </div>
 
               {/* Contact Form */}
-              <form className="bg-white/5 p-6 md:p-8 rounded-3xl shadow-sm backdrop-blur-md space-y-4">
+              <form
+                onSubmit={handleSubmit}
+                className="bg-white/5 p-6 md:p-8 rounded-3xl shadow-sm backdrop-blur-md space-y-4"
+              >
                 <div>
                   <label className="block text-foreground font-medium mb-1">Your Name</label>
                   <input
                     type="text"
+                    name="name"
                     placeholder="John Doe"
+                    value={formData.name}
+                    onChange={handleChange}
                     className="w-full px-4 py-2.5 bg-background border border-border rounded-xl text-foreground placeholder:text-foreground/40 focus:border-primary focus:ring-1 focus:ring-primary transition text-sm"
+                    required
                   />
                 </div>
 
@@ -79,25 +124,51 @@ export default function Contact() {
                   <label className="block text-foreground font-medium mb-1">Email Address</label>
                   <input
                     type="email"
+                    name="email"
                     placeholder="john@example.com"
+                    value={formData.email}
+                    onChange={handleChange}
                     className="w-full px-4 py-2.5 bg-background border border-border rounded-xl text-foreground placeholder:text-foreground/40 focus:border-primary focus:ring-1 focus:ring-primary transition text-sm"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-foreground font-medium mb-1">Phone Number</label>
+                  <input
+                    type="tel"
+                    name="phone"
+                    placeholder="+256 7XX XXX XXX"
+                    value={formData.phone}
+                    onChange={handleChange}
+                    className="w-full px-4 py-2.5 bg-background border border-border rounded-xl text-foreground placeholder:text-foreground/40 focus:border-primary focus:ring-1 focus:ring-primary transition text-sm"
+                    required
                   />
                 </div>
 
                 <div>
                   <label className="block text-foreground font-medium mb-1">Message</label>
                   <textarea
+                    name="message"
                     rows={4}
                     placeholder="Tell us more..."
+                    value={formData.message}
+                    onChange={handleChange}
                     className="w-full px-4 py-2.5 bg-background border border-border rounded-xl text-foreground placeholder:text-foreground/40 focus:border-primary focus:ring-1 focus:ring-primary transition resize-none text-sm"
+                    required
                   ></textarea>
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full py-2.5 md:py-3 bg-black text-primary-foreground rounded-xl font-semibold text-base hover:scale-105 hover:shadow-lg transition-transform duration-300"
+                  disabled={isSubmitting}
+                  className={`w-full py-2.5 md:py-3 rounded-xl font-semibold text-base transition-transform duration-300 ${
+                    isSubmitting
+                      ? "bg-gray-500 cursor-not-allowed"
+                      : "bg-black text-primary-foreground hover:scale-105 hover:shadow-lg"
+                  }`}
                 >
-                  Send Message
+                  {isSubmitting ? "Sending..." : "Send Message"}
                 </button>
               </form>
             </div>

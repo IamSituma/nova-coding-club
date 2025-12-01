@@ -758,6 +758,9 @@ function Hero() {
     const [experience, setExperience] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
     const [goals, setGoals] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
     const [agree, setAgree] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    // Validation errors
+    const [emailError, setEmailError] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
+    const [phoneError, setPhoneError] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
     const openModal = ()=>setIsModalOpen(true);
     const closeModal = ()=>setIsModalOpen(false);
     // Close modal on ESC key press or click outside
@@ -786,12 +789,46 @@ function Hero() {
             })["Hero.useEffect"];
         }
     }["Hero.useEffect"], []);
+    const validateEmail = (email)=>{
+        if (!email.includes("@")) {
+            setEmailError("Please enter a valid email address");
+            return false;
+        }
+        setEmailError("");
+        return true;
+    };
+    const validatePhone = (phone)=>{
+        const ugPrefixes = [
+            "070",
+            "071",
+            "072",
+            "073",
+            "074",
+            "075",
+            "076",
+            "077",
+            "078",
+            "079"
+        ];
+        const digitsOnly = phone.replace(/\D/g, "");
+        if (digitsOnly.length !== 10) {
+            setPhoneError("Phone number must be 10 digits");
+            return false;
+        }
+        if (!ugPrefixes.includes(digitsOnly.slice(0, 3))) {
+            setPhoneError("Invalid Ugandan phone prefix");
+            return false;
+        }
+        setPhoneError("");
+        return true;
+    };
     const handleSubmit = async (e)=>{
         e.preventDefault();
         if (!agree) {
             alert("You must agree to the terms and conditions");
             return;
         }
+        if (!validateEmail(email) || !validatePhone(phone)) return;
         if (isSubmitting) return;
         setIsSubmitting(true);
         const data = {
@@ -805,7 +842,7 @@ function Hero() {
             agree
         };
         try {
-            const res = await fetch("https://script.google.com/macros/s/AKfycbwE5Ct7uyoKK-v4PfZf8EW8DFH3EZ3kRSdU0W0fAJ39dUdg7nEinFD3p4e3AibJbeq44A/exec", {
+            const res = await fetch("https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec", {
                 method: "POST",
                 body: JSON.stringify(data)
             });
@@ -833,7 +870,7 @@ function Hero() {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$navbar$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/components/hero.tsx",
-                lineNumber: 98,
+                lineNumber: 128,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -846,14 +883,14 @@ function Hero() {
                         }
                     }, void 0, false, {
                         fileName: "[project]/components/hero.tsx",
-                        lineNumber: 100,
+                        lineNumber: 130,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "absolute inset-0 bg-black/60"
                     }, void 0, false, {
                         fileName: "[project]/components/hero.tsx",
-                        lineNumber: 104,
+                        lineNumber: 134,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -872,19 +909,19 @@ function Hero() {
                                                     size: 16
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/hero.tsx",
-                                                    lineNumber: 111,
+                                                    lineNumber: 141,
                                                     columnNumber: 19
                                                 }, this),
                                                 " Learn. Code. Grow."
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/hero.tsx",
-                                            lineNumber: 110,
+                                            lineNumber: 140,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/hero.tsx",
-                                        lineNumber: 109,
+                                        lineNumber: 139,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -892,7 +929,7 @@ function Hero() {
                                         children: "Unlock Your Coding Potential at Nova Coding Club"
                                     }, void 0, false, {
                                         fileName: "[project]/components/hero.tsx",
-                                        lineNumber: 115,
+                                        lineNumber: 145,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -900,7 +937,7 @@ function Hero() {
                                         children: "Join our coding communities designed for students and professionals. Whether you're just starting out or looking to level up your skills, we have programs tailored just for you."
                                     }, void 0, false, {
                                         fileName: "[project]/components/hero.tsx",
-                                        lineNumber: 119,
+                                        lineNumber: 149,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -915,13 +952,13 @@ function Hero() {
                                                         size: 20
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/hero.tsx",
-                                                        lineNumber: 128,
+                                                        lineNumber: 158,
                                                         columnNumber: 31
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/hero.tsx",
-                                                lineNumber: 124,
+                                                lineNumber: 154,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -930,35 +967,35 @@ function Hero() {
                                                 children: "Explore Programs"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/hero.tsx",
-                                                lineNumber: 130,
+                                                lineNumber: 160,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/hero.tsx",
-                                        lineNumber: 123,
+                                        lineNumber: 153,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/hero.tsx",
-                                lineNumber: 108,
+                                lineNumber: 138,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/hero.tsx",
-                            lineNumber: 107,
+                            lineNumber: 137,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/hero.tsx",
-                        lineNumber: 106,
+                        lineNumber: 136,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/hero.tsx",
-                lineNumber: 99,
+                lineNumber: 129,
                 columnNumber: 7
             }, this),
             isModalOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -973,7 +1010,7 @@ function Hero() {
                             children: "✕"
                         }, void 0, false, {
                             fileName: "[project]/components/hero.tsx",
-                            lineNumber: 148,
+                            lineNumber: 178,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -981,7 +1018,7 @@ function Hero() {
                             children: "Register for a Program"
                         }, void 0, false, {
                             fileName: "[project]/components/hero.tsx",
-                            lineNumber: 155,
+                            lineNumber: 185,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -989,7 +1026,7 @@ function Hero() {
                             children: "Fill in your details below to register for a coding program. We’ll get back to you with all the details."
                         }, void 0, false, {
                             fileName: "[project]/components/hero.tsx",
-                            lineNumber: 158,
+                            lineNumber: 188,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
@@ -1006,7 +1043,7 @@ function Hero() {
                                                     children: "Full Name *"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/hero.tsx",
-                                                    lineNumber: 165,
+                                                    lineNumber: 195,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -1015,16 +1052,16 @@ function Hero() {
                                                     value: fullName,
                                                     onChange: (e)=>setFullName(e.target.value),
                                                     placeholder: "John Doe",
-                                                    className: "w-full px-4 py-3 bg-secondary/30 border border-border rounded-lg text-foreground placeholder:text-foreground/40 focus:border-primary focus:outline-none transition-colors"
+                                                    className: "block w-full px-4 py-3 bg-secondary/30 border border-border rounded-lg text-foreground placeholder:text-foreground/40 focus:border-primary focus:outline-none transition-colors"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/hero.tsx",
-                                                    lineNumber: 166,
+                                                    lineNumber: 196,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/hero.tsx",
-                                            lineNumber: 164,
+                                            lineNumber: 194,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1034,25 +1071,36 @@ function Hero() {
                                                     children: "Email *"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/hero.tsx",
-                                                    lineNumber: 176,
+                                                    lineNumber: 207,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                                     type: "email",
                                                     required: true,
                                                     value: email,
-                                                    onChange: (e)=>setEmail(e.target.value),
+                                                    onChange: (e)=>{
+                                                        setEmail(e.target.value);
+                                                        validateEmail(e.target.value);
+                                                    },
                                                     placeholder: "john@example.com",
-                                                    className: "w-full px-4 py-3 bg-secondary/30 border border-border rounded-lg text-foreground placeholder:text-foreground/40 focus:border-primary focus:outline-none transition-colors"
+                                                    className: "block w-full px-4 py-3 bg-secondary/30 border border-border rounded-lg text-foreground placeholder:text-foreground/40 focus:border-primary focus:outline-none transition-colors"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/hero.tsx",
-                                                    lineNumber: 177,
+                                                    lineNumber: 208,
                                                     columnNumber: 19
+                                                }, this),
+                                                emailError && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                    className: "text-red-500 text-sm mt-1",
+                                                    children: emailError
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/hero.tsx",
+                                                    lineNumber: 219,
+                                                    columnNumber: 34
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/hero.tsx",
-                                            lineNumber: 175,
+                                            lineNumber: 206,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1062,25 +1110,36 @@ function Hero() {
                                                     children: "Phone *"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/hero.tsx",
-                                                    lineNumber: 187,
+                                                    lineNumber: 223,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                                     type: "tel",
                                                     required: true,
                                                     value: phone,
-                                                    onChange: (e)=>setPhone(e.target.value),
+                                                    onChange: (e)=>{
+                                                        setPhone(e.target.value);
+                                                        validatePhone(e.target.value);
+                                                    },
                                                     placeholder: "+256 700 000 000",
-                                                    className: "w-full px-4 py-3 bg-secondary/30 border border-border rounded-lg text-foreground placeholder:text-foreground/40 focus:border-primary focus:outline-none transition-colors"
+                                                    className: "block w-full px-4 py-3 bg-secondary/30 border border-border rounded-lg text-foreground placeholder:text-foreground/40 focus:border-primary focus:outline-none transition-colors"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/hero.tsx",
-                                                    lineNumber: 188,
+                                                    lineNumber: 224,
                                                     columnNumber: 19
+                                                }, this),
+                                                phoneError && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                    className: "text-red-500 text-sm mt-1",
+                                                    children: phoneError
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/hero.tsx",
+                                                    lineNumber: 235,
+                                                    columnNumber: 34
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/hero.tsx",
-                                            lineNumber: 186,
+                                            lineNumber: 222,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1090,63 +1149,70 @@ function Hero() {
                                                     children: "Program *"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/hero.tsx",
-                                                    lineNumber: 198,
+                                                    lineNumber: 239,
                                                     columnNumber: 19
                                                 }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
-                                                    required: true,
-                                                    value: program,
-                                                    onChange: (e)=>setProgram(e.target.value),
-                                                    className: "w-full px-4 py-3 bg-secondary/30 border border-border rounded-lg text-foreground focus:border-primary focus:outline-none transition-colors",
-                                                    children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                                            value: "",
-                                                            children: "Select a program"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/components/hero.tsx",
-                                                            lineNumber: 205,
-                                                            columnNumber: 21
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                                            value: "school",
-                                                            children: "School Coding Club - UGX 250,000"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/components/hero.tsx",
-                                                            lineNumber: 206,
-                                                            columnNumber: 21
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                                            value: "webdev",
-                                                            children: "Bootcamp - Web Development - UGX 450,000"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/components/hero.tsx",
-                                                            lineNumber: 207,
-                                                            columnNumber: 21
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                                            value: "mobiledev",
-                                                            children: "Bootcamp - Mobile Development - UGX 650,000"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/components/hero.tsx",
-                                                            lineNumber: 208,
-                                                            columnNumber: 21
-                                                        }, this)
-                                                    ]
-                                                }, void 0, true, {
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "w-full",
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
+                                                        required: true,
+                                                        value: program,
+                                                        onChange: (e)=>setProgram(e.target.value),
+                                                        className: "block w-full max-w-full px-4 py-3 bg-secondary/30 border border-border rounded-lg text-foreground focus:border-primary focus:outline-none transition-colors",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                                value: "",
+                                                                children: "Select a program"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/components/hero.tsx",
+                                                                lineNumber: 247,
+                                                                columnNumber: 23
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                                value: "school",
+                                                                children: "School Coding Club - UGX 250,000"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/components/hero.tsx",
+                                                                lineNumber: 248,
+                                                                columnNumber: 23
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                                value: "webdev",
+                                                                children: "Bootcamp - Web Dev - UGX 450,000"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/components/hero.tsx",
+                                                                lineNumber: 249,
+                                                                columnNumber: 23
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                                value: "mobiledev",
+                                                                children: "Bootcamp - Summer - UGX 650,000"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/components/hero.tsx",
+                                                                lineNumber: 250,
+                                                                columnNumber: 23
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/components/hero.tsx",
+                                                        lineNumber: 241,
+                                                        columnNumber: 21
+                                                    }, this)
+                                                }, void 0, false, {
                                                     fileName: "[project]/components/hero.tsx",
-                                                    lineNumber: 199,
+                                                    lineNumber: 240,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/hero.tsx",
-                                            lineNumber: 197,
+                                            lineNumber: 238,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/hero.tsx",
-                                    lineNumber: 163,
+                                    lineNumber: 193,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1157,21 +1223,21 @@ function Hero() {
                                             children: "Experience Level *"
                                         }, void 0, false, {
                                             fileName: "[project]/components/hero.tsx",
-                                            lineNumber: 214,
+                                            lineNumber: 257,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
                                             required: true,
                                             value: experience,
                                             onChange: (e)=>setExperience(e.target.value),
-                                            className: "w-full px-4 py-3 bg-secondary/30 border border-border rounded-lg text-foreground focus:border-primary focus:outline-none transition-colors",
+                                            className: "block w-full px-4 py-3 bg-secondary/30 border border-border rounded-lg text-foreground focus:border-primary focus:outline-none transition-colors",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
                                                     value: "",
                                                     children: "Select your level"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/hero.tsx",
-                                                    lineNumber: 221,
+                                                    lineNumber: 264,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -1179,7 +1245,7 @@ function Hero() {
                                                     children: "Beginner - No coding experience"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/hero.tsx",
-                                                    lineNumber: 222,
+                                                    lineNumber: 265,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -1187,7 +1253,7 @@ function Hero() {
                                                     children: "Intermediate - Some coding knowledge"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/hero.tsx",
-                                                    lineNumber: 223,
+                                                    lineNumber: 266,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -1195,19 +1261,19 @@ function Hero() {
                                                     children: "Advanced - Professional experience"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/hero.tsx",
-                                                    lineNumber: 224,
+                                                    lineNumber: 267,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/hero.tsx",
-                                            lineNumber: 215,
+                                            lineNumber: 258,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/hero.tsx",
-                                    lineNumber: 213,
+                                    lineNumber: 256,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1218,7 +1284,7 @@ function Hero() {
                                             children: "Goals (Optional)"
                                         }, void 0, false, {
                                             fileName: "[project]/components/hero.tsx",
-                                            lineNumber: 229,
+                                            lineNumber: 272,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
@@ -1226,10 +1292,10 @@ function Hero() {
                                             value: goals,
                                             onChange: (e)=>setGoals(e.target.value),
                                             placeholder: "Tell us about your learning goals...",
-                                            className: "w-full px-4 py-3 bg-secondary/30 border border-border rounded-lg text-foreground placeholder:text-foreground/40 focus:border-primary focus:outline-none transition-colors resize-none"
+                                            className: "block w-full px-4 py-3 bg-secondary/30 border border-border rounded-lg text-foreground placeholder:text-foreground/40 focus:border-primary focus:outline-none transition-colors resize-none"
                                         }, void 0, false, {
                                             fileName: "[project]/components/hero.tsx",
-                                            lineNumber: 230,
+                                            lineNumber: 273,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1244,7 +1310,7 @@ function Hero() {
                                                     className: "mt-1 w-4 h-4 bg-secondary/30 border border-border rounded cursor-pointer"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/hero.tsx",
-                                                    lineNumber: 239,
+                                                    lineNumber: 282,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
@@ -1253,19 +1319,19 @@ function Hero() {
                                                     children: "I agree to the terms and conditions and want to receive updates."
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/hero.tsx",
-                                                    lineNumber: 247,
+                                                    lineNumber: 290,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/hero.tsx",
-                                            lineNumber: 238,
+                                            lineNumber: 281,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/hero.tsx",
-                                    lineNumber: 228,
+                                    lineNumber: 271,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1275,35 +1341,35 @@ function Hero() {
                                     children: isSubmitting ? "Submitting..." : "Complete Registration"
                                 }, void 0, false, {
                                     fileName: "[project]/components/hero.tsx",
-                                    lineNumber: 253,
+                                    lineNumber: 296,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/hero.tsx",
-                            lineNumber: 162,
+                            lineNumber: 192,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/hero.tsx",
-                    lineNumber: 144,
+                    lineNumber: 174,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/hero.tsx",
-                lineNumber: 143,
+                lineNumber: 173,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$footer$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/components/hero.tsx",
-                lineNumber: 268,
+                lineNumber: 311,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true);
 }
-_s(Hero, "8rLFN67WGyULrQ/p8WiC+6hW+TI=");
+_s(Hero, "vRRX2TQE9E1kpJ7eT3snGykrYYw=");
 _c = Hero;
 var _c;
 __turbopack_context__.k.register(_c, "Hero");
@@ -1458,183 +1524,151 @@ var _s = __turbopack_context__.k.signature();
 ;
 function Programs() {
     _s();
-    const [schoolModalOpen, setSchoolModalOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
-    const [webDevModalOpen, setWebDevModalOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
-    const [mobileDevModalOpen, setMobileDevModalOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [activeModal, setActiveModal] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
     const [isSubmitting, setIsSubmitting] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
-    // Ref for handling outside clicks
-    const modalRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
-    // ---------- Modal States ----------
-    // School
+    // Form state
     const [schoolName, setSchoolName] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
     const [contactPerson, setContactPerson] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
-    // Bootcamp
     const [studentName, setStudentName] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
     const [age, setAge] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
     const [parentName, setParentName] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
     const [phone, setPhone] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
+    const [email, setEmail] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
     const [parentEmail, setParentEmail] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
     const [hasLaptop, setHasLaptop] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
     const [paymentPreference, setPaymentPreference] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
-    const [programTitle, setProgramTitle] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
-    // Handle ESC and outside click
-    const handleCloseModal = ()=>{
-        setSchoolModalOpen(false);
-        setWebDevModalOpen(false);
-        setMobileDevModalOpen(false);
-    };
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
-        "Programs.useEffect": ()=>{
-            const handleEsc = {
-                "Programs.useEffect.handleEsc": (e)=>{
-                    if (e.key === "Escape") handleCloseModal();
-                }
-            }["Programs.useEffect.handleEsc"];
-            const handleClickOutside = {
-                "Programs.useEffect.handleClickOutside": (e)=>{
-                    if (modalRef.current && !modalRef.current.contains(e.target)) {
-                        handleCloseModal();
-                    }
-                }
-            }["Programs.useEffect.handleClickOutside"];
-            window.addEventListener("keydown", handleEsc);
-            window.addEventListener("mousedown", handleClickOutside);
-            return ({
-                "Programs.useEffect": ()=>{
-                    window.removeEventListener("keydown", handleEsc);
-                    window.removeEventListener("mousedown", handleClickOutside);
-                }
-            })["Programs.useEffect"];
-        }
-    }["Programs.useEffect"], []);
-    // ---------- Submission ----------
-    const handleSubmitSchool = async (e)=>{
-        e.preventDefault();
-        if (isSubmitting) return;
-        setIsSubmitting(true);
-        const data = {
-            formType: "school",
-            schoolName,
-            contactPerson
-        };
-        try {
-            const res = await fetch("https://script.google.com/macros/s/AKfycbwE5Ct7uyoKK-v4PfZf8EW8DFH3EZ3kRSdU0W0fAJ39dUdg7nEinFD3p4e3AibJbeq44A/exec", {
-                method: "POST",
-                body: JSON.stringify(data)
-            });
-            const result = await res.json();
-            if (result.status === "success") {
-                alert("School registration successful!");
-                setSchoolName("");
-                setContactPerson("");
-                handleCloseModal();
-            } else {
-                alert("Failed to register: " + result.message);
-            }
-        } catch (err) {
-            alert("Error: " + err.message);
-        } finally{
-            setIsSubmitting(false);
-        }
-    };
-    const handleSubmitBootcamp = async (e)=>{
-        e.preventDefault();
-        if (isSubmitting) return;
-        setIsSubmitting(true);
-        const data = {
-            formType: "bootcamp",
-            programTitle,
-            studentName,
-            age,
-            parentName,
-            phone,
-            parentEmail,
-            hasLaptop,
-            paymentPreference
-        };
-        try {
-            const res = await fetch("YOUR_GOOGLE_APPS_SCRIPT_URL", {
-                method: "POST",
-                body: JSON.stringify(data)
-            });
-            const result = await res.json();
-            if (result.status === "success") {
-                alert("Bootcamp registration successful!");
-                setStudentName("");
-                setAge("");
-                setParentName("");
-                setPhone("");
-                setParentEmail("");
-                setHasLaptop("");
-                setPaymentPreference("");
-                handleCloseModal();
-            } else {
-                alert("Failed to register: " + result.message);
-            }
-        } catch (err) {
-            alert("Error: " + err.message);
-        } finally{
-            setIsSubmitting(false);
-        }
-    };
-    // ---------- Programs ----------
+    const [agree, setAgree] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const programs = [
         {
             title: "School Coding Club",
-            duration: "12 Weeks",
-            price: "250,000",
-            description: "Perfect for high school students looking to learn programming fundamentals.",
-            features: [
-                "Web Development",
-                "Project Portfolio",
-                "Career Guidance"
-            ],
+            slug: "school",
             image: "/school.png",
-            buttonText: "Register School",
-            openModal: ()=>setSchoolModalOpen(true)
+            description: "Perfect for high school students learning programming fundamentals.",
+            price: "250,000",
+            features: [
+                "HTML, CSS & Javascript Basics",
+                "Project Portfolio",
+                "Web Development",
+                "Career Guidance",
+                "1 Session Per Week"
+            ]
         },
         {
             title: "Bootcamp - Web Development",
-            duration: "16 Weeks",
+            slug: "webdev",
+            image: "/web.jpg",
+            description: "Intensive bootcamp to become a full-stack web developer.",
             price: "450,000",
-            description: "Intensive bootcamp to become a full-stack web developer ready for job market.",
             features: [
                 "Frontend & Backend",
                 "Database Design",
                 "Deployment",
-                "Job Prep"
-            ],
-            image: "/web.jpg",
-            buttonText: "Register",
-            openModal: ()=>{
-                setProgramTitle("Bootcamp - Web Development");
-                setWebDevModalOpen(true);
-            }
+                "Job Prep",
+                "3 Sessions Per Week"
+            ]
         },
         {
-            title: "Bootcamp - Mobile Development",
-            duration: "16 Weeks",
-            price: "650,000",
+            title: "Bootcamp - Summer",
+            slug: "mobiledev",
+            image: "/college.jpg",
             description: "Master mobile app development for iOS and Android platforms.",
+            price: "1,000,000",
             features: [
                 "React Native",
                 "Flutter",
                 "APIs",
-                "App Publishing"
-            ],
-            image: "/app.jpg",
-            buttonText: "Register",
-            openModal: ()=>{
-                setProgramTitle("Bootcamp - Mobile Development");
-                setMobileDevModalOpen(true);
-            }
+                "App Publishing",
+                "3 Sessions Per Week"
+            ]
         }
     ];
+    // Close modal on ESC or click outside
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "Programs.useEffect": ()=>{
+            const handleEsc = {
+                "Programs.useEffect.handleEsc": (e)=>{
+                    if (e.key === "Escape") setActiveModal(null);
+                }
+            }["Programs.useEffect.handleEsc"];
+            window.addEventListener("keydown", handleEsc);
+            return ({
+                "Programs.useEffect": ()=>window.removeEventListener("keydown", handleEsc)
+            })["Programs.useEffect"];
+        }
+    }["Programs.useEffect"], []);
+    const handleSubmit = async (formType, e)=>{
+        e.preventDefault();
+        if (isSubmitting) return;
+        setIsSubmitting(true);
+        let data = {
+            formType
+        };
+        if (formType === "school") {
+            if (!schoolName || !contactPerson) {
+                alert("Please fill in required fields");
+                setIsSubmitting(false);
+                return;
+            }
+            data = {
+                ...data,
+                schoolName,
+                contactPerson,
+                phone,
+                email,
+                agree
+            };
+        } else if (formType === "webdev" || formType === "mobiledev") {
+            if (!studentName || !age || !parentName || !phone || !hasLaptop || !paymentPreference) {
+                alert("Please fill in required fields");
+                setIsSubmitting(false);
+                return;
+            }
+            data = {
+                ...data,
+                studentName,
+                age,
+                parentName,
+                phone,
+                parentEmail,
+                hasLaptop,
+                paymentPreference
+            };
+        }
+        try {
+            const res = await fetch("https://script.google.com/macros/s/AKfycbzpiuQefg00s9ljwNBMRlgnlgjoFgjx8ZsKdPjfvjY_QoiRaY2uX5JqlUUD_Uy57CLv/exec", {
+                method: "POST",
+                body: JSON.stringify(data)
+            });
+            const result = await res.json();
+            if (result.status === "success") {
+                alert("Registration successful!");
+                // Reset fields
+                setSchoolName("");
+                setContactPerson("");
+                setStudentName("");
+                setAge("");
+                setParentName("");
+                setPhone("");
+                setEmail("");
+                setParentEmail("");
+                setHasLaptop("");
+                setPaymentPreference("");
+                setAgree(false);
+                setActiveModal(null);
+            } else {
+                alert("Failed: " + result.message);
+            }
+        } catch (err) {
+            alert("Error: " + err.message);
+        } finally{
+            setIsSubmitting(false);
+        }
+    };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         className: "py-16 md:py-24 px-4 bg-background",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "max-w-7xl mx-auto space-y-12",
+                className: "max-w-7xl mx-auto space-y-8 md:space-y-12",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         children: [
@@ -1643,7 +1677,7 @@ function Programs() {
                                 children: "Our Programs"
                             }, void 0, false, {
                                 fileName: "[project]/components/programs.tsx",
-                                lineNumber: 168,
+                                lineNumber: 109,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1651,38 +1685,38 @@ function Programs() {
                                 children: "Choose from our carefully designed programs tailored to your skill level and goals."
                             }, void 0, false, {
                                 fileName: "[project]/components/programs.tsx",
-                                lineNumber: 171,
+                                lineNumber: 112,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/programs.tsx",
-                        lineNumber: 167,
+                        lineNumber: 108,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8",
-                        children: programs.map((program, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "bg-secondary/30 border border-border rounded-2xl overflow-hidden hover:border-primary/50 hover:bg-secondary/50 transition-all duration-300 flex flex-col cursor-pointer",
+                        children: programs.map((program)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "bg-secondary/30 border border-border rounded-2xl overflow-hidden flex flex-col hover:border-primary/50 transition-all",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                                         src: program.image,
                                         alt: program.title,
-                                        className: "w-full h-40 md:h-48 object-cover hover:scale-110 transition-transform duration-300"
+                                        className: "w-full h-48 object-cover"
                                     }, void 0, false, {
                                         fileName: "[project]/components/programs.tsx",
-                                        lineNumber: 183,
+                                        lineNumber: 121,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "p-4 md:p-6 flex flex-col flex-1",
+                                        className: "p-6 flex flex-col flex-1",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                className: "font-display font-bold text-lg md:text-xl mb-2 text-foreground",
+                                                className: "font-bold text-lg mb-2 text-foreground",
                                                 children: program.title
                                             }, void 0, false, {
                                                 fileName: "[project]/components/programs.tsx",
-                                                lineNumber: 189,
+                                                lineNumber: 123,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1690,640 +1724,439 @@ function Programs() {
                                                 children: program.description
                                             }, void 0, false, {
                                                 fileName: "[project]/components/programs.tsx",
-                                                lineNumber: 190,
+                                                lineNumber: 124,
                                                 columnNumber: 17
                                             }, this),
+                                            " ",
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                                                className: "mt-3 mb-4 space-y-1",
-                                                children: program.features.map((f, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                        className: "text-foreground/70 text-sm flex items-center gap-2",
-                                                        children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                className: "w-1.5 h-1.5 bg-teal-500 rounded-full"
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/components/programs.tsx",
-                                                                lineNumber: 194,
-                                                                columnNumber: 23
-                                                            }, this),
-                                                            f
-                                                        ]
-                                                    }, i, true, {
-                                                        fileName: "[project]/components/programs.tsx",
-                                                        lineNumber: 193,
-                                                        columnNumber: 21
-                                                    }, this))
-                                            }, void 0, false, {
+                                                className: "mb-4 space-y-2 md:space-y-3",
+                                                children: [
+                                                    " ",
+                                                    program.features.map((f, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                            className: "text-foreground/70 text-sm flex items-center gap-2",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                    className: "w-1.5 h-1.5 bg-teal-500 rounded-full"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/components/programs.tsx",
+                                                                    lineNumber: 130,
+                                                                    columnNumber: 23
+                                                                }, this),
+                                                                f
+                                                            ]
+                                                        }, idx, true, {
+                                                            fileName: "[project]/components/programs.tsx",
+                                                            lineNumber: 129,
+                                                            columnNumber: 21
+                                                        }, this))
+                                                ]
+                                            }, void 0, true, {
                                                 fileName: "[project]/components/programs.tsx",
-                                                lineNumber: 191,
+                                                lineNumber: 127,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "space-y-3 flex-1",
+                                                className: "flex justify-between py-2 border-t border-border",
                                                 children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "flex justify-between items-center py-2 border-t border-border",
-                                                        children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                className: "text-foreground/60 text-sm",
-                                                                children: "Duration:"
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/components/programs.tsx",
-                                                                lineNumber: 201,
-                                                                columnNumber: 21
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                className: "font-semibold text-foreground text-sm",
-                                                                children: program.duration
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/components/programs.tsx",
-                                                                lineNumber: 202,
-                                                                columnNumber: 21
-                                                            }, this)
-                                                        ]
-                                                    }, void 0, true, {
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                        className: "text-foreground/60 text-sm",
+                                                        children: "Price:"
+                                                    }, void 0, false, {
                                                         fileName: "[project]/components/programs.tsx",
-                                                        lineNumber: 200,
+                                                        lineNumber: 137,
                                                         columnNumber: 19
                                                     }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "flex justify-between items-center py-2 border-t border-border",
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                        className: "font-semibold text-primary text-sm",
                                                         children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                className: "text-foreground/60 text-sm",
-                                                                children: "Price:"
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/components/programs.tsx",
-                                                                lineNumber: 205,
-                                                                columnNumber: 21
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                className: "font-semibold text-primary text-sm",
-                                                                children: [
-                                                                    "UGX ",
-                                                                    program.price
-                                                                ]
-                                                            }, void 0, true, {
-                                                                fileName: "[project]/components/programs.tsx",
-                                                                lineNumber: 206,
-                                                                columnNumber: 21
-                                                            }, this)
+                                                            "UGX ",
+                                                            program.price
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/programs.tsx",
-                                                        lineNumber: 204,
+                                                        lineNumber: 138,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/programs.tsx",
-                                                lineNumber: 199,
+                                                lineNumber: 136,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                onClick: program.openModal,
-                                                className: "mt-4 md:mt-6 w-full py-2.5 md:py-3 bg-teal-600 text-primary-foreground rounded-lg font-semibold hover:shadow-lg hover:shadow-primary/50 transition-all duration-300 flex items-center justify-center gap-2 text-sm md:text-base",
+                                                onClick: ()=>setActiveModal(program.slug),
+                                                disabled: isSubmitting,
+                                                className: `mt-4 py-3 rounded-lg font-semibold flex items-center justify-center gap-2 transition-all duration-300 ${isSubmitting ? "bg-gray-400 text-white cursor-not-allowed" : "bg-teal-600 text-white hover:shadow-lg"}`,
                                                 children: [
-                                                    program.buttonText,
-                                                    " ",
+                                                    isSubmitting ? "Processing..." : program.slug === "school" ? "Register School" : "Join Class",
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
                                                         size: 18
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/programs.tsx",
-                                                        lineNumber: 213,
-                                                        columnNumber: 40
+                                                        lineNumber: 148,
+                                                        columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/programs.tsx",
-                                                lineNumber: 209,
+                                                lineNumber: 140,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/programs.tsx",
-                                        lineNumber: 188,
+                                        lineNumber: 122,
                                         columnNumber: 15
                                     }, this)
                                 ]
-                            }, idx, true, {
+                            }, program.slug, true, {
                                 fileName: "[project]/components/programs.tsx",
-                                lineNumber: 179,
+                                lineNumber: 120,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/components/programs.tsx",
-                        lineNumber: 177,
+                        lineNumber: 118,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/programs.tsx",
-                lineNumber: 164,
+                lineNumber: 105,
                 columnNumber: 7
             }, this),
-            schoolModalOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm p-4",
+            activeModal && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm",
+                onClick: (e)=>{
+                    if (e.target.classList.contains("fixed")) setActiveModal(null);
+                },
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    ref: modalRef,
-                    className: "bg-white dark:bg-background rounded-2xl max-w-3xl w-full p-8 md:p-12 overflow-y-auto max-h-[90vh]",
+                    className: "bg-background rounded-2xl max-w-2xl w-full p-8 md:p-12 relative overflow-y-auto max-h-[90vh]",
                     children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                            className: "font-bold text-2xl md:text-3xl mb-2 text-foreground",
-                            children: "Register Your School"
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                            onClick: ()=>setActiveModal(null),
+                            className: "absolute top-4 right-4 text-foreground text-lg font-bold hover:text-red-500 transition-all",
+                            children: "✕"
                         }, void 0, false, {
                             fileName: "[project]/components/programs.tsx",
-                            lineNumber: 226,
+                            lineNumber: 163,
                             columnNumber: 13
                         }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "text-foreground/70 mb-6",
-                            children: "Fill in the details of your school and the immediate contact person for registration."
-                        }, void 0, false, {
-                            fileName: "[project]/components/programs.tsx",
-                            lineNumber: 227,
-                            columnNumber: 13
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
-                            className: "space-y-6",
-                            onSubmit: handleSubmitSchool,
+                        activeModal === "school" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
                             children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                    type: "text",
-                                    placeholder: "School Name",
-                                    value: schoolName,
-                                    onChange: (e)=>setSchoolName(e.target.value),
-                                    required: true,
-                                    className: "w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-400"
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                    className: "text-2xl md:text-3xl font-bold mb-4 text-foreground",
+                                    children: "School Registration"
                                 }, void 0, false, {
                                     fileName: "[project]/components/programs.tsx",
-                                    lineNumber: 229,
-                                    columnNumber: 15
+                                    lineNumber: 173,
+                                    columnNumber: 17
                                 }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                    type: "text",
-                                    placeholder: "Immediate Person of Contact",
-                                    value: contactPerson,
-                                    onChange: (e)=>setContactPerson(e.target.value),
-                                    required: true,
-                                    className: "w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-400"
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    className: "text-foreground/70 mb-6",
+                                    children: "Register your school for the Nova Coding Club programs."
                                 }, void 0, false, {
                                     fileName: "[project]/components/programs.tsx",
-                                    lineNumber: 230,
-                                    columnNumber: 15
+                                    lineNumber: 174,
+                                    columnNumber: 17
                                 }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                    type: "submit",
-                                    disabled: isSubmitting,
-                                    className: "w-full py-3 bg-teal-600 text-white rounded-lg font-semibold hover:bg-teal-500 transition-all",
-                                    children: isSubmitting ? "Submitting..." : "Register School"
-                                }, void 0, false, {
-                                    fileName: "[project]/components/programs.tsx",
-                                    lineNumber: 231,
-                                    columnNumber: 15
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/components/programs.tsx",
-                            lineNumber: 228,
-                            columnNumber: 13
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "[project]/components/programs.tsx",
-                    lineNumber: 225,
-                    columnNumber: 11
-                }, this)
-            }, void 0, false, {
-                fileName: "[project]/components/programs.tsx",
-                lineNumber: 224,
-                columnNumber: 9
-            }, this),
-            webDevModalOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm p-4",
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    ref: modalRef,
-                    className: "bg-white dark:bg-background rounded-2xl max-w-3xl w-full p-8 md:p-12 overflow-y-auto max-h-[90vh]",
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                            className: "font-bold text-2xl md:text-3xl mb-2 text-foreground",
-                            children: [
-                                "Register for ",
-                                programTitle
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/components/programs.tsx",
-                            lineNumber: 241,
-                            columnNumber: 13
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "text-foreground/70 mb-6",
-                            children: [
-                                "Fill in your child's details to register for ",
-                                programTitle,
-                                ". Ensure all mandatory fields are filled."
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/components/programs.tsx",
-                            lineNumber: 242,
-                            columnNumber: 13
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
-                            className: "space-y-6",
-                            onSubmit: handleSubmitBootcamp,
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "grid grid-cols-1 md:grid-cols-2 gap-4",
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
+                                    className: "space-y-6",
+                                    onSubmit: (e)=>handleSubmit("school", e),
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                             type: "text",
-                                            placeholder: "Student Name",
-                                            value: studentName,
-                                            onChange: (e)=>setStudentName(e.target.value),
                                             required: true,
-                                            className: "w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-400"
+                                            placeholder: "School Name *",
+                                            value: schoolName,
+                                            onChange: (e)=>setSchoolName(e.target.value),
+                                            className: "w-full px-4 py-3 bg-secondary/30 border border-border rounded-lg"
                                         }, void 0, false, {
                                             fileName: "[project]/components/programs.tsx",
-                                            lineNumber: 245,
-                                            columnNumber: 17
+                                            lineNumber: 176,
+                                            columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                            type: "number",
-                                            placeholder: "Age",
-                                            value: age,
-                                            onChange: (e)=>setAge(e.target.value),
-                                            required: true,
-                                            className: "w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-400"
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/programs.tsx",
-                                            lineNumber: 246,
-                                            columnNumber: 17
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/components/programs.tsx",
-                                    lineNumber: 244,
-                                    columnNumber: 15
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "grid grid-cols-1 md:grid-cols-2 gap-4",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                             type: "text",
-                                            placeholder: "Parent Name",
-                                            value: parentName,
-                                            onChange: (e)=>setParentName(e.target.value),
                                             required: true,
-                                            className: "w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-400"
+                                            placeholder: "Immediate Person of Contact *",
+                                            value: contactPerson,
+                                            onChange: (e)=>setContactPerson(e.target.value),
+                                            className: "w-full px-4 py-3 bg-secondary/30 border border-border rounded-lg"
                                         }, void 0, false, {
                                             fileName: "[project]/components/programs.tsx",
-                                            lineNumber: 249,
-                                            columnNumber: 17
+                                            lineNumber: 177,
+                                            columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                             type: "tel",
                                             placeholder: "Phone Number",
                                             value: phone,
                                             onChange: (e)=>setPhone(e.target.value),
-                                            required: true,
-                                            className: "w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-400"
+                                            className: "w-full px-4 py-3 bg-secondary/30 border border-border rounded-lg"
                                         }, void 0, false, {
                                             fileName: "[project]/components/programs.tsx",
-                                            lineNumber: 250,
-                                            columnNumber: 17
+                                            lineNumber: 178,
+                                            columnNumber: 19
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                            type: "email",
+                                            placeholder: "Email",
+                                            value: email,
+                                            onChange: (e)=>setEmail(e.target.value),
+                                            className: "w-full px-4 py-3 bg-secondary/30 border border-border rounded-lg"
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/programs.tsx",
+                                            lineNumber: 179,
+                                            columnNumber: 19
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "flex items-center gap-2",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                                    type: "checkbox",
+                                                    checked: agree,
+                                                    onChange: (e)=>setAgree(e.target.checked),
+                                                    className: "w-4 h-4"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/programs.tsx",
+                                                    lineNumber: 181,
+                                                    columnNumber: 21
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                                    className: "text-foreground/70 text-sm",
+                                                    children: "I agree to terms and updates"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/programs.tsx",
+                                                    lineNumber: 182,
+                                                    columnNumber: 21
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/components/programs.tsx",
+                                            lineNumber: 180,
+                                            columnNumber: 19
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                            type: "submit",
+                                            disabled: isSubmitting,
+                                            className: "w-full py-4 rounded-lg bg-teal-600 text-white font-semibold",
+                                            children: isSubmitting ? "Submitting..." : "Register"
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/programs.tsx",
+                                            lineNumber: 184,
+                                            columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/programs.tsx",
-                                    lineNumber: 248,
-                                    columnNumber: 15
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                    type: "email",
-                                    placeholder: "Parent Email (optional)",
-                                    value: parentEmail,
-                                    onChange: (e)=>setParentEmail(e.target.value),
-                                    className: "w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-400"
-                                }, void 0, false, {
-                                    fileName: "[project]/components/programs.tsx",
-                                    lineNumber: 252,
-                                    columnNumber: 15
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
-                                    value: hasLaptop,
-                                    onChange: (e)=>setHasLaptop(e.target.value),
-                                    required: true,
-                                    className: "w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-400",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                            value: "",
-                                            children: "Does your child have a laptop?"
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/programs.tsx",
-                                            lineNumber: 254,
-                                            columnNumber: 17
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                            value: "yes",
-                                            children: "Yes"
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/programs.tsx",
-                                            lineNumber: 255,
-                                            columnNumber: 17
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                            value: "no",
-                                            children: "No"
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/programs.tsx",
-                                            lineNumber: 256,
-                                            columnNumber: 17
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/components/programs.tsx",
-                                    lineNumber: 253,
-                                    columnNumber: 15
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
-                                    value: paymentPreference,
-                                    onChange: (e)=>setPaymentPreference(e.target.value),
-                                    required: true,
-                                    className: "w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-400",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                            value: "",
-                                            children: "Payment Preference"
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/programs.tsx",
-                                            lineNumber: 259,
-                                            columnNumber: 17
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                            value: "online",
-                                            children: "Online"
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/programs.tsx",
-                                            lineNumber: 260,
-                                            columnNumber: 17
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                            value: "offline",
-                                            children: "Offline"
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/programs.tsx",
-                                            lineNumber: 261,
-                                            columnNumber: 17
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/components/programs.tsx",
-                                    lineNumber: 258,
-                                    columnNumber: 15
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                    type: "submit",
-                                    disabled: isSubmitting,
-                                    className: "w-full py-3 bg-teal-600 text-white rounded-lg font-semibold hover:bg-teal-500 transition-all",
-                                    children: isSubmitting ? "Submitting..." : "Register"
-                                }, void 0, false, {
-                                    fileName: "[project]/components/programs.tsx",
-                                    lineNumber: 263,
-                                    columnNumber: 15
+                                    lineNumber: 175,
+                                    columnNumber: 17
                                 }, this)
                             ]
-                        }, void 0, true, {
-                            fileName: "[project]/components/programs.tsx",
-                            lineNumber: 243,
-                            columnNumber: 13
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "[project]/components/programs.tsx",
-                    lineNumber: 240,
-                    columnNumber: 11
-                }, this)
-            }, void 0, false, {
-                fileName: "[project]/components/programs.tsx",
-                lineNumber: 239,
-                columnNumber: 9
-            }, this),
-            mobileDevModalOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm p-4",
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    ref: modalRef,
-                    className: "bg-white dark:bg-background rounded-2xl max-w-3xl w-full p-8 md:p-12 overflow-y-auto max-h-[90vh]",
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                            className: "font-bold text-2xl md:text-3xl mb-2 text-foreground",
+                        }, void 0, true),
+                        (activeModal === "webdev" || activeModal === "mobiledev") && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
                             children: [
-                                "Register for ",
-                                programTitle
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/components/programs.tsx",
-                            lineNumber: 273,
-                            columnNumber: 13
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "text-foreground/70 mb-6",
-                            children: [
-                                "Fill in your child's details to register for ",
-                                programTitle,
-                                ". Ensure all mandatory fields are filled."
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/components/programs.tsx",
-                            lineNumber: 274,
-                            columnNumber: 13
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
-                            className: "space-y-6",
-                            onSubmit: handleSubmitBootcamp,
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "grid grid-cols-1 md:grid-cols-2 gap-4",
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                    className: "text-2xl md:text-3xl font-bold mb-4 text-foreground",
+                                    children: activeModal === "webdev" ? "Web Development Bootcamp" : "Mobile Development Bootcamp"
+                                }, void 0, false, {
+                                    fileName: "[project]/components/programs.tsx",
+                                    lineNumber: 192,
+                                    columnNumber: 17
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    className: "text-foreground/70 mb-6",
+                                    children: [
+                                        "Register your child for the ",
+                                        activeModal === "webdev" ? "Web Dev" : "Mobile Dev",
+                                        " bootcamp."
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/components/programs.tsx",
+                                    lineNumber: 193,
+                                    columnNumber: 17
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
+                                    className: "space-y-6",
+                                    onSubmit: (e)=>handleSubmit(activeModal, e),
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                             type: "text",
-                                            placeholder: "Student Name",
+                                            required: true,
+                                            placeholder: "Student Name *",
                                             value: studentName,
                                             onChange: (e)=>setStudentName(e.target.value),
-                                            required: true,
-                                            className: "w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-400"
+                                            className: "w-full px-4 py-3 bg-secondary/30 border border-border rounded-lg"
                                         }, void 0, false, {
                                             fileName: "[project]/components/programs.tsx",
-                                            lineNumber: 277,
-                                            columnNumber: 17
+                                            lineNumber: 195,
+                                            columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                             type: "number",
-                                            placeholder: "Age",
+                                            required: true,
+                                            placeholder: "Age *",
                                             value: age,
                                             onChange: (e)=>setAge(e.target.value),
-                                            required: true,
-                                            className: "w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-400"
+                                            className: "w-full px-4 py-3 bg-secondary/30 border border-border rounded-lg"
                                         }, void 0, false, {
                                             fileName: "[project]/components/programs.tsx",
-                                            lineNumber: 278,
-                                            columnNumber: 17
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/components/programs.tsx",
-                                    lineNumber: 276,
-                                    columnNumber: 15
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "grid grid-cols-1 md:grid-cols-2 gap-4",
-                                    children: [
+                                            lineNumber: 196,
+                                            columnNumber: 19
+                                        }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                             type: "text",
-                                            placeholder: "Parent Name",
+                                            required: true,
+                                            placeholder: "Parent Name *",
                                             value: parentName,
                                             onChange: (e)=>setParentName(e.target.value),
-                                            required: true,
-                                            className: "w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-400"
+                                            className: "w-full px-4 py-3 bg-secondary/30 border border-border rounded-lg"
                                         }, void 0, false, {
                                             fileName: "[project]/components/programs.tsx",
-                                            lineNumber: 281,
-                                            columnNumber: 17
+                                            lineNumber: 197,
+                                            columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                             type: "tel",
-                                            placeholder: "Phone Number",
+                                            required: true,
+                                            placeholder: "Phone Number *",
                                             value: phone,
                                             onChange: (e)=>setPhone(e.target.value),
+                                            className: "w-full px-4 py-3 bg-secondary/30 border border-border rounded-lg"
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/programs.tsx",
+                                            lineNumber: 198,
+                                            columnNumber: 19
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                            type: "email",
+                                            placeholder: "Parent Email (Optional)",
+                                            value: parentEmail,
+                                            onChange: (e)=>setParentEmail(e.target.value),
+                                            className: "w-full px-4 py-3 bg-secondary/30 border border-border rounded-lg"
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/programs.tsx",
+                                            lineNumber: 199,
+                                            columnNumber: 19
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
                                             required: true,
-                                            className: "w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-400"
+                                            value: hasLaptop,
+                                            onChange: (e)=>setHasLaptop(e.target.value),
+                                            className: "w-full px-4 py-3 bg-secondary/30 border border-border rounded-lg",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                    value: "",
+                                                    children: "Does your child have a laptop? *"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/programs.tsx",
+                                                    lineNumber: 201,
+                                                    columnNumber: 21
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                    value: "Yes",
+                                                    children: "Yes"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/programs.tsx",
+                                                    lineNumber: 202,
+                                                    columnNumber: 21
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                    value: "No",
+                                                    children: "No"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/programs.tsx",
+                                                    lineNumber: 203,
+                                                    columnNumber: 21
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/components/programs.tsx",
+                                            lineNumber: 200,
+                                            columnNumber: 19
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
+                                            required: true,
+                                            value: paymentPreference,
+                                            onChange: (e)=>setPaymentPreference(e.target.value),
+                                            className: "w-full px-4 py-3 bg-secondary/30 border border-border rounded-lg",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                    value: "",
+                                                    children: "Payment Preference *"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/programs.tsx",
+                                                    lineNumber: 206,
+                                                    columnNumber: 21
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                    value: "Bank",
+                                                    children: "Bank"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/programs.tsx",
+                                                    lineNumber: 207,
+                                                    columnNumber: 21
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                    value: "Mobile Money",
+                                                    children: "Mobile Money"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/programs.tsx",
+                                                    lineNumber: 208,
+                                                    columnNumber: 21
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                    value: "Cash",
+                                                    children: "Cash"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/programs.tsx",
+                                                    lineNumber: 209,
+                                                    columnNumber: 21
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/components/programs.tsx",
+                                            lineNumber: 205,
+                                            columnNumber: 19
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                            type: "submit",
+                                            disabled: isSubmitting,
+                                            className: "w-full py-4 rounded-lg bg-teal-600 text-white font-semibold",
+                                            children: isSubmitting ? "Submitting..." : "Register"
                                         }, void 0, false, {
                                             fileName: "[project]/components/programs.tsx",
-                                            lineNumber: 282,
-                                            columnNumber: 17
+                                            lineNumber: 211,
+                                            columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/programs.tsx",
-                                    lineNumber: 280,
-                                    columnNumber: 15
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                    type: "email",
-                                    placeholder: "Parent Email (optional)",
-                                    value: parentEmail,
-                                    onChange: (e)=>setParentEmail(e.target.value),
-                                    className: "w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-400"
-                                }, void 0, false, {
-                                    fileName: "[project]/components/programs.tsx",
-                                    lineNumber: 284,
-                                    columnNumber: 15
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
-                                    value: hasLaptop,
-                                    onChange: (e)=>setHasLaptop(e.target.value),
-                                    required: true,
-                                    className: "w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-400",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                            value: "",
-                                            children: "Does your child have a laptop?"
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/programs.tsx",
-                                            lineNumber: 286,
-                                            columnNumber: 17
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                            value: "yes",
-                                            children: "Yes"
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/programs.tsx",
-                                            lineNumber: 287,
-                                            columnNumber: 17
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                            value: "no",
-                                            children: "No"
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/programs.tsx",
-                                            lineNumber: 288,
-                                            columnNumber: 17
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/components/programs.tsx",
-                                    lineNumber: 285,
-                                    columnNumber: 15
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
-                                    value: paymentPreference,
-                                    onChange: (e)=>setPaymentPreference(e.target.value),
-                                    required: true,
-                                    className: "w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-400",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                            value: "",
-                                            children: "Payment Preference"
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/programs.tsx",
-                                            lineNumber: 291,
-                                            columnNumber: 17
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                            value: "online",
-                                            children: "Online"
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/programs.tsx",
-                                            lineNumber: 292,
-                                            columnNumber: 17
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                            value: "offline",
-                                            children: "Offline"
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/programs.tsx",
-                                            lineNumber: 293,
-                                            columnNumber: 17
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/components/programs.tsx",
-                                    lineNumber: 290,
-                                    columnNumber: 15
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                    type: "submit",
-                                    disabled: isSubmitting,
-                                    className: "w-full py-3 bg-teal-600 text-white rounded-lg font-semibold hover:bg-teal-500 transition-all",
-                                    children: isSubmitting ? "Submitting..." : "Register"
-                                }, void 0, false, {
-                                    fileName: "[project]/components/programs.tsx",
-                                    lineNumber: 295,
-                                    columnNumber: 15
+                                    lineNumber: 194,
+                                    columnNumber: 17
                                 }, this)
                             ]
-                        }, void 0, true, {
-                            fileName: "[project]/components/programs.tsx",
-                            lineNumber: 275,
-                            columnNumber: 13
-                        }, this)
+                        }, void 0, true)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/programs.tsx",
-                    lineNumber: 272,
+                    lineNumber: 162,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/programs.tsx",
-                lineNumber: 271,
+                lineNumber: 158,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/programs.tsx",
-        lineNumber: 163,
+        lineNumber: 104,
         columnNumber: 5
     }, this);
 }
-_s(Programs, "ylPVvEC4icGUBW64WhoyqBhKQN0=");
+_s(Programs, "+l7T5CW1JtyohkOkVrXaTzfmJhA=");
 _c = Programs;
 var _c;
 __turbopack_context__.k.register(_c, "Programs");
@@ -2530,12 +2363,6 @@ function Categories() {
             slug: "mobile-development-bootcamp"
         },
         {
-            name: "Python Programming",
-            count: "1 Program",
-            image: "/python.jpg",
-            slug: "python-programming"
-        },
-        {
             name: "UI/UX Design Fundamentals",
             count: "1 Program",
             image: "/ui.jpg",
@@ -2554,7 +2381,7 @@ function Categories() {
                         children: "Program Categories"
                     }, void 0, false, {
                         fileName: "[project]/components/categories.tsx",
-                        lineNumber: 42,
+                        lineNumber: 36,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2569,7 +2396,7 @@ function Categories() {
                                         className: "w-full h-52 md:h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                                     }, void 0, false, {
                                         fileName: "[project]/components/categories.tsx",
-                                        lineNumber: 50,
+                                        lineNumber: 44,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2580,7 +2407,7 @@ function Categories() {
                                                 children: cat.name
                                             }, void 0, false, {
                                                 fileName: "[project]/components/categories.tsx",
-                                                lineNumber: 56,
+                                                lineNumber: 50,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2588,40 +2415,40 @@ function Categories() {
                                                 children: cat.count
                                             }, void 0, false, {
                                                 fileName: "[project]/components/categories.tsx",
-                                                lineNumber: 59,
+                                                lineNumber: 53,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/categories.tsx",
-                                        lineNumber: 55,
+                                        lineNumber: 49,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, idx, true, {
                                 fileName: "[project]/components/categories.tsx",
-                                lineNumber: 45,
+                                lineNumber: 39,
                                 columnNumber: 15
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/components/categories.tsx",
-                        lineNumber: 43,
+                        lineNumber: 37,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/categories.tsx",
-                lineNumber: 41,
+                lineNumber: 35,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/components/categories.tsx",
-            lineNumber: 40,
+            lineNumber: 34,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/categories.tsx",
-        lineNumber: 39,
+        lineNumber: 33,
         columnNumber: 5
     }, this);
 }
