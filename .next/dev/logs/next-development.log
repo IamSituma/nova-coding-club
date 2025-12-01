@@ -1,378 +1,122 @@
-[00:00:00.931] Server  LOG      ✓ Ready in 608ms
-[00:00:08.795] Server  LOG      ○ Compiling /programs ...
-[00:00:10.278] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:10.691] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:10.691] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/programs","route":"/programs"}
-[00:00:10.691] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764526646235}
-[00:00:18.610] Browser WARN    Image with src "http://localhost:3000/logo1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:01:16.298] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/programs/page.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[00:01:16.606] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:16.826] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:01:16.826] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/programs","route":"/programs"}
-[00:01:16.826] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764526712277}
-[00:01:31.403] Server  LOG      ✓ Compiled in 105ms
-[00:01:31.507] Browser ERROR   ./app/programs/page.tsx:20:9
-Parsing ecmascript source code failed
-  18 |       description: "Perfect for high school students looking to learn programming fundamentals.",
-  19 |       features: [
-> 20 |         "Pyth,
-     |         ^^^^^^
-  21 |         "Web Development",
-  22 |         "Project Portfolio",
-  23 |         "Career Guidance",
+[00:00:00.937] Server  LOG      ✓ Ready in 626ms
+[00:00:17.782] Server  LOG      ○ Compiling / ...
+[00:00:20.572] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:21.024] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:21.024] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:21.024] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764569950399}
+[00:00:37.532] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:37.843] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:38.131] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:38.131] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:38.131] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764569967505}
+[00:00:38.709] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:38.710] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:38.710] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764569967245}
+[00:00:55.199] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:55.441] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:55.441] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:55.441] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764569984801}
+[00:01:14.698] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:15.084] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
-Unterminated string constant
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
 
-Import traces:
-  Client Component Browser:
-    ./app/programs/page.tsx [Client Component Browser]
-    ./app/programs/page.tsx [Server Component]
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
 
-  Client Component SSR:
-    ./app/programs/page.tsx [Client Component SSR]
-    ./app/programs/page.tsx [Server Component]
-[00:01:35.835] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/programs/page.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[00:01:36.150] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:36.353] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:01:36.353] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/programs","route":"/programs"}
-[00:01:36.353] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764526731846}
-[00:01:36.353] Browser WARN    Image with src "http://localhost:3000/logo1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:01:44.133] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs/school-coding-club color: rgb(120, 120, 120) color: inherit {"dp":"/programs/[slug]","o":"http://localhost:3000/programs/school-coding-club","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764526739674}
-[00:01:55.550] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764526750714}
-[00:01:58.277] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764526753727}
-[00:02:26.358] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/programs/page.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[00:02:26.826] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:02:27.298] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:02:27.298] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/programs","route":"/programs"}
-[00:02:27.298] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764526782597}
-[00:02:40.678] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs/school-coding-club color: rgb(120, 120, 120) color: inherit {"dp":"/programs/[slug]","o":"http://localhost:3000/programs/school-coding-club","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764526796205}
-[00:02:40.678] Browser WARN    Image with src "http://localhost:3000/logo1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:02:44.001] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764526799543}
-[00:02:45.314] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs/web-development-bootcamp color: rgb(120, 120, 120) color: inherit {"dp":"/programs/[slug]","o":"http://localhost:3000/programs/web-development-bootcamp","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764526800855}
-[00:02:49.127] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764526804669}
-[00:02:50.689] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs/mobile-development-bootcamp color: rgb(120, 120, 120) color: inherit {"dp":"/programs/[slug]","o":"http://localhost:3000/programs/mobile-development-bootcamp","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764526806230}
-[00:03:04.023] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764526819410}
-[00:03:15.429] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs/mobile-development-bootcamp color: rgb(120, 120, 120) color: inherit {"dp":"/programs/[slug]","o":"http://localhost:3000/programs/mobile-development-bootcamp","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764526830971}
-[00:03:30.874] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764526846247}
-[00:04:04.123] Server  LOG      ✓ Compiled in 88ms
-[00:04:10.243] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:04:10.382] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:04:10.382] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/programs","route":"/programs"}
-[00:04:10.382] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764526885925}
-[00:04:41.447] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:04:41.893] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:04:41.894] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/programs","route":"/programs"}
-[00:04:41.894] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764526917437}
-[00:10:51.105] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs/school-coding-club color: rgb(120, 120, 120) color: inherit {"dp":"/programs/[slug]","o":"http://localhost:3000/programs/school-coding-club","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764527286615}
-[00:10:51.105] Browser WARN    Image with src "http://localhost:3000/logo1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:10:55.168] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764527290552}
-[00:11:12.318] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs/school-coding-club color: rgb(120, 120, 120) color: inherit {"dp":"/programs/[slug]","o":"http://localhost:3000/programs/school-coding-club","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764527307673}
-[00:11:28.330] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764527323727}
-[00:11:37.775] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/contact color: rgb(120, 120, 120) color: inherit {"dp":"/contact","o":"http://localhost:3000/contact","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764527333204}
-[00:11:52.438] Server  LOG      ✓ Compiled in 242ms
-[00:11:52.484] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/programs/page.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[00:11:52.906] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:11:54.631] Browser WARN    Image with src "http://localhost:3000/logo1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:11:55.265] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:11:55.265] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/contact","route":"/contact"}
-[00:11:55.265] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/contact color: rgb(120, 120, 120) color: inherit {"dp":"/contact","o":"http://localhost:3000/contact","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764527350809}
-[00:11:56.910] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764527352215}
-[00:12:26.153] Server  LOG      ✓ Compiled in 90ms
-[00:12:31.028] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:12:31.216] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:12:31.216] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/programs","route":"/programs"}
-[00:12:31.216] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764527386750}
-[00:12:31.216] Browser WARN    Image with src "http://localhost:3000/logo1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:12:51.485] Server  LOG      ✓ Compiled in 99ms
-[00:13:40.997] Server  LOG      ✓ Compiled in 98ms
-[00:16:37.836] Server  LOG      ✓ Compiled in 98ms
-[00:19:54.960] Server  LOG      ✓ Compiled in 113ms
-[00:19:55.882] Server  ERROR    ⨯ Error: Failed to load chunk server/chunks/ssr/_1141eef8._.js from module [project]/node_modules/next/dist/esm/build/templates/app-page.js?page=/programs/page { GLOBAL_ERROR_MODULE => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_0 => "[project]/app/layout.tsx [app-rsc] (ecmascript, Next.js Server Component)", MODULE_1 => "[project]/node_modules/next/dist/client/components/builtin/not-found.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_2 => "[project]/node_modules/next/dist/client/components/builtin/forbidden.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_3 => "[project]/node_modules/next/dist/client/components/builtin/unauthorized.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_4 => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_5 => "[project]/app/programs/page.tsx [app-rsc] (ecmascript, Next.js Server Component)" } [app-rsc] (ecmascript) <locals>
-[00:19:56.494] Server  ERROR   Error: Failed to load chunk server/chunks/ssr/_1141eef8._.js from module [project]/node_modules/next/dist/esm/build/templates/app-page.js?page=/programs/page { GLOBAL_ERROR_MODULE => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_0 => "[project]/app/layout.tsx [app-rsc] (ecmascript, Next.js Server Component)", MODULE_1 => "[project]/node_modules/next/dist/client/components/builtin/not-found.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_2 => "[project]/node_modules/next/dist/client/components/builtin/forbidden.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_3 => "[project]/node_modules/next/dist/client/components/builtin/unauthorized.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_4 => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_5 => "[project]/app/programs/page.tsx [app-rsc] (ecmascript, Next.js Server Component)" } [app-rsc] (ecmascript) <locals>
-[00:19:57.109] Server  ERROR    ⨯ "unhandledRejection:" Error: Failed to load chunk server/chunks/ssr/_1141eef8._.js from module [project]/node_modules/next/dist/esm/build/templates/app-page.js?page=/programs/page { GLOBAL_ERROR_MODULE => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_0 => "[project]/app/layout.tsx [app-rsc] (ecmascript, Next.js Server Component)", MODULE_1 => "[project]/node_modules/next/dist/client/components/builtin/not-found.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_2 => "[project]/node_modules/next/dist/client/components/builtin/forbidden.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_3 => "[project]/node_modules/next/dist/client/components/builtin/unauthorized.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_4 => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_5 => "[project]/app/programs/page.tsx [app-rsc] (ecmascript, Next.js Server Component)" } [app-rsc] (ecmascript) <locals>
-[00:19:57.650] Server  ERROR    ⨯ "unhandledRejection: " Error: Failed to load chunk server/chunks/ssr/_1141eef8._.js from module [project]/node_modules/next/dist/esm/build/templates/app-page.js?page=/programs/page { GLOBAL_ERROR_MODULE => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_0 => "[project]/app/layout.tsx [app-rsc] (ecmascript, Next.js Server Component)", MODULE_1 => "[project]/node_modules/next/dist/client/components/builtin/not-found.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_2 => "[project]/node_modules/next/dist/client/components/builtin/forbidden.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_3 => "[project]/node_modules/next/dist/client/components/builtin/unauthorized.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_4 => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_5 => "[project]/app/programs/page.tsx [app-rsc] (ecmascript, Next.js Server Component)" } [app-rsc] (ecmascript) <locals>
-[00:19:57.856] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:19:58.301] Browser ERROR   uncaughtError: SyntaxError: Unexpected token '<'
-[00:21:26.129] Server  LOG      ✓ Compiled in 97ms
-[00:22:15.871] Server  LOG      ✓ Compiled in 93ms
-[00:22:41.723] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:22:42.071] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:22:42.071] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/programs","route":"/programs"}
-[00:22:42.071] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764527997611}
-[00:22:42.071] Browser WARN    Image with src "http://localhost:3000/logo1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:22:53.782] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/about color: rgb(120, 120, 120) color: inherit {"dp":"/about","o":"http://localhost:3000/about","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764528009323}
-[00:22:56.460] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764528011908}
-[00:24:18.118] Server  LOG      ✓ Compiled in 222ms
-[00:25:18.799] Server  LOG      ✓ Compiled in 78ms
-[00:25:22.045] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:25:22.192] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:25:22.192] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/register","route":"/register"}
-[00:25:22.192] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/register color: rgb(120, 120, 120) color: inherit {"dp":"/register","o":"http://localhost:3000/register","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764528157736}
-[00:25:45.392] Browser ERROR   ./app/programs/page.tsx:34:17
-Parsing ecmascript source code failed
-  32 |             >
-  33 |               Contact Us <ArrowRight size={20} />
-> 34 |           </div>
-     |                 ^
-> 35 |         </div>
-     | ^^^^^^^^^
-  36 |       </section>
-  37 |
-  38 |       <Programs />
+%s%s https://react.dev/link/hydration-mismatch 
 
-Expected '</', got 'jsx text (
-        )'
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="en"
+                          className="inter_b2991b2-module__9mH_6q__variable poppins_e2c50352-module__BpWDjG__variable"
+-                         webcrx=""
+                        >
+                  ...
 
-Import traces:
-  Client Component Browser:
-    ./app/programs/page.tsx [Client Component Browser]
-    ./app/programs/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/programs/page.tsx [Client Component SSR]
-    ./app/programs/page.tsx [Server Component]
-[00:25:49.313] Server  ERROR    ⨯ ./app/programs/page.tsx:34:17
-Parsing ecmascript source code failed
-  32 |             >
-  33 |               Contact Us <ArrowRight size={20} />
-> 34 |           </div>
-     |                 ^
-> 35 |         </div>
-     | ^^^^^^^^^
-  36 |       </section>
-  37 |
-  38 |       <Programs />
-
-Expected '</', got 'jsx text (
-        )'
-
-Import traces:
-  Client Component Browser:
-    ./app/programs/page.tsx [Client Component Browser]
-    ./app/programs/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/programs/page.tsx [Client Component SSR]
-    ./app/programs/page.tsx [Server Component]
-
-
-[00:25:49.431] Browser ERROR   ./app/programs/page.tsx:34:17
-Parsing ecmascript source code failed
-  32 |             >
-  33 |               Contact Us <ArrowRight size={20} />
-> 34 |           </div>
-     |                 ^
-> 35 |         </div>
-     | ^^^^^^^^^
-  36 |       </section>
-  37 |
-  38 |       <Programs />
-
-Expected '</', got 'jsx text (
-        )'
-
-Import traces:
-  Client Component Browser:
-    ./app/programs/page.tsx [Client Component Browser]
-    ./app/programs/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/programs/page.tsx [Client Component SSR]
-    ./app/programs/page.tsx [Server Component]
-[00:25:50.303] Browser ERROR   ./app/programs/page.tsx:34:17
-Parsing ecmascript source code failed
-  32 |             >
-  33 |               Contact Us <ArrowRight size={20} />
-> 34 |           </div>
-     |                 ^
-> 35 |         </div>
-     | ^^^^^^^^^
-  36 |       </section>
-  37 |
-  38 |       <Programs />
-
-Expected '</', got 'jsx text (
-        )'
-
-Import traces:
-  Client Component Browser:
-    ./app/programs/page.tsx [Client Component Browser]
-    ./app/programs/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/programs/page.tsx [Client Component SSR]
-    ./app/programs/page.tsx [Server Component]
-[00:25:50.424] Browser ERROR   ./app/programs/page.tsx:34:17
-Parsing ecmascript source code failed
-  32 |             >
-  33 |               Contact Us <ArrowRight size={20} />
-> 34 |           </div>
-     |                 ^
-> 35 |         </div>
-     | ^^^^^^^^^
-  36 |       </section>
-  37 |
-  38 |       <Programs />
-
-Expected '</', got 'jsx text (
-        )'
-
-Import traces:
-  Client Component Browser:
-    ./app/programs/page.tsx [Client Component Browser]
-    ./app/programs/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/programs/page.tsx [Client Component SSR]
-    ./app/programs/page.tsx [Server Component]
-[00:25:51.134] Browser ERROR   uncaughtError: Error: ./app/programs/page.tsx:34:17
-Parsing ecmascript source code failed
-  32 |             >
-  33 |               Contact Us <ArrowRight size={20} />
-> 34 |           </div>
-     |                 ^
-> 35 |         </div>
-     | ^^^^^^^^^
-  36 |       </section>
-  37 |
-  38 |       <Programs />
-
-Expected '</', got 'jsx text (
-        )'
-
-Import traces:
-  Client Component Browser:
-    ./app/programs/page.tsx [Client Component Browser]
-    ./app/programs/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/programs/page.tsx [Client Component SSR]
-    ./app/programs/page.tsx [Server Component]
-
-
-[00:25:51.336] Browser ERROR   ./app/programs/page.tsx:34:17
-Parsing ecmascript source code failed
-  32 |             >
-  33 |               Contact Us <ArrowRight size={20} />
-> 34 |           </div>
-     |                 ^
-> 35 |         </div>
-     | ^^^^^^^^^
-  36 |       </section>
-  37 |
-  38 |       <Programs />
-
-Expected '</', got 'jsx text (
-        )'
-
-Import traces:
-  Client Component Browser:
-    ./app/programs/page.tsx [Client Component Browser]
-    ./app/programs/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/programs/page.tsx [Client Component SSR]
-    ./app/programs/page.tsx [Server Component]
-[00:25:51.336] Browser ERROR   ./app/programs/page.tsx:34:17
-Parsing ecmascript source code failed
-  32 |             >
-  33 |               Contact Us <ArrowRight size={20} />
-> 34 |           </div>
-     |                 ^
-> 35 |         </div>
-     | ^^^^^^^^^
-  36 |       </section>
-  37 |
-  38 |       <Programs />
-
-Expected '</', got 'jsx text (
-        )'
-
-Import traces:
-  Client Component Browser:
-    ./app/programs/page.tsx [Client Component Browser]
-    ./app/programs/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/programs/page.tsx [Client Component SSR]
-    ./app/programs/page.tsx [Server Component]
-[00:25:53.373] Browser ERROR   uncaughtError: Error: ./app/programs/page.tsx:34:17
-Parsing ecmascript source code failed
-  32 |             >
-  33 |               Contact Us <ArrowRight size={20} />
-> 34 |           </div>
-     |                 ^
-> 35 |         </div>
-     | ^^^^^^^^^
-  36 |       </section>
-  37 |
-  38 |       <Programs />
-
-Expected '</', got 'jsx text (
-        )'
-
-Import traces:
-  Client Component Browser:
-    ./app/programs/page.tsx [Client Component Browser]
-    ./app/programs/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/programs/page.tsx [Client Component SSR]
-    ./app/programs/page.tsx [Server Component]
-
-
-[00:25:53.562] Browser ERROR   ./app/programs/page.tsx:34:17
-Parsing ecmascript source code failed
-  32 |             >
-  33 |               Contact Us <ArrowRight size={20} />
-> 34 |           </div>
-     |                 ^
-> 35 |         </div>
-     | ^^^^^^^^^
-  36 |       </section>
-  37 |
-  38 |       <Programs />
-
-Expected '</', got 'jsx text (
-        )'
-
-Import traces:
-  Client Component Browser:
-    ./app/programs/page.tsx [Client Component Browser]
-    ./app/programs/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/programs/page.tsx [Client Component SSR]
-    ./app/programs/page.tsx [Server Component]
-[00:25:53.563] Browser ERROR   ./app/programs/page.tsx:34:17
-Parsing ecmascript source code failed
-  32 |             >
-  33 |               Contact Us <ArrowRight size={20} />
-> 34 |           </div>
-     |                 ^
-> 35 |         </div>
-     | ^^^^^^^^^
-  36 |       </section>
-  37 |
-  38 |       <Programs />
-
-Expected '</', got 'jsx text (
-        )'
-
-Import traces:
-  Client Component Browser:
-    ./app/programs/page.tsx [Client Component Browser]
-    ./app/programs/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/programs/page.tsx [Client Component SSR]
-    ./app/programs/page.tsx [Server Component]
-[00:26:09.424] Server  LOG      ✓ Compiled in 81ms
-[00:26:09.769] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:26:09.930] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:26:09.930] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/about","route":"/about"}
-[00:26:09.930] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/about color: rgb(120, 120, 120) color: inherit {"dp":"/about","o":"http://localhost:3000/about","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764528205469}
-[00:26:09.930] Browser WARN    Image with src "http://localhost:3000/logo1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:26:12.528] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764528207867}
-[00:26:16.422] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/contact color: rgb(120, 120, 120) color: inherit {"dp":"/contact","o":"http://localhost:3000/contact","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764528211963}
-[00:26:20.441] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764528215648}
+[00:01:16.055] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:01:16.055] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:01:16.055] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764570005429}
+[00:01:35.925] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764570025093}
+[00:01:35.925] Browser WARN    Image with src "http://localhost:3000/logo1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:01:56.044] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764570045241}
+[00:17:07.345] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764570956349}
+[00:17:07.345] Browser WARN    Image with src "http://localhost:3000/logo1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:18:07.824] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs/school-coding-club color: rgb(120, 120, 120) color: inherit {"dp":"/programs/[slug]","o":"http://localhost:3000/programs/school-coding-club","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764571017197}
+[00:18:14.112] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764571023484}
+[00:20:02.284] Server  LOG      ✓ Compiled in 127ms
+[00:20:06.994] Server  LOG      ✓ Compiled in 110ms
+[00:23:22.789] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764571331770}
+[00:28:50.591] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764571659688}
+[00:37:06.099] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764572155447}
+[00:37:14.139] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764572163512}
+[00:37:20.752] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764572170125}
+[01:00:04.335] Server  LOG      ✓ Compiled in 64ms
+[01:00:45.263] Server  LOG      ✓ Compiled in 47ms
+[01:01:10.754] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:01:11.299] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[01:01:11.300] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[01:01:11.300] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764573600674}
+[01:09:24.480] Server  LOG      ✓ Compiled in 203ms
+[01:09:55.683] Server  LOG      ✓ Compiled in 81ms
+[01:10:01.604] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:10:01.978] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[01:10:01.978] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[01:10:01.978] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764574131352}
+[01:14:25.322] Server  LOG      ✓ Compiled in 83ms
+[01:20:08.310] Server  LOG      ✓ Compiled in 139ms
+[01:24:21.569] Server  LOG      ✓ Compiled in 40ms
+[01:31:29.809] Server  LOG      ✓ Compiled in 85ms
+[01:34:09.040] Server  LOG      ✓ Compiled in 100ms
+[01:37:34.058] Server  LOG      ✓ Compiled in 48ms
+[01:43:20.399] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764576324975}
+[01:43:20.399] Browser WARN    Image with src "http://localhost:3000/logo1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:43:32.954] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764576337495}
+[01:43:44.491] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs/school-coding-club color: rgb(120, 120, 120) color: inherit {"dp":"/programs/[slug]","o":"http://localhost:3000/programs/school-coding-club","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764576349083}
+[01:43:59.425] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764576364016}
+[01:44:03.596] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:44:03.742] Browser WARN    Image with src "http://localhost:3000/logo1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:44:04.182] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[01:44:04.183] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/programs","route":"/programs"}
+[01:44:04.183] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764576368774}
+[01:44:05.849] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764576370408}
+[01:44:26.891] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764576391482}
+[01:44:34.390] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764576398957}
+[02:00:57.822] Server  LOG      ✓ Compiled in 40ms
+[02:04:59.942] Server  LOG      ✓ Compiled in 120ms
+[02:05:09.427] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:05:09.606] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[02:05:09.606] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[02:05:09.606] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764577634198}
+[02:18:09.597] Server  LOG      ✓ Compiled in 122ms
+[02:18:10.709] Browser WARN    Image with src "http://localhost:3000/logo1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[02:18:29.069] Server  LOG      ✓ Compiled in 56ms
+[02:19:33.838] Server  LOG      ✓ Compiled in 54ms
+[02:23:18.884] Server  LOG      ✓ Compiled in 117ms
+[02:25:35.391] Server  LOG      ✓ Compiled in 97ms
+[02:27:42.708] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/programs color: rgb(120, 120, 120) color: inherit {"dp":"/programs","o":"http://localhost:3000/programs","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764578987299}
+[02:27:48.741] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764578993327}
+[02:28:22.636] Server  LOG      ✓ Compiled in 48ms
+[02:32:25.890] Server  LOG      ✓ Compiled in 54ms
+[02:34:16.580] Server  LOG      ✓ Compiled in 53ms
+[02:37:46.978] Server  LOG      ✓ Compiled in 94ms
+[02:39:09.504] Server  LOG      ✓ Compiled in 41ms
