@@ -287,7 +287,8 @@ function Programs() {
                 "HTML, CSS & Javascript Basics",
                 "Project Portfolio",
                 "Web Development",
-                "Career Guidance"
+                "Career Guidance",
+                "1 Session Per Week"
             ]
         },
         {
@@ -300,20 +301,22 @@ function Programs() {
                 "Frontend & Backend",
                 "Database Design",
                 "Deployment",
-                "Job Prep"
+                "Job Prep",
+                "3 Sessions Per Week"
             ]
         },
         {
-            title: "Bootcamp - Mobile Development",
+            title: "Bootcamp - Summer",
             slug: "mobiledev",
-            image: "/app.jpg",
+            image: "/college.jpg",
             description: "Master mobile app development for iOS and Android platforms.",
-            price: "650,000",
+            price: "1,000,000",
             features: [
                 "React Native",
                 "Flutter",
                 "APIs",
-                "App Publishing"
+                "App Publishing",
+                "3 Sessions Per Week"
             ]
         }
     ];

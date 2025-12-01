@@ -27,7 +27,7 @@ export default function Programs() {
       image: "/school.png",
       description: "Perfect for high school students learning programming fundamentals.",
       price: "250,000",
-      features: ["HTML, CSS & Javascript Basics", "Project Portfolio", "Web Development","Career Guidance"],
+      features: ["HTML, CSS & Javascript Basics", "Project Portfolio", "Web Development","Career Guidance", "1 Session Per Week"],
     },
     {
       title: "Bootcamp - Web Development",
@@ -35,15 +35,15 @@ export default function Programs() {
       image: "/web.jpg",
       description: "Intensive bootcamp to become a full-stack web developer.",
       price: "450,000",
-      features: ["Frontend & Backend", "Database Design", "Deployment", "Job Prep"],
+      features: ["Frontend & Backend", "Database Design", "Deployment", "Job Prep", "3 Sessions Per Week"],
     },
     {
-      title: "Bootcamp - Mobile Development",
+      title: "Bootcamp - Summer",
       slug: "mobiledev",
-      image: "/app.jpg",
+      image: "/college.jpg",
       description: "Master mobile app development for iOS and Android platforms.",
-      price: "650,000",
-      features: ["React Native", "Flutter", "APIs", "App Publishing"],
+      price: "1,000,000",
+      features: ["React Native", "Flutter", "APIs", "App Publishing", "3 Sessions Per Week"],
     },
   ]
 

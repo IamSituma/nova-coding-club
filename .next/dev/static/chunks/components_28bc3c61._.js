@@ -995,7 +995,8 @@ function Programs() {
                 "HTML, CSS & Javascript Basics",
                 "Project Portfolio",
                 "Web Development",
-                "Career Guidance"
+                "Career Guidance",
+                "1 Session Per Week"
             ]
         },
         {
@@ -1008,20 +1009,22 @@ function Programs() {
                 "Frontend & Backend",
                 "Database Design",
                 "Deployment",
-                "Job Prep"
+                "Job Prep",
+                "3 Sessions Per Week"
             ]
         },
         {
-            title: "Bootcamp - Mobile Development",
+            title: "Bootcamp - Summer",
             slug: "mobiledev",
-            image: "/app.jpg",
+            image: "/college.jpg",
             description: "Master mobile app development for iOS and Android platforms.",
-            price: "650,000",
+            price: "1,000,000",
             features: [
                 "React Native",
                 "Flutter",
                 "APIs",
-                "App Publishing"
+                "App Publishing",
+                "3 Sessions Per Week"
             ]
         }
     ];
@@ -1806,12 +1809,6 @@ function Categories() {
             slug: "mobile-development-bootcamp"
         },
         {
-            name: "Python Programming",
-            count: "1 Program",
-            image: "/python.jpg",
-            slug: "python-programming"
-        },
-        {
             name: "UI/UX Design Fundamentals",
             count: "1 Program",
             image: "/ui.jpg",
@@ -1830,7 +1827,7 @@ function Categories() {
                         children: "Program Categories"
                     }, void 0, false, {
                         fileName: "[project]/components/categories.tsx",
-                        lineNumber: 42,
+                        lineNumber: 36,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1845,7 +1842,7 @@ function Categories() {
                                         className: "w-full h-52 md:h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                                     }, void 0, false, {
                                         fileName: "[project]/components/categories.tsx",
-                                        lineNumber: 50,
+                                        lineNumber: 44,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1856,7 +1853,7 @@ function Categories() {
                                                 children: cat.name
                                             }, void 0, false, {
                                                 fileName: "[project]/components/categories.tsx",
-                                                lineNumber: 56,
+                                                lineNumber: 50,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1864,40 +1861,40 @@ function Categories() {
                                                 children: cat.count
                                             }, void 0, false, {
                                                 fileName: "[project]/components/categories.tsx",
-                                                lineNumber: 59,
+                                                lineNumber: 53,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/categories.tsx",
-                                        lineNumber: 55,
+                                        lineNumber: 49,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, idx, true, {
                                 fileName: "[project]/components/categories.tsx",
-                                lineNumber: 45,
+                                lineNumber: 39,
                                 columnNumber: 15
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/components/categories.tsx",
-                        lineNumber: 43,
+                        lineNumber: 37,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/categories.tsx",
-                lineNumber: 41,
+                lineNumber: 35,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/components/categories.tsx",
-            lineNumber: 40,
+            lineNumber: 34,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/categories.tsx",
-        lineNumber: 39,
+        lineNumber: 33,
         columnNumber: 5
     }, this);
 }

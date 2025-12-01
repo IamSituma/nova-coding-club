@@ -22,12 +22,6 @@ export default function Categories() {
       slug: "mobile-development-bootcamp",
     },
     {
-      name: "Python Programming",
-      count: "1 Program",
-      image: "/python.jpg",
-      slug: "python-programming",
-    },
-    {
       name: "UI/UX Design Fundamentals",
       count: "1 Program",
       image: "/ui.jpg",
