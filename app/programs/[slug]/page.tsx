@@ -15,7 +15,18 @@ interface ProgramDetailProps {
 export default function ProgramDetail({ params }: ProgramDetailProps) {
   const resolvedParams = use(params)
   const [selectedLevel, setSelectedLevel] = useState("Beginner")
-  const [activeTab, setActiveTab] = useState("About")
+  const [activeTab, setActiveTab] = useState("Courses")
+
+  // Modal state
+  const [activeModal, setActiveModal] = useState(false)
+  const [isSubmitting, setIsSubmitting] = useState(false)
+
+  // School form state
+  const [schoolName, setSchoolName] = useState("")
+  const [contactPerson, setContactPerson] = useState("")
+  const [phone, setPhone] = useState("")
+  const [email, setEmail] = useState("")
+  const [agree, setAgree] = useState(false)
 
   // Find program by slug
   const program: Program | undefined = programs.find((p) => p.slug === resolvedParams.slug)
@@ -42,6 +53,38 @@ export default function ProgramDetail({ params }: ProgramDetailProps) {
   }
 
   const filteredCredentials: Credential[] = program.credentials.filter((c) => c.level === selectedLevel)
+
+  // School Modal Submission
+  const handleSchoolSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    if (isSubmitting) return
+    if (!schoolName || !contactPerson) {
+      alert("Please fill in required fields")
+      return
+    }
+    setIsSubmitting(true)
+
+    const data = { formType: "school", schoolName, contactPerson, phone, email, agree }
+
+    try {
+      const res = await fetch(
+        "https://script.google.com/macros/s/AKfycbyWxPKJI4uB39CLpXBjAYQFqB1gLBsmla39otbwKkHjrVarmNe4f0-BfqBHjHHEb4Um/exec",
+        { method: "POST", body: JSON.stringify(data) }
+      )
+      const result = await res.json()
+      if (result.status === "success") {
+        alert("Registration successful!")
+        setSchoolName(""); setContactPerson(""); setPhone(""); setEmail(""); setAgree(false)
+        setActiveModal(false)
+      } else {
+        alert("Failed: " + result.message)
+      }
+    } catch (err: any) {
+      alert("Error: " + err.message)
+    } finally {
+      setIsSubmitting(false)
+    }
+  }
 
   return (
     <>
@@ -138,11 +181,14 @@ export default function ProgramDetail({ params }: ProgramDetailProps) {
                         {/* Price + Enroll + WhatsApp */}
                         <div className="flex flex-wrap gap-3 items-center mt-4">
                           <span className="text-foreground font-semibold text-lg md:text-xl">UGX {program.price}</span>
-                          <button className="px-4 md:px-6 py-2 bg-primary text-white rounded-lg font-semibold hover:shadow-lg transition-all text-sm md:text-base">
-                            Enroll Here
+                          <button
+                            onClick={() => setActiveModal(true)}
+                            className="px-4 md:px-6 py-2 bg-primary text-white rounded-lg font-semibold hover:shadow-lg transition-all text-sm md:text-base"
+                          >
+                            Register School
                           </button>
                           <a
-                            href={`https://wa.me/256700000000?text=Hi,%20I%20am%20interested%20in%20the%20${encodeURIComponent(
+                            href={`https://wa.me/256741004466?text=Hi,%20I%20am%20interested%20in%20the%20${encodeURIComponent(
                               program.title
                             )}%20program.`}
                             target="_blank"
@@ -157,7 +203,7 @@ export default function ProgramDetail({ params }: ProgramDetailProps) {
                     {/* Tabs */}
                     <div className="mt-8">
                       <div className="flex flex-wrap gap-3 border-b border-border mb-4">
-                        {["About", "Outcomes", "Modules", "Recommendations", "Reviews"].map((tab) => (
+                        {["Courses", "Outcomes", "Modules", "Recommendations", "Reviews"].map((tab) => (
                           <button
                             key={tab}
                             onClick={() => setActiveTab(tab)}
@@ -173,7 +219,7 @@ export default function ProgramDetail({ params }: ProgramDetailProps) {
                       </div>
 
                       <div>
-                        {activeTab === "About" && (
+                        {activeTab === "Courses" && (
                           <div className="space-y-8">
                             <div>
                               <h5 className="font-semibold text-lg text-foreground mb-4">What you'll learn</h5>
@@ -195,6 +241,12 @@ export default function ProgramDetail({ params }: ProgramDetailProps) {
                             <li>Understand programming fundamentals and best practices.</li>
                             <li>Apply responsive design principles and frameworks.</li>
                             <li>Gain confidence to start personal projects or freelance work.</li>
+                            <li>Use modern CSS frameworks to speed up development.</li>
+                            <li>Work with JavaScript to add interactivity and logic.</li>
+                            <li>Connect websites to APIs and external data sources.</li>
+                            <li>Manage projects with Git and GitHub confidently.</li>
+                            <li>Deploy websites online for real-world use.</li>
+                            <li>Start personal projects or explore freelance opportunities.</li>
                           </ul>
                         )}
 
@@ -211,8 +263,11 @@ export default function ProgramDetail({ params }: ProgramDetailProps) {
 
                         {activeTab === "Recommendations" && (
                           <ul className="list-disc pl-6 text-foreground/80 space-y-2">
-                            <li>After completing this credential, consider advanced courses in your field.</li>
-                            <li>Join our coding community to get mentorship and project guidance.</li>
+                            <li>Explore advanced web development courses to deepen your skills.</li>
+                            <li>Join our coding community for mentorship and support.</li>
+                            <li>Work on real-world projects to strengthen your portfolio.</li>
+                            <li>Participate in coding challenges to improve your problem-solving skills.</li>
+                            <li>Contribute to open-source projects to gain practical experience.</li>
                           </ul>
                         )}
 
@@ -260,12 +315,44 @@ export default function ProgramDetail({ params }: ProgramDetailProps) {
 
         {/* WhatsApp Floating Button */}
         <a
-          href="https://wa.me/256700000000"
+          href="https://wa.me/256741004466"
           target="_blank"
           className="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-lg flex items-center justify-center transition-all"
         >
           <span className="font-semibold hidden sm:inline">Contact Us</span>
         </a>
+
+        {/* School Modal */}
+        {activeModal && (
+          <div
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm"
+            onClick={(e) => { if ((e.target as HTMLDivElement).classList.contains("fixed")) setActiveModal(false) }}
+          >
+            <div className="bg-background rounded-2xl max-w-2xl w-full p-8 md:p-12 relative overflow-y-auto max-h-[90vh]">
+              <button
+                onClick={() => setActiveModal(false)}
+                className="absolute top-4 right-4 text-foreground text-lg font-bold hover:text-red-500 transition-all"
+              >
+                ✕
+              </button>
+
+              <h2 className="text-2xl md:text-3xl font-bold mb-4 text-foreground">School Registration</h2>
+              <p className="text-foreground/70 mb-6">Register your school for the Nova Coding Club programs.</p>
+              <form className="space-y-6" onSubmit={handleSchoolSubmit}>
+                <input type="text" required placeholder="School Name *" value={schoolName} onChange={(e)=>setSchoolName(e.target.value)} className="w-full px-4 py-3 bg-secondary/30 border border-border rounded-lg"/>
+                <input type="text" required placeholder="Immediate Person of Contact *" value={contactPerson} onChange={(e)=>setContactPerson(e.target.value)} className="w-full px-4 py-3 bg-secondary/30 border border-border rounded-lg"/>
+                <input type="tel" placeholder="Phone Number" value={phone} onChange={(e)=>setPhone(e.target.value)} className="w-full px-4 py-3 bg-secondary/30 border border-border rounded-lg"/>
+                <input type="email" placeholder="Email" value={email} onChange={(e)=>setEmail(e.target.value)} className="w-full px-4 py-3 bg-secondary/30 border border-border rounded-lg"/>
+                <div className="flex items-center gap-2">
+                  <input type="checkbox" checked={agree} onChange={(e)=>setAgree(e.target.checked)} className="w-4 h-4"/>
+                  <label className="text-foreground/70 text-sm">I agree to terms and updates</label>
+                </div>
+                <button type="submit" disabled={isSubmitting} className="w-full py-4 rounded-lg bg-teal-600 text-white font-semibold">{isSubmitting ? "Submitting..." : "Register"}</button>
+              </form>
+            </div>
+          </div>
+        )}
+
       </main>
       <Footer />
     </>

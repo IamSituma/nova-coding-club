@@ -63,16 +63,14 @@ export default function Partnerships() {
     { value: "15+", label: "Countries Reached" },
   ]
 
+  // Partners with logos only
   const partners = [
-    { name: "Lincoln High School", type: "School" },
-    { name: "St. Mary Secondary", type: "School" },
-    { name: "Tech Innovation Hub", type: "Organization" },
-    { name: "Digital Minds Academy", type: "School" },
-    { name: "Future Leaders Institute", type: "Organization" },
-    { name: "CodeWorks Studio", type: "Organization" },
-    { name: "Kampala Tech Center", type: "Organization" },
-    { name: "African Innovation Hub", type: "Organization" },
-    { name: "Youth Development Program", type: "NGO" },
+    { name: "Sprint Internet Uganda", logo: "/sprint.png" },
+    { name: "Nova Generation Limited", logo: "/nova.png" },
+    { name: "Seroma Christian High School", logo: "/seroma.png" },
+    { name: "British School of Kampala", logo: "/bsk.png" },
+    { name: "Ambrosoli International School", logo: "/ambrosoli.png" },
+    { name: "Smart Girls Foundation", logo: "/smart.png" },
   ]
 
   return (
@@ -81,7 +79,7 @@ export default function Partnerships() {
       <main className="min-h-screen bg-background">
 
         {/* HERO */}
-        <section className="relative min-h-[70vh] flex items-center justify-center">
+        <section className="relative min-h-[55vh] flex items-center justify-center">
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{ backgroundImage: "url('/partner.jpg')" }}
@@ -259,9 +257,9 @@ export default function Partnerships() {
           </div>
         </section>
 
-        {/* LOGO CAROUSEL */}
+        {/* LOGO CAROUSEL WITH FADE */}
         <section className="py-20 md:py-28 px-4">
-          <div className="max-w-7xl mx-auto">
+          <div className="max-w-7xl mx-auto relative">
             <div className="text-center mb-16">
               <h2 className="font-display font-bold text-3xl md:text-4xl mb-4">
                 Trusted by Leading Institutions
@@ -272,26 +270,26 @@ export default function Partnerships() {
             </div>
 
             <div className="relative overflow-hidden">
+              {/* Fade effect overlays */}
+              <div className="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-background/100 to-background/0 pointer-events-none z-10" />
+              <div className="absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-background/100 to-background/0 pointer-events-none z-10" />
+
               <div className="flex gap-10 animate-scroll logo-track">
                 {partners.concat(partners).map((partner, idx) => (
                   <div
                     key={idx}
-                    className="logo-item shrink-0 w-40 h-28 flex flex-col items-center justify-center transition-all"
+                    className="logo-item shrink-0 w-40 h-28 flex items-center justify-center transition-all"
                   >
                     <img
-                      src="/placeholder-logo.png"
+                      src={partner.logo}
                       alt={partner.name}
-                      className="logo-img h-12 md:h-16 object-contain grayscale transition-all"
+                      className="logo-img h-16 md:h-20 object-contain grayscale transition-all"
                     />
-                    <p className="logo-text text-foreground/70 text-sm font-medium mt-2 transition-all">
-                      {partner.name}
-                    </p>
                   </div>
                 ))}
               </div>
             </div>
 
-            {/* Carousel styles */}
             <style jsx>{`
               @keyframes scroll {
                 0% { transform: translateX(0); }
@@ -306,13 +304,8 @@ export default function Partnerships() {
                 animation-play-state: paused;
               }
 
-              /* Default: slightly dim */
-              .logo-item { opacity: 0.4; }
+              .logo-item { opacity: 0.7; }
 
-              /* When hovering over the track, dim all */
-              .logo-track:hover .logo-item { opacity: 0.2; }
-
-              /* Focused logo: zoom + full color + full opacity */
               .logo-item:hover {
                 opacity: 1 !important;
                 transform: scale(1.15);
@@ -321,17 +314,11 @@ export default function Partnerships() {
               .logo-item:hover .logo-img {
                 filter: grayscale(0);
               }
-
-              .logo-item:hover .logo-text {
-                opacity: 1;
-                color: var(--foreground);
-              }
             `}</style>
-
           </div>
         </section>
 
-        {/* PARTNERSHIP PROCESS (Horizontal Flow) */}
+        {/* PARTNERSHIP PROCESS */}
         <section className="py-20 md:py-28 px-4 bg-muted/30">
           <div className="max-w-7xl mx-auto text-center mb-16">
             <span className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4">
@@ -362,7 +349,6 @@ export default function Partnerships() {
                   <h3 className="font-display font-bold text-lg mt-4">{item.title}</h3>
                   <p className="text-foreground/60 text-sm max-w-[200px]">{item.desc}</p>
 
-                  {/* Show arrow except after last step */}
                   {idx < 3 && (
                     <div className="hidden md:block absolute top-8 right-[-55px]">
                       <ArrowRight size={28} className="text-primary/60" />
@@ -378,9 +364,7 @@ export default function Partnerships() {
         <section className="relative py-20 md:py-28 px-4">
           <div
             className="absolute inset-0 bg-cover bg-center"
-            style={{
-              backgroundImage: "url('/college.jpg')",
-            }}
+            style={{ backgroundImage: "url('/college.jpg')" }}
           />
           <div className="absolute inset-0 bg-foreground/70" />
 

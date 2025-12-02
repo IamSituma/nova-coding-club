@@ -65,26 +65,27 @@ export default function Footer() {
 
           {/* Programs */}
           <div className="space-y-3 md:space-y-4">
-            <h4 className="font-display font-semibold text-white text-sm md:text-base">Programs</h4>
+            <h4 className="font-display font-semibold text-white text-sm md:text-base">Quick Links</h4>
             <ul className="space-y-1.5 md:space-y-2 text-xs md:text-sm">
               <li>
+                <Link href="/gallery" className="text-white/80 hover:text-white transition-colors">
+                  Gallery
+                </Link>
+              </li>
+              <li>
                 <Link href="/programs/school-coding-club" className="text-white/80 hover:text-white transition-colors">
+
                   School Coding Club
                 </Link>
               </li>
               <li>
-                <Link href="/programs/web-development-bootcamp" className="text-white/80 hover:text-white transition-colors">
-                  Web Dev Bootcamp
-                </Link>
+                <a href="https://www.novageneration.tech" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-white transition-colors">
+                  Company
+                </a>
               </li>
               <li>
-                <Link href="/programs/summer-bootcamp" className="text-white/80 hover:text-white transition-colors">
-                  Summer Bootcamp
-                </Link>
-              </li>
-              <li>
-                <Link href="/programs/ui-ux-design" className="text-white/80 hover:text-white transition-colors">
-                  UI/UX Design
+                <Link href="/programs/" className="text-white/80 hover:text-white transition-colors">
+                  Programs
                 </Link>
               </li>
             </ul>

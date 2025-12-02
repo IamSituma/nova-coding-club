@@ -24,8 +24,8 @@ export default function Testimonials() {
     },
     {
       name: "Grace Nakimuli",
-      program: "Data Science Track",
-      role: "Data Analyst",
+      program: "UI/UX Course",
+      role: "UI.UX Designer",
       text: "The practical approach to teaching makes complex concepts easy to understand. Highly recommend CodeClub to anyone serious about tech.",
       rating: 5,
       reviews: 189,

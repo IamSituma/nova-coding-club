@@ -1,26 +1,26 @@
 export default function Tutors() {
   const tutors = [
     {
-      name: "John Doe",
-      title: "Web Development Lead",
+      name: "Steve Byarugaba",
+      title: "Software Engineer",
       image: "/john2.png",
       bio: "Full-stack developer with 8+ years of experience at tech startups.",
     },
     {
-      name: "Jane Doe",
-      title: "Mobile Development Expert",
+      name: "Nina Bwengye",
+      title: "Software Engineer",
       image: "/jane2.png",
       bio: "React Native specialist who has shipped 15+ mobile apps.",
     },
     {
-      name: "Jane Doe",
-      title: "Data Science Instructor",
+      name: "Nanyonga Rahmah",
+      title: "Software Engineer",
       image: "/jane.png",
       bio: "Machine learning engineer with 5+ years in fintech and analytics.",
     },
     {
-      name: "John Doe",
-      title: "UI/UX Design Mentor",
+      name: "Situma AMbrose",
+      title: "Software Enginer",
       image: "/john.png",
       bio: "Award-winning designer focused on user-centered design principles.",
     },
@@ -32,7 +32,7 @@ export default function Tutors() {
         <div className="space-y-8 md:space-y-12">
           <div>
             <h2 className="font-display font-bold text-2xl md:text-4xl mb-3 md:mb-4 text-foreground">
-              Meet Our Tutors
+              Meet The Team
             </h2>
             <p className="text-foreground/60 text-base md:text-lg">
               Learn from industry experts dedicated to your success.

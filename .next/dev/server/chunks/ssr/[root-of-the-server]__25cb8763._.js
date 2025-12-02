@@ -237,26 +237,26 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 function Tutors() {
     const tutors = [
         {
-            name: "John Doe",
-            title: "Web Development Lead",
+            name: "Steve Byarugaba",
+            title: "Software Engineer",
             image: "/john2.png",
             bio: "Full-stack developer with 8+ years of experience at tech startups."
         },
         {
-            name: "Jane Doe",
-            title: "Mobile Development Expert",
+            name: "Nina Bwengye",
+            title: "Software Engineer",
             image: "/jane2.png",
             bio: "React Native specialist who has shipped 15+ mobile apps."
         },
         {
-            name: "Jane Doe",
-            title: "Data Science Instructor",
+            name: "Nanyonga Rahmah",
+            title: "Software Engineer",
             image: "/jane.png",
             bio: "Machine learning engineer with 5+ years in fintech and analytics."
         },
         {
-            name: "John Doe",
-            title: "UI/UX Design Mentor",
+            name: "Situma AMbrose",
+            title: "Software Enginer",
             image: "/john.png",
             bio: "Award-winning designer focused on user-centered design principles."
         }
@@ -272,7 +272,7 @@ function Tutors() {
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                 className: "font-display font-bold text-2xl md:text-4xl mb-3 md:mb-4 text-foreground",
-                                children: "Meet Our Tutors"
+                                children: "Meet The Team"
                             }, void 0, false, {
                                 fileName: "[project]/components/tutors.tsx",
                                 lineNumber: 34,

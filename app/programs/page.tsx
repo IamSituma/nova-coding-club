@@ -1,4 +1,10 @@
-"use client"
+// app/programs/page.tsx
+
+export const metadata = {
+  title: "Programs | Nova Coding Club",
+  description: "Explore our coding programs, from school coding clubs to advanced bootcamps. Learn programming, web development, mobile apps, and more with hands-on projects.",
+}
+
 
 import Navbar from "@/components/navbar"
 import Programs from "@/components/programs"
@@ -32,14 +38,20 @@ export default function ProgramsPage() {
             >
               Contact Us <ArrowRight size={20} />
             </Link>
-          
           </div>
         </div>
       </section>
 
+      {/* Programs Section */}
       <Programs />
+
+      {/* FAQ Section */}
       <ProgramsPageFAQ />
+
+      {/* Call To Action */}
       <CTA />
+
+      {/* Footer */}
       <Footer />
     </>
   )

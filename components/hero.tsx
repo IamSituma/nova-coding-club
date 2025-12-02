@@ -125,10 +125,11 @@ export default function Hero() {
   return (
     <>
       <Navbar />
-      <section className="min-h-[850px] pt-20 pb-12 md:pt-24 md:pb-16 flex items-center px-4 relative overflow-hidden">
+      {/* HERO SECTION */}
+      <section className="relative overflow-hidden h-[600px] sm:h-[450px] md:h-[800px] pt-20 pb-12 flex items-center px-4">
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: "url('/hero1.jpg')" }}
+          style={{ backgroundImage: "url('/cover4.jpg')" }}
         />
         <div className="absolute inset-0 bg-black/60" />
 
@@ -141,24 +142,24 @@ export default function Hero() {
                 </span>
               </div>
 
-              <h1 className="font-display font-bold text-4xl md:text-5xl lg:text-6xl text-balance leading-tight text-white">
+              <h1 className="font-display font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-balance leading-tight text-white">
                 Unlock Your Coding Potential at Nova Coding Club
               </h1>
 
-              <p className="text-lg md:text-xl text-white/90 text-balance max-w-2xl leading-relaxed">
+              <p className="text-base sm:text-lg md:text-xl text-white/90 text-balance max-w-2xl leading-relaxed">
                 Join our coding communities designed for students and professionals. Whether you're just starting out or looking to level up your skills, we have programs tailored just for you.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-start">
                 <button
-                  onClick={openModal}
-                  className="px-8 py-4 bg-white text-[#009696] rounded-full font-semibold hover:shadow-lg hover:shadow-white/50 transition-all duration-300 flex items-center justify-center gap-2 hover:-translate-y-1"
+                  onClick={() => setIsModalOpen(true)}
+                  className="px-6 sm:px-8 py-3 sm:py-4 bg-white text-[#009696] rounded-full font-semibold hover:shadow-lg hover:shadow-white/50 transition-all duration-300 flex items-center justify-center gap-2 hover:-translate-y-1"
                 >
                   Get Started <ArrowRight size={20} />
                 </button>
                 <a
                   href="/programs"
-                  className="px-8 py-4 bg-transparent text-white border border-white rounded-full font-semibold hover:bg-white/10 transition-all duration-300"
+                  className="px-6 sm:px-8 py-3 sm:py-4 bg-transparent text-white border border-white rounded-full font-semibold hover:bg-white/10 transition-all duration-300"
                 >
                   Explore Programs
                 </a>
@@ -168,14 +169,15 @@ export default function Hero() {
         </div>
       </section>
 
+      {/* MODAL */}
       {isModalOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm">
           <div
             id="hero-modal"
-            className="bg-background rounded-2xl max-w-3xl w-full p-10 md:p-14 relative overflow-y-auto max-h-[90vh]"
+            className="bg-background rounded-2xl max-w-3xl w-full p-10 md:p-14 relative overflow-y-auto max-h-[80vh]"
           >
             <button
-              onClick={closeModal}
+              onClick={() => setIsModalOpen(false)}
               className="absolute top-4 right-4 text-foreground text-lg font-bold hover:text-red-500 transition-all"
             >
               ✕

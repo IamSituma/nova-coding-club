@@ -1,4 +1,7 @@
-"use client"
+export const metadata = {
+  title: "Gallery | Nova Coding Club",
+  description: "Explore our gallery of photos and videos from our events, workshops, bootcamps, and community gatherings.",
+}
 
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
@@ -6,29 +9,18 @@ import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 
 const albums = [
+
   {
-    id: "bootcamp-graduation-2024",
-    title: "Seroma Christian High School ",
-    cover: "/graduation-ceremony-students-celebrating-with-cert.jpg",
-    imageCount: 24,
-  },
-  {
-    id: "hackathon-2024",
-    title: "Bootcamp December 2025",
-    cover: "/students-at-hackathon-working-on-laptops-coding.jpg",
-    imageCount: 36,
-  },
-  {
-    id: "school-coding-workshop",
+    id: "smart-girls",
     title: "Smart Girls",
-    cover: "/children-learning-coding-in-classroom-with-teacher.jpg",
-    imageCount: 18,
+    cover: "/smart2.webp",
+    imageCount: 6,
   },
   {
-    id: "tech-conference-2024",
-    title: "Tech Conference 2024",
-    cover: "/tech-conference-speakers-on-stage-presentation.jpg",
-    imageCount: 42,
+    id: "scooby-doo-boom-kids-visit",
+    title: "Scooby Doo Boom Kids Visit",
+    cover: "/scooby1.jpg",
+    imageCount: 6,
   },
 ]
 
@@ -38,7 +30,7 @@ export default function GalleryPage() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative pt-16 min-h-[60vh] flex items-center justify-center bg-gradient-to-br from-[#009696] via-[#007a7a] to-[#005f5f] overflow-hidden">
+      <section className="relative pt-16 min-h-[40vh] md:h-[70vh] flex items-center justify-center bg-gradient-to-br from-[#009696] via-[#007a7a] to-[#005f5f] overflow-hidden">
       <div className="absolute inset-0 bg-black/40 z-10"></div>
       <img
             src="/gallery.jpg"
