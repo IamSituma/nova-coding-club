@@ -88,8 +88,8 @@ export interface Course {
       ],
     },
     {
-      slug: "mobile-development-bootcamp",
-      title: "Bootcamp Mobile Development",
+      slug: "summer-bootcamp",
+      title: "Summer Bootcamp",
       duration: "8 Weeks",
       price: "350,000",
       level: "Beginner",

@@ -307,7 +307,7 @@ function Programs() {
         },
         {
             title: "Summer Bootcamp",
-            slug: "summer",
+            slug: "Summer",
             image: "/college.jpg",
             description: "Master mobile app development for iOS and Android platforms.",
             price: "1,000,000",
@@ -355,7 +355,7 @@ function Programs() {
                 email,
                 agree
             };
-        } else if (formType === "webdev" || formType === "mobiledev") {
+        } else if (formType === "webdev" || formType === "Summer") {
             if (!studentName || !age || !parentName || !phone || !hasLaptop || !paymentPreference) {
                 alert("Please fill in required fields");
                 setIsSubmitting(false);
@@ -373,7 +373,7 @@ function Programs() {
             };
         }
         try {
-            const res = await fetch("https://script.google.com/macros/s/AKfycbzpiuQefg00s9ljwNBMRlgnlgjoFgjx8ZsKdPjfvjY_QoiRaY2uX5JqlUUD_Uy57CLv/exec", {
+            const res = await fetch("https://script.google.com/macros/s/AKfycbyWxPKJI4uB39CLpXBjAYQFqB1gLBsmla39otbwKkHjrVarmNe4f0-BfqBHjHHEb4Um/exec", {
                 method: "POST",
                 body: JSON.stringify(data)
             });
@@ -693,7 +693,7 @@ function Programs() {
                                 }, this)
                             ]
                         }, void 0, true),
-                        (activeModal === "webdev" || activeModal === "mobiledev") && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
+                        (activeModal === "webdev" || activeModal === "Summer") && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                     className: "text-2xl md:text-3xl font-bold mb-4 text-foreground",
