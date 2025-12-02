@@ -38,8 +38,8 @@ export default function Programs() {
       features: ["Frontend & Backend", "Database Design", "Deployment", "Job Prep", "3 Sessions Per Week"],
     },
     {
-      title: "Bootcamp - Summer",
-      slug: "mobiledev",
+      title: "Summer Bootcamp",
+      slug: "Summer",
       image: "/college.jpg",
       description: "Master mobile app development for iOS and Android platforms.",
       price: "1,000,000",
@@ -70,7 +70,7 @@ export default function Programs() {
         return
       }
       data = { ...data, schoolName, contactPerson, phone, email, agree }
-    } else if (formType === "webdev" || formType === "mobiledev") {
+    } else if (formType === "webdev" || formType === "Summer") {
       if (!studentName || !age || !parentName || !phone || !hasLaptop || !paymentPreference) {
         alert("Please fill in required fields")
         setIsSubmitting(false)
@@ -81,7 +81,7 @@ export default function Programs() {
 
     try {
       const res = await fetch(
-        "https://script.google.com/macros/s/AKfycbzpiuQefg00s9ljwNBMRlgnlgjoFgjx8ZsKdPjfvjY_QoiRaY2uX5JqlUUD_Uy57CLv/exec", // Replace with your Apps Script URL
+        "https://script.google.com/macros/s/AKfycbyWxPKJI4uB39CLpXBjAYQFqB1gLBsmla39otbwKkHjrVarmNe4f0-BfqBHjHHEb4Um/exec", // Replace with your Apps Script URL
         { method: "POST", body: JSON.stringify(data) }
       )
       const result = await res.json()
@@ -186,11 +186,11 @@ export default function Programs() {
               </>
             )}
 
-            {/* WebDev / MobileDev Modal */}
-            {(activeModal === "webdev" || activeModal === "mobiledev") && (
+            {/* WebDev / Summer Bootcamp Modal */}
+            {(activeModal === "webdev" || activeModal === "Summer") && (
               <>
-                <h2 className="text-2xl md:text-3xl font-bold mb-4 text-foreground">{activeModal === "webdev" ? "Web Development Bootcamp" : "Mobile Development Bootcamp"}</h2>
-                <p className="text-foreground/70 mb-6">Register your child for the {activeModal === "webdev" ? "Web Dev" : "Mobile Dev"} bootcamp.</p>
+                <h2 className="text-2xl md:text-3xl font-bold mb-4 text-foreground">{activeModal === "webdev" ? "Web Development Bootcamp" : "Summer Bootcamp"}</h2>
+                <p className="text-foreground/70 mb-6">Register your child for the {activeModal === "webdev" ? "Web Dev" : "Summer"} bootcamp.</p>
                 <form className="space-y-6" onSubmit={(e) => handleSubmit(activeModal, e)}>
                   <input type="text" required placeholder="Student Name *" value={studentName} onChange={(e)=>setStudentName(e.target.value)} className="w-full px-4 py-3 bg-secondary/30 border border-border rounded-lg"/>
                   <input type="number" required placeholder="Age *" value={age} onChange={(e)=>setAge(e.target.value)} className="w-full px-4 py-3 bg-secondary/30 border border-border rounded-lg"/>

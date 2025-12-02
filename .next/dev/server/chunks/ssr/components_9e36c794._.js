@@ -340,7 +340,7 @@ function Hero() {
             agree
         };
         try {
-            const res = await fetch("https://script.google.com/macros/s/AKfycbzpiuQefg00s9ljwNBMRlgnlgjoFgjx8ZsKdPjfvjY_QoiRaY2uX5JqlUUD_Uy57CLv/exec", {
+            const res = await fetch("https://script.google.com/macros/s/AKfycbz41D2wCbJrxWB72jdcdcdvNZMo9iw1ca5O0fmilydKS1_fFShAT0K-oXJaLQH3utGj/exec", {
                 method: "POST",
                 body: JSON.stringify(data)
             });
@@ -676,15 +676,15 @@ function Hero() {
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
                                                                 value: "webdev",
-                                                                children: "Bootcamp - Web Dev - UGX 450,000"
+                                                                children: "Web Dev Bootcamp - UGX 450,000"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/hero.tsx",
                                                                 lineNumber: 248,
                                                                 columnNumber: 23
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                                                value: "mobiledev",
-                                                                children: "Bootcamp - Summer - UGX 650,000"
+                                                                value: "Summer",
+                                                                children: "Summer Bootcamp - UGX 650,000"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/hero.tsx",
                                                                 lineNumber: 249,
@@ -1046,8 +1046,8 @@ function Programs() {
             ]
         },
         {
-            title: "Bootcamp - Summer",
-            slug: "mobiledev",
+            title: "Summer Bootcamp",
+            slug: "Summer",
             image: "/college.jpg",
             description: "Master mobile app development for iOS and Android platforms.",
             price: "1,000,000",
@@ -1089,7 +1089,7 @@ function Programs() {
                 email,
                 agree
             };
-        } else if (formType === "webdev" || formType === "mobiledev") {
+        } else if (formType === "webdev" || formType === "Summer") {
             if (!studentName || !age || !parentName || !phone || !hasLaptop || !paymentPreference) {
                 alert("Please fill in required fields");
                 setIsSubmitting(false);
@@ -1107,7 +1107,7 @@ function Programs() {
             };
         }
         try {
-            const res = await fetch("https://script.google.com/macros/s/AKfycbzpiuQefg00s9ljwNBMRlgnlgjoFgjx8ZsKdPjfvjY_QoiRaY2uX5JqlUUD_Uy57CLv/exec", {
+            const res = await fetch("https://script.google.com/macros/s/AKfycbyWxPKJI4uB39CLpXBjAYQFqB1gLBsmla39otbwKkHjrVarmNe4f0-BfqBHjHHEb4Um/exec", {
                 method: "POST",
                 body: JSON.stringify(data)
             });
@@ -1427,11 +1427,11 @@ function Programs() {
                                 }, this)
                             ]
                         }, void 0, true),
-                        (activeModal === "webdev" || activeModal === "mobiledev") && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
+                        (activeModal === "webdev" || activeModal === "Summer") && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                     className: "text-2xl md:text-3xl font-bold mb-4 text-foreground",
-                                    children: activeModal === "webdev" ? "Web Development Bootcamp" : "Mobile Development Bootcamp"
+                                    children: activeModal === "webdev" ? "Web Development Bootcamp" : "Summer Bootcamp"
                                 }, void 0, false, {
                                     fileName: "[project]/components/programs.tsx",
                                     lineNumber: 192,
@@ -1441,7 +1441,7 @@ function Programs() {
                                     className: "text-foreground/70 mb-6",
                                     children: [
                                         "Register your child for the ",
-                                        activeModal === "webdev" ? "Web Dev" : "Mobile Dev",
+                                        activeModal === "webdev" ? "Web Dev" : "Summer",
                                         " bootcamp."
                                     ]
                                 }, void 0, true, {
@@ -1805,10 +1805,10 @@ function Categories() {
             slug: "web-development-bootcamp"
         },
         {
-            name: "Mobile Development Bootcamp",
+            name: "Summer Bootcamp",
             count: "1 Program",
             image: "/app.jpg",
-            slug: "mobile-development-bootcamp"
+            slug: "summer"
         },
         {
             name: "UI/UX Design Fundamentals",
@@ -2484,9 +2484,9 @@ function Footer() {
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                                href: "/programs/mobile-development-bootcamp",
+                                                href: "/programs/summer-bootcamp",
                                                 className: "text-white/80 hover:text-white transition-colors",
-                                                children: "Mobile Dev Bootcamp"
+                                                children: "Summer Bootcamp"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/footer.tsx",
                                                 lineNumber: 81,

@@ -306,8 +306,8 @@ function Programs() {
             ]
         },
         {
-            title: "Bootcamp - Summer",
-            slug: "mobiledev",
+            title: "Summer Bootcamp",
+            slug: "summer",
             image: "/college.jpg",
             description: "Master mobile app development for iOS and Android platforms.",
             price: "1,000,000",
@@ -373,7 +373,7 @@ function Programs() {
             };
         }
         try {
-            const res = await fetch("https://script.google.com/macros/s/AKfycbwE5Ct7uyoKK-v4PfZf8EW8DFH3EZ3kRSdU0W0fAJ39dUdg7nEinFD3p4e3AibJbeq44A/exec", {
+            const res = await fetch("https://script.google.com/macros/s/AKfycbzpiuQefg00s9ljwNBMRlgnlgjoFgjx8ZsKdPjfvjY_QoiRaY2uX5JqlUUD_Uy57CLv/exec", {
                 method: "POST",
                 body: JSON.stringify(data)
             });
@@ -697,7 +697,7 @@ function Programs() {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                     className: "text-2xl md:text-3xl font-bold mb-4 text-foreground",
-                                    children: activeModal === "webdev" ? "Web Development Bootcamp" : "Mobile Development Bootcamp"
+                                    children: activeModal === "webdev" ? "Web Development Bootcamp" : "Summer Bootcamp"
                                 }, void 0, false, {
                                     fileName: "[project]/components/programs.tsx",
                                     lineNumber: 192,
@@ -707,7 +707,7 @@ function Programs() {
                                     className: "text-foreground/70 mb-6",
                                     children: [
                                         "Register your child for the ",
-                                        activeModal === "webdev" ? "Web Dev" : "Mobile Dev",
+                                        activeModal === "webdev" ? "Web Dev" : "Summer",
                                         " bootcamp."
                                     ]
                                 }, void 0, true, {
@@ -1385,9 +1385,9 @@ function Footer() {
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                                href: "/programs/mobile-development-bootcamp",
+                                                href: "/programs/summer-bootcamp",
                                                 className: "text-white/80 hover:text-white transition-colors",
-                                                children: "Mobile Dev Bootcamp"
+                                                children: "Summer Bootcamp"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/footer.tsx",
                                                 lineNumber: 81,

@@ -16,10 +16,10 @@ export default function Categories() {
       slug: "web-development-bootcamp",
     },
     {
-      name: "Mobile Development Bootcamp",
+      name: "Summer Bootcamp",
       count: "1 Program",
       image: "/app.jpg",
-      slug: "mobile-development-bootcamp",
+      slug: "summer",
     },
     {
       name: "UI/UX Design Fundamentals",

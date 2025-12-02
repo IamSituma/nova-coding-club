@@ -95,7 +95,7 @@ export default function Hero() {
 
     try {
       const res = await fetch(
-        "https://script.google.com/macros/s/AKfycbzpiuQefg00s9ljwNBMRlgnlgjoFgjx8ZsKdPjfvjY_QoiRaY2uX5JqlUUD_Uy57CLv/exec",
+        "https://script.google.com/macros/s/AKfycbz41D2wCbJrxWB72jdcdcdvNZMo9iw1ca5O0fmilydKS1_fFShAT0K-oXJaLQH3utGj/exec",
         {
           method: "POST",
           body: JSON.stringify(data),
@@ -245,8 +245,8 @@ export default function Hero() {
                     >
                       <option value="">Select a program</option>
                       <option value="school">School Coding Club - UGX 250,000</option>
-                      <option value="webdev">Bootcamp - Web Dev - UGX 450,000</option>
-                      <option value="mobiledev">Bootcamp - Summer - UGX 650,000</option>
+                      <option value="webdev">Web Dev Bootcamp - UGX 450,000</option>
+                      <option value="Summer">Summer Bootcamp - UGX 650,000</option>
                     </select>
                   </div>
                 </div>

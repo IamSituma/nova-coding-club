@@ -78,8 +78,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/programs/mobile-development-bootcamp" className="text-white/80 hover:text-white transition-colors">
-                  Mobile Dev Bootcamp
+                <Link href="/programs/summer-bootcamp" className="text-white/80 hover:text-white transition-colors">
+                  Summer Bootcamp
                 </Link>
               </li>
               <li>

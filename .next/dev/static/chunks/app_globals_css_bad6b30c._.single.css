@@ -1411,10 +1411,6 @@
     width: 100px;
   }
 
-  .w-\[200px\] {
-    width: 200px;
-  }
-
   .w-auto {
     width: auto;
   }
@@ -1688,10 +1684,6 @@
 
   .list-none {
     list-style-type: none;
-  }
-
-  .appearance-none {
-    appearance: none;
   }
 
   .auto-rows-min {
@@ -2057,10 +2049,6 @@
 
   .border-primary {
     border-color: var(--primary);
-  }
-
-  .border-red-500 {
-    border-color: var(--color-red-500);
   }
 
   .border-sidebar-border {
@@ -2908,14 +2896,6 @@
 
   .pr-8 {
     padding-right: calc(var(--spacing) * 8);
-  }
-
-  .pr-10 {
-    padding-right: calc(var(--spacing) * 10);
-  }
-
-  .pr-12 {
-    padding-right: calc(var(--spacing) * 12);
   }
 
   .pb-2 {
@@ -5759,12 +5739,6 @@
   @media (min-width: 48rem) {
     .md\:col-span-1 {
       grid-column: span 1 / span 1;
-    }
-  }
-
-  @media (min-width: 48rem) {
-    .md\:col-span-2 {
-      grid-column: span 2 / span 2;
     }
   }
 
