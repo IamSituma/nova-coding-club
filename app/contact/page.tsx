@@ -23,22 +23,41 @@ export default function Contact() {
     setIsSubmitting(true)
 
     try {
-      const res = await fetch("https://script.google.com/macros/s/AKfycbw8rU0s5SSxlLH70mQi5_KrzrazpEyk3Publ78GcoHq2-O0dig1r9Yp57d9f03uQugQ/exec", {
+      const res = await fetch("https://script.google.com/macros/s/AKfycbyTgAnCLcfnVuTwBBCw6LmeZxBQ5o2ktPVn9ztAWaCko_JjJp8h3qfHr_kx1OdcWdeY/exec", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ ...formData, formType: "contact" }),
       })
 
-      const result = await res.json()
+      // Debug: get raw response
+      const raw = await res.text()
+      console.log("RAW GOOGLE SCRIPT RESPONSE:", raw)
+
+      // Define expected response type
+      type GoogleResponse = {
+        status?: string;
+        message?: string;
+      }
+
+      let result: GoogleResponse = {}
+
+      try {
+        result = JSON.parse(raw)
+      } catch (error) {
+        alert("Server returned non-JSON:\n" + raw)
+        return
+      }
 
       if (result.status === "success") {
         alert("Thank you! Your message has been submitted successfully. We will get in touch with you soon.")
         setFormData({ name: "", email: "", phone: "", message: "" })
       } else {
-        alert("Oops! Something went wrong. Please try again.")
+        alert("Oops! Something went wrong.\n" + (result.message || "Unknown error"))
       }
+
     } catch (err) {
       alert("Oops! Something went wrong. Please try again.")
+      console.error(err)
     } finally {
       setIsSubmitting(false)
     }
@@ -173,7 +192,7 @@ export default function Contact() {
               </form>
             </div>
 
-            {/* RIGHT: MAP + TEXT */}
+            {/* RIGHT: MAP */}
             <div className="flex flex-col gap-4">
               <div className="w-full h-[400px] md:h-[630px] rounded-3xl overflow-hidden shadow-lg">
                 <iframe
