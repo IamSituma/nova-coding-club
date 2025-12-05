@@ -23,7 +23,7 @@ export default function Contact() {
     setIsSubmitting(true)
 
     try {
-      const res = await fetch("https://script.google.com/macros/s/AKfycbz7NTROM5ApHz8tG7n-hkYxyUrIIg6YXA0GKceuSumgz5p02EU9oyClQXenJt7GhEJ5_g/exec", {
+      const res = await fetch("https://script.google.com/macros/s/AKfycbw8rU0s5SSxlLH70mQi5_KrzrazpEyk3Publ78GcoHq2-O0dig1r9Yp57d9f03uQugQ/exec", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ ...formData, formType: "contact" }),
