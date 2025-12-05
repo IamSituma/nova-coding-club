@@ -25,6 +25,7 @@ export default function Contact() {
     message: ""
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
+  const [statusMessage, setStatusMessage] = useState<string | null>(null) // <-- add this
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value })
@@ -33,6 +34,7 @@ export default function Contact() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
+    setStatusMessage(null) // clear any previous message
 
     try {
       const res = await fetch("/api/contact", {
@@ -49,20 +51,20 @@ export default function Contact() {
       try {
         result = JSON.parse(raw)
       } catch {
-        alert("Server returned non-JSON response:\n" + raw)
+        setStatusMessage("Server returned an unexpected response.")
         return
       }
 
       if (result.status === "success") {
-        alert("Thank you! Your message has been submitted successfully. We will get in touch with you soon.")
+        setStatusMessage("🟩 Thank you! Your message has been sent successfully.")
         setFormData({ name: "", email: "", phone: "", message: "" })
       } else {
-        alert("Oops! Something went wrong.\n" + (result.message || "Unknown error"))
+        setStatusMessage("⚠️ Oops! Something went wrong. " + (result.message || "Unknown error"))
       }
 
     } catch (err) {
       console.error(err)
-      alert("Oops! Something went wrong. Please try again.")
+      setStatusMessage("⚠️ Oops! Something went wrong. Please try again.")
     } finally {
       setIsSubmitting(false)
     }
@@ -104,7 +106,16 @@ export default function Contact() {
                 </div>
               </div>
 
+              {/* Contact Form */}
               <form onSubmit={handleSubmit} className="bg-white/5 p-6 md:p-8 rounded-3xl shadow-sm backdrop-blur-md space-y-4">
+
+                {/* Show the status message here */}
+                {statusMessage && (
+                  <p className="text-sm font-medium text-center md:text-left text-foreground/90 mb-2">
+                    {statusMessage}
+                  </p>
+                )}
+
                 <div>
                   <label className="block text-foreground font-medium mb-1">Your Name</label>
                   <input type="text" name="name" placeholder="John Doe" value={formData.name} onChange={handleChange} className="w-full px-4 py-2.5 bg-background border border-border rounded-xl text-foreground placeholder:text-foreground/40 focus:border-primary focus:ring-1 focus:ring-primary transition text-sm" required />
